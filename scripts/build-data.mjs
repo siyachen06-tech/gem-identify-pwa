@@ -71,6 +71,64 @@ const jadeNames = [
   "孔雀石",
 ];
 
+const imageKeysById = {
+  crystal_001: "clear-quartz",
+  crystal_002: "amethyst",
+  crystal_003: "citrine",
+  crystal_004: "rose-quartz",
+  crystal_005: "smoky-quartz",
+  crystal_006: "green-phantom-quartz",
+  crystal_007: "red-phantom-quartz",
+  crystal_008: "white-phantom-quartz",
+  crystal_009: "golden-rutilated-quartz",
+  crystal_010: "red-rutilated-quartz",
+  crystal_011: "tourmalinated-quartz",
+  crystal_012: "actinolite-quartz",
+  crystal_013: "phantom-quartz",
+  crystal_014: "enhydro-quartz",
+  crystal_015: "rainbow-quartz",
+  crystal_016: "skeletal-quartz",
+  crystal_017: "double-terminated-quartz",
+  crystal_018: "ametrine",
+  crystal_019: "prasiolite",
+  crystal_020: "blue-quartz",
+  crystal_021: "rose-quartz",
+  crystal_022: "aventurine",
+  crystal_023: "tiger-eye",
+  crystal_024: "charoite",
+  crystal_025: "sugilite",
+  crystal_026: "labradorite",
+  crystal_027: "moonstone",
+  crystal_028: "sunstone",
+  crystal_029: "amazonite",
+  crystal_030: "aquamarine",
+  crystal_031: "morganite",
+  crystal_032: "heliodor",
+  crystal_033: "topaz",
+  crystal_034: "tourmaline",
+  crystal_035: "garnet",
+  crystal_036: "spinel",
+  crystal_037: "tanzanite",
+  crystal_038: "peridot",
+  crystal_039: "zircon",
+  crystal_040: "apatite",
+  crystal_041: "iolite",
+  crystal_042: "malachite",
+  crystal_043: "lapis-lazuli",
+  crystal_044: "turquoise",
+  crystal_045: "nanhong-agate",
+  crystal_046: "zhanguo-red-agate",
+  crystal_047: "moss-agate",
+  crystal_048: "fluorite",
+  crystal_049: "calcite",
+  crystal_050: "pyrite",
+  crystal_051: "celestite",
+  crystal_052: "apophyllite",
+  crystal_053: "desert-rose",
+  crystal_054: "titanium-aura-quartz",
+  crystal_055: "jadeite",
+};
+
 function topCategoryFor(item) {
   if (
     item.category.includes("水晶") ||
@@ -94,6 +152,8 @@ function topCategoryFor(item) {
 }
 
 function imageKeyFor(item, topCategory) {
+  if (imageKeysById[item.id]) return imageKeysById[item.id];
+
   const name = item.name;
   if (name.includes("紫水晶")) return "amethyst";
   if (name.includes("黄水晶")) return "citrine";

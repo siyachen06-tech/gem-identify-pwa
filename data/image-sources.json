@@ -1,0 +1,333 @@
+{
+  "version": "1.0.0",
+  "source": "Wikimedia Commons",
+  "note": "每个 imageKey 对应一个公开图库搜索词。下载脚本会保存本地图片和署名信息。",
+  "images": {
+    "clear-quartz": {
+      "label": "白水晶",
+      "preferredTitles": ["Quartz, Tibet.jpg"],
+      "queries": ["Clear quartz crystal specimen", "Rock crystal quartz"],
+      "matchTerms": ["quartz"]
+    },
+    "amethyst": {
+      "label": "紫水晶",
+      "preferredTitles": ["Quartz var Amethyst Specimen 22.JPG"],
+      "queries": ["Amethyst quartz specimen", "Amethyst crystals"],
+      "matchTerms": ["amethyst"]
+    },
+    "citrine": {
+      "label": "黄水晶",
+      "preferredTitles": ["Quartz Citrine Crystals in Their Natural Form.jpg"],
+      "queries": ["Citrine quartz specimen", "Citrine crystal"],
+      "matchTerms": ["citrine"]
+    },
+    "rose-quartz": {
+      "label": "粉水晶 / 芙蓉石",
+      "preferredTitles": ["Rose Quartz Macro 1.JPG"],
+      "queries": ["Rose quartz specimen", "Rose quartz mineral"],
+      "matchTerms": ["rose", "quartz"]
+    },
+    "smoky-quartz": {
+      "label": "茶晶（烟晶）",
+      "preferredTitles": ["Smoky-quartz-TUCQTZ09-03-arkenstone-irocks.png"],
+      "queries": ["Smoky quartz specimen", "Smoky quartz crystal"],
+      "matchTerms": ["smoky", "quartz"]
+    },
+    "green-phantom-quartz": {
+      "label": "绿幽灵水晶",
+      "preferredTitles": ["Chlorite phantom quartz.jpg"],
+      "queries": ["Chlorite phantom quartz", "Green phantom quartz"],
+      "matchTerms": ["phantom", "quartz"],
+      "requiredTerms": ["phantom"]
+    },
+    "red-phantom-quartz": {
+      "label": "红幽灵水晶",
+      "preferredTitles": ["Quartz-Hematite-181023.jpg"],
+      "queries": ["Red phantom quartz", "Hematite phantom quartz", "Hematite included quartz"],
+      "matchTerms": ["quartz"]
+    },
+    "white-phantom-quartz": {
+      "label": "白幽灵水晶",
+      "preferredTitles": ["Phantom quartz at the Oxford Museum of Natural History.jpg"],
+      "queries": ["White phantom quartz", "Phantom quartz crystal"],
+      "matchTerms": ["phantom", "quartz"],
+      "requiredTerms": ["phantom"]
+    },
+    "golden-rutilated-quartz": {
+      "label": "金发晶",
+      "preferredTitles": ["Rutilated quartz.jpg"],
+      "queries": ["Golden rutilated quartz", "Rutilated quartz golden rutile"],
+      "matchTerms": ["rutile", "quartz"],
+      "requiredTerms": ["rutile"]
+    },
+    "red-rutilated-quartz": {
+      "label": "红发晶",
+      "preferredTitles": ["Hematite-Quartz-42661.jpg"],
+      "queries": ["Red rutilated quartz", "Hematite quartz inclusions"],
+      "matchTerms": ["quartz"]
+    },
+    "tourmalinated-quartz": {
+      "label": "黑发晶（电气石发晶）",
+      "preferredTitles": ["Tourmaline-Quartz-169702.jpg"],
+      "queries": ["Tourmalinated quartz specimen", "Black tourmaline in quartz"],
+      "matchTerms": ["tourmaline", "quartz"],
+      "requiredTerms": ["tourmaline"]
+    },
+    "actinolite-quartz": {
+      "label": "绿发晶（阳起石发晶）",
+      "preferredTitles": ["Actinolite-Quartz-rhqtz-17a.jpg"],
+      "queries": ["Actinolite in quartz", "Green actinolite quartz inclusions"],
+      "matchTerms": ["actinolite", "quartz"],
+      "requiredTerms": ["actinolite"]
+    },
+    "phantom-quartz": {
+      "label": "异象水晶（幻影水晶）",
+      "preferredTitles": ["Phantom quartz at the Oxford Museum of Natural History.jpg"],
+      "queries": ["Phantom quartz specimen", "Phantom quartz crystal"],
+      "matchTerms": ["phantom", "quartz"],
+      "requiredTerms": ["phantom"]
+    },
+    "enhydro-quartz": {
+      "label": "水胆水晶",
+      "preferredTitles": ["Quartz-178964.jpg"],
+      "queries": ["Enhydro quartz", "Enhydro crystal quartz"],
+      "matchTerms": ["enhydro", "quartz"]
+    },
+    "rainbow-quartz": {
+      "label": "彩虹水晶",
+      "preferredTitles": ["Quartz-244271.jpg"],
+      "queries": ["Rainbow quartz crystal", "Iridescent quartz crystal"],
+      "matchTerms": ["quartz"]
+    },
+    "skeletal-quartz": {
+      "label": "骨干水晶（窗户水晶）",
+      "preferredTitles": ["Quartz-253954.jpg"],
+      "queries": ["Skeletal quartz specimen", "Elestial quartz"],
+      "matchTerms": ["quartz"]
+    },
+    "double-terminated-quartz": {
+      "label": "双尖水晶",
+      "preferredTitles": ["Double terminated quartz in rhyolite.jpg"],
+      "queries": ["Double terminated quartz", "Double terminated quartz crystal"],
+      "matchTerms": ["quartz"]
+    },
+    "ametrine": {
+      "label": "紫黄晶",
+      "preferredTitles": ["Bolivian ametrine.jpg"],
+      "queries": ["Ametrine specimen", "Ametrine gemstone"],
+      "matchTerms": ["ametrine"],
+      "requiredTerms": ["ametrine"]
+    },
+    "prasiolite": {
+      "label": "绿水晶（果冻绿）",
+      "preferredTitles": ["Brazilian prasiolite.jpg"],
+      "queries": ["Prasiolite green quartz", "Green quartz prasiolite"],
+      "matchTerms": ["prasiolite"],
+      "requiredTerms": ["prasiolite"]
+    },
+    "blue-quartz": {
+      "label": "蓝水晶",
+      "preferredTitles": ["Quartz-Magnesioriebeckite-118652.jpg"],
+      "queries": ["Blue quartz specimen", "Blue quartz mineral"],
+      "matchTerms": ["blue", "quartz"]
+    },
+    "aventurine": {
+      "label": "东陵石",
+      "preferredTitles": ["Quartz, aventurine (GeoDIL number - 2517).jpg"],
+      "queries": ["Aventurine quartz specimen", "Green aventurine"],
+      "matchTerms": ["aventurine"]
+    },
+    "tiger-eye": {
+      "label": "虎眼石",
+      "preferredTitles": ["Tiger's eye.jpg"],
+      "queries": ["Tiger's eye gemstone", "Tigers eye mineral"],
+      "matchTerms": ["tiger"]
+    },
+    "charoite": {
+      "label": "紫龙晶",
+      "preferredTitles": ["Charoite from Russia.jpg"],
+      "queries": ["Charoite mineral specimen", "Charoite"],
+      "matchTerms": ["charoite"]
+    },
+    "sugilite": {
+      "label": "舒俱徕石",
+      "preferredTitles": ["Sugilite-162617.jpg"],
+      "queries": ["Sugilite mineral specimen", "Sugilite"],
+      "matchTerms": ["sugilite"]
+    },
+    "labradorite": {
+      "label": "拉长石",
+      "preferredTitles": ["Labradorite (GeoDIL number - 2924).jpg"],
+      "queries": ["Labradorite mineral specimen", "Labradorite"],
+      "matchTerms": ["labradorite"]
+    },
+    "moonstone": {
+      "label": "月光石",
+      "preferredTitles": ["Raw Moonstone.jpg"],
+      "queries": ["Moonstone feldspar specimen", "Moonstone mineral"],
+      "matchTerms": ["moonstone"]
+    },
+    "sunstone": {
+      "label": "太阳石",
+      "preferredTitles": ["Sunstone (Tertiary; Spectrum Mine, Oregon, USA) 7.jpg"],
+      "queries": ["Sunstone feldspar specimen", "Sunstone mineral"],
+      "matchTerms": ["sunstone"]
+    },
+    "amazonite": {
+      "label": "天河石",
+      "preferredTitles": ["Amazonite-8819.jpg"],
+      "queries": ["Amazonite mineral specimen", "Amazonite"],
+      "matchTerms": ["amazonite"]
+    },
+    "aquamarine": {
+      "label": "海蓝宝",
+      "preferredTitles": ["Beryl aquamarine.jpg"],
+      "queries": ["Aquamarine crystal specimen", "Aquamarine beryl"],
+      "matchTerms": ["aquamarine"],
+      "requiredTerms": ["aquamarine"]
+    },
+    "morganite": {
+      "label": "摩根石",
+      "preferredTitles": ["Morganite .jpg"],
+      "queries": ["Morganite crystal specimen", "Morganite beryl"],
+      "matchTerms": ["morganite"],
+      "requiredTerms": ["morganite"]
+    },
+    "heliodor": {
+      "label": "黄绿柱石（金绿玉）",
+      "preferredTitles": ["Heliodor.jpg"],
+      "queries": ["Heliodor beryl specimen", "Golden beryl heliodor"],
+      "matchTerms": ["heliodor", "beryl"],
+      "requiredTerms": ["heliodor"]
+    },
+    "topaz": {
+      "label": "托帕石（黄玉）",
+      "preferredTitles": ["Topaz-t5g32d.jpg"],
+      "queries": ["Topaz crystal specimen", "Topaz mineral"],
+      "matchTerms": ["topaz"]
+    },
+    "tourmaline": {
+      "label": "碧玺（电气石）",
+      "preferredTitles": ["Pale watermelon tourmaline crystal 1.jpg"],
+      "queries": ["Tourmaline crystal specimen", "Elbaite tourmaline"],
+      "matchTerms": ["tourmaline"]
+    },
+    "garnet": {
+      "label": "石榴石",
+      "preferredTitles": ["Garnet-Group-236782.jpg"],
+      "queries": ["Garnet crystal specimen", "Garnet mineral"],
+      "matchTerms": ["garnet"]
+    },
+    "spinel": {
+      "label": "尖晶石",
+      "preferredTitles": ["Spinel-282544.jpg"],
+      "queries": ["Spinel crystal specimen", "Spinel mineral"],
+      "matchTerms": ["spinel"]
+    },
+    "tanzanite": {
+      "label": "坦桑石",
+      "preferredTitles": ["Zoisite-m06-16b.jpg"],
+      "queries": ["Tanzanite crystal specimen", "Tanzanite zoisite"],
+      "matchTerms": ["tanzanite"]
+    },
+    "peridot": {
+      "label": "橄榄石",
+      "preferredTitles": ["Olivine-4aa46b.jpg"],
+      "queries": ["Peridot olivine specimen", "Olivine peridot"],
+      "matchTerms": ["peridot", "olivine"]
+    },
+    "zircon": {
+      "label": "锆石",
+      "queries": ["Zircon crystal specimen", "Zircon mineral"],
+      "matchTerms": ["zircon"]
+    },
+    "apatite": {
+      "label": "磷灰石",
+      "queries": ["Apatite crystal specimen", "Apatite mineral"],
+      "matchTerms": ["apatite"]
+    },
+    "iolite": {
+      "label": "堇青石",
+      "queries": ["Iolite cordierite specimen", "Iolite mineral"],
+      "matchTerms": ["iolite", "cordierite"]
+    },
+    "malachite": {
+      "label": "孔雀石",
+      "preferredTitles": ["Malachite specimen.jpg"],
+      "queries": ["Malachite mineral specimen", "Malachite"],
+      "matchTerms": ["malachite"]
+    },
+    "lapis-lazuli": {
+      "label": "青金石",
+      "preferredTitles": ["Lapis lazuli, Smithsonian Objects of Wonder.jpg"],
+      "queries": ["Lapis lazuli specimen", "Lapis lazuli mineral"],
+      "matchTerms": ["lapis"]
+    },
+    "turquoise": {
+      "label": "绿松石",
+      "preferredTitles": ["Turquoise.JPG"],
+      "queries": ["Turquoise mineral specimen", "Turquoise"],
+      "matchTerms": ["turquoise"]
+    },
+    "nanhong-agate": {
+      "label": "南红玛瑙",
+      "preferredTitles": ["Iziko Mineral Carnelian.JPG"],
+      "queries": ["Nanhong agate", "Red agate specimen", "Red chalcedony agate"],
+      "matchTerms": ["agate"]
+    },
+    "zhanguo-red-agate": {
+      "label": "战国红玛瑙",
+      "preferredTitles": ["Banded Agate.JPG", "Bandedagate.jpg"],
+      "queries": ["Zhanguo red agate", "Warring States red agate", "Banded red agate"],
+      "matchTerms": ["agate"]
+    },
+    "moss-agate": {
+      "label": "水草玛瑙",
+      "preferredTitles": ["Montana Moss Agate.jpg"],
+      "queries": ["Moss agate specimen", "Moss agate"],
+      "matchTerms": ["moss", "agate"]
+    },
+    "fluorite": {
+      "label": "萤石",
+      "queries": ["Fluorite mineral specimen", "Fluorite crystal"],
+      "matchTerms": ["fluorite"]
+    },
+    "calcite": {
+      "label": "方解石",
+      "queries": ["Calcite mineral specimen", "Calcite crystal"],
+      "matchTerms": ["calcite"]
+    },
+    "pyrite": {
+      "label": "黄铁矿",
+      "queries": ["Pyrite mineral specimen", "Pyrite crystal"],
+      "matchTerms": ["pyrite"]
+    },
+    "celestite": {
+      "label": "天青石",
+      "queries": ["Celestite mineral specimen", "Celestine crystal"],
+      "matchTerms": ["celestite", "celestine"]
+    },
+    "apophyllite": {
+      "label": "鱼眼石",
+      "queries": ["Apophyllite mineral specimen", "Apophyllite crystal"],
+      "matchTerms": ["apophyllite"]
+    },
+    "desert-rose": {
+      "label": "沙漠玫瑰",
+      "queries": ["Desert rose gypsum", "Gypsum desert rose"],
+      "matchTerms": ["desert", "rose"]
+    },
+    "titanium-aura-quartz": {
+      "label": "钛晶（镀膜水晶）",
+      "preferredTitles": ["Angel aura quartz from China. Erbil Stones and Gems Museum, Erbil Citadel, Hawler, Iraq.jpg"],
+      "queries": ["Titanium aura quartz", "Aura quartz titanium"],
+      "matchTerms": ["aura", "quartz"]
+    },
+    "jadeite": {
+      "label": "翡翠（硬玉）",
+      "preferredTitles": ["Jadeite (GeoDIL number - 1607).jpg", "冰種翡翠 jadeite.jpg"],
+      "queries": ["Jadeite jade specimen", "Jadeite"],
+      "matchTerms": ["jadeite"]
+    }
+  }
+}

@@ -1,6 +1,6 @@
-const CACHE_NAME = "gem-pwa-v1";
+const CACHE_NAME = "gem-pwa-v3";
 
-const APP_ASSETS = [
+const CORE_ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
@@ -8,6 +8,8 @@ const APP_ASSETS = [
   "./src/app.js",
   "./data/gems.json",
   "./data/gems.js",
+  "./data/image-credits.json",
+  "./data/image-credits.js",
   "./assets/icon.svg",
   "./assets/crystal.svg",
   "./assets/gemstone.svg",
@@ -26,7 +28,11 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
-      .then((cache) => cache.addAll(APP_ASSETS))
+      .then(async (cache) => {
+        await cache.addAll(CORE_ASSETS);
+        const imageAssets = await loadImageAssets();
+        await Promise.allSettled(imageAssets.map((asset) => cache.add(asset)));
+      })
       .then(() => self.skipWaiting()),
   );
 });
@@ -57,3 +63,17 @@ self.addEventListener("fetch", (event) => {
     }),
   );
 });
+
+async function loadImageAssets() {
+  try {
+    const response = await fetch("./data/image-credits.json", { cache: "no-store" });
+    if (!response.ok) return [];
+    const credits = await response.json();
+    return Object.values(credits.images || {})
+      .map((image) => image.path)
+      .filter(Boolean)
+      .map((asset) => `./${asset.replace(/^\.\//, "")}`);
+  } catch (error) {
+    return [];
+  }
+}

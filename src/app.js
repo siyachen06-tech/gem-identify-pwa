@@ -28,6 +28,7 @@
 
   const state = {
     data: null,
+    imageCredits: null,
     query: "",
     selectedCategory: "全部",
     settings: { ...DEFAULT_SETTINGS },
@@ -49,6 +50,7 @@
     bindNetworkEvents();
     updateNetworkPill();
     await loadGemData();
+    await loadImageCredits();
     renderRoute();
     registerServiceWorker();
   }
@@ -96,6 +98,22 @@
     }
 
     $("#app").innerHTML = `<section class="notice danger">数据库加载失败。请用本地服务器打开，或检查 data/gems.json 是否存在。</section>`;
+  }
+
+  async function loadImageCredits() {
+    if (location.protocol !== "file:") {
+      try {
+        const response = await fetch("data/image-credits.json", { cache: "no-store" });
+        if (response.ok) {
+          state.imageCredits = await response.json();
+          return;
+        }
+      } catch (error) {
+        console.warn("Image credits load failed, falling back to embedded data.", error);
+      }
+    }
+
+    state.imageCredits = window.GEM_IMAGE_CREDITS || { images: {} };
   }
 
   function registerServiceWorker() {
@@ -267,7 +285,7 @@
     const isSaved = favoriteExists(`gem:${gem.id}`);
     return `
       <article class="gem-card" data-gem-id="${escapeAttribute(gem.id)}" role="button" tabindex="0">
-        <img class="gem-art" src="${imageSrc(gem.imageKey)}" alt="${escapeAttribute(gem.name)} 图卡" loading="lazy" />
+        <img class="gem-art" src="${imageSrc(gem.imageKey)}" alt="${escapeAttribute(gem.name)} 照片" loading="lazy" ${imageFallbackAttr()} />
         <div class="gem-card-body">
           <div class="gem-title-row">
             <div>
@@ -308,7 +326,7 @@
 
     $("#app").innerHTML = `
       <section class="detail-hero">
-        <img class="detail-art" src="${imageSrc(gem.imageKey)}" alt="${escapeAttribute(gem.name)} 图卡" />
+        <img class="detail-art" src="${imageSrc(gem.imageKey)}" alt="${escapeAttribute(gem.name)} 照片" ${imageFallbackAttr()} />
         <div class="detail-heading">
           <div class="tag-row">
             <span class="tag">${escapeHtml(gem.topCategory)}</span>
@@ -316,6 +334,7 @@
           </div>
           <h2>${escapeHtml(gem.name)}</h2>
           <p class="gem-english">${escapeHtml(gem.englishName)}</p>
+          ${imageCreditHtml(gem.imageKey)}
           <div class="action-row">
             <button type="button" class="button primary" data-add-gem="${escapeAttribute(gem.id)}">${favoriteExists(`gem:${gem.id}`) ? "已在收藏" : "收藏条目"}</button>
             <button type="button" class="button ghost" data-back>返回</button>
@@ -641,11 +660,11 @@
   }
 
   function renderFavoriteCard(favorite) {
-    const thumb = favorite.imageData || imageSrc(favorite.imageKey || "crystal");
+    const thumb = favorite.imageData || favoriteGemImageSrc(favorite);
     const typeLabel = favorite.type === "identification" ? "识别结果" : "百科条目";
     return `
       <article class="favorite-card" data-favorite-id="${escapeAttribute(favorite.id)}" role="button" tabindex="0">
-        <img class="thumb" src="${thumb}" alt="${escapeAttribute(favorite.title)} 缩略图" />
+        <img class="thumb" src="${thumb}" alt="${escapeAttribute(favorite.title)} 缩略图" ${imageFallbackAttr()} />
         <div class="favorite-card-body">
           <div class="gem-title-row">
             <div>
@@ -673,13 +692,15 @@
     }
 
     setHeader(favorite.title, favorite.type === "identification" ? "识别结果收藏" : "百科条目收藏");
-    const thumb = favorite.imageData || imageSrc(favorite.imageKey || "crystal");
+    const thumb = favorite.imageData || favoriteGemImageSrc(favorite);
+    const gem = currentGemForFavorite(favorite);
 
     $("#app").innerHTML = `
       <section class="favorite-editor">
-        <img class="detail-art" src="${thumb}" alt="${escapeAttribute(favorite.title)} 图片" />
+        <img class="detail-art" src="${thumb}" alt="${escapeAttribute(favorite.title)} 图片" ${imageFallbackAttr()} />
         <h2>${escapeHtml(favorite.title)}</h2>
         <p class="favorite-subtitle">${escapeHtml(favorite.subtitle || "")}</p>
+        ${gem ? imageCreditHtml(gem.imageKey) : ""}
         <label class="field">
           <span>我的备注</span>
           <textarea id="favorite-note" class="textarea" placeholder="记录购买地点、价格、实物手感、证书编号或后续判断">${escapeHtml(favorite.note || "")}</textarea>
@@ -985,7 +1006,39 @@
   }
 
   function imageSrc(imageKey) {
+    const credit = imageCredit(imageKey);
+    if (credit?.path) return credit.path;
     return IMAGE_MAP[imageKey] || IMAGE_MAP.crystal;
+  }
+
+  function imageCredit(imageKey) {
+    return state.imageCredits?.images?.[imageKey] || null;
+  }
+
+  function imageCreditHtml(imageKey) {
+    const credit = imageCredit(imageKey);
+    if (!credit?.pageUrl) return "";
+    const artist = credit.artist ? ` · ${shortText(credit.artist, 48)}` : "";
+    return `
+      <p class="image-credit">
+        图片：<a href="${escapeAttribute(credit.pageUrl)}" target="_blank" rel="noreferrer">${escapeHtml(shortText(credit.title || credit.label, 34))}</a>
+        · ${escapeHtml(credit.license || "Wikimedia Commons")}${escapeHtml(artist)}
+      </p>
+    `;
+  }
+
+  function favoriteGemImageSrc(favorite) {
+    const gem = currentGemForFavorite(favorite);
+    return imageSrc(gem?.imageKey || favorite.imageKey || "crystal");
+  }
+
+  function currentGemForFavorite(favorite) {
+    if (favorite.type !== "gem") return null;
+    return state.data?.gems?.find((gem) => gem.id === favorite.sourceId) || favorite.data || null;
+  }
+
+  function imageFallbackAttr() {
+    return `onerror="this.onerror=null;this.src='assets/crystal.svg'"`;
   }
 
   function compressImageFile(file, maxSize, quality) {

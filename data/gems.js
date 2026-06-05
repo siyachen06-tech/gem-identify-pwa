@@ -2,7 +2,7 @@ window.GEM_DATA = {
   "meta": {
     "name": "宝石百科与现场识别数据库",
     "version": "1.0.0",
-    "generatedAt": "2026-06-05T09:13:39.904Z",
+    "generatedAt": "2026-06-05T11:06:27.724Z",
     "source": "crystals_database.json",
     "total": 55,
     "fieldSchema": [
@@ -173,7 +173,7 @@ window.GEM_DATA = {
         "绿幽灵水晶",
         "Green Phantom Quartz"
       ],
-      "imageKey": "phantom-quartz"
+      "imageKey": "green-phantom-quartz"
     },
     {
       "id": "crystal_007",
@@ -193,7 +193,7 @@ window.GEM_DATA = {
         "红幽灵水晶",
         "Red Phantom Quartz"
       ],
-      "imageKey": "phantom-quartz"
+      "imageKey": "red-phantom-quartz"
     },
     {
       "id": "crystal_008",
@@ -213,7 +213,7 @@ window.GEM_DATA = {
         "白幽灵水晶",
         "White Phantom Quartz"
       ],
-      "imageKey": "phantom-quartz"
+      "imageKey": "white-phantom-quartz"
     },
     {
       "id": "crystal_009",
@@ -233,7 +233,7 @@ window.GEM_DATA = {
         "金发晶",
         "Golden Rutilated Quartz"
       ],
-      "imageKey": "rutilated-quartz"
+      "imageKey": "golden-rutilated-quartz"
     },
     {
       "id": "crystal_010",
@@ -253,7 +253,7 @@ window.GEM_DATA = {
         "红发晶",
         "Red Rutilated Quartz"
       ],
-      "imageKey": "rutilated-quartz"
+      "imageKey": "red-rutilated-quartz"
     },
     {
       "id": "crystal_011",
@@ -274,7 +274,7 @@ window.GEM_DATA = {
         "Black Tourmaline in Quartz",
         "电气石发晶"
       ],
-      "imageKey": "rutilated-quartz"
+      "imageKey": "tourmalinated-quartz"
     },
     {
       "id": "crystal_012",
@@ -295,7 +295,7 @@ window.GEM_DATA = {
         "Actinolite in Quartz",
         "阳起石发晶"
       ],
-      "imageKey": "rutilated-quartz"
+      "imageKey": "actinolite-quartz"
     },
     {
       "id": "crystal_013",
@@ -336,7 +336,7 @@ window.GEM_DATA = {
         "水胆水晶",
         "Enhydro Quartz"
       ],
-      "imageKey": "crystal"
+      "imageKey": "enhydro-quartz"
     },
     {
       "id": "crystal_015",
@@ -356,7 +356,7 @@ window.GEM_DATA = {
         "彩虹水晶",
         "Rainbow Quartz"
       ],
-      "imageKey": "crystal"
+      "imageKey": "rainbow-quartz"
     },
     {
       "id": "crystal_016",
@@ -379,7 +379,7 @@ window.GEM_DATA = {
         "Elestial Quartz",
         "Skeletal Quartz"
       ],
-      "imageKey": "crystal"
+      "imageKey": "skeletal-quartz"
     },
     {
       "id": "crystal_017",
@@ -399,7 +399,7 @@ window.GEM_DATA = {
         "双尖水晶",
         "Double Terminated Quartz"
       ],
-      "imageKey": "crystal"
+      "imageKey": "double-terminated-quartz"
     },
     {
       "id": "crystal_018",
@@ -420,7 +420,7 @@ window.GEM_DATA = {
         "Ametrine",
         "紫黄水晶"
       ],
-      "imageKey": "citrine"
+      "imageKey": "ametrine"
     },
     {
       "id": "crystal_019",
@@ -443,7 +443,7 @@ window.GEM_DATA = {
         "Green Quartz",
         "Prasiolite"
       ],
-      "imageKey": "crystal"
+      "imageKey": "prasiolite"
     },
     {
       "id": "crystal_020",
@@ -463,7 +463,7 @@ window.GEM_DATA = {
         "蓝水晶",
         "Blue Quartz"
       ],
-      "imageKey": "crystal"
+      "imageKey": "blue-quartz"
     },
     {
       "id": "crystal_021",
@@ -504,7 +504,7 @@ window.GEM_DATA = {
         "东陵石",
         "Aventurine"
       ],
-      "imageKey": "crystal"
+      "imageKey": "aventurine"
     },
     {
       "id": "crystal_023",
@@ -524,7 +524,7 @@ window.GEM_DATA = {
         "虎眼石",
         "Tiger's Eye"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "tiger-eye"
     },
     {
       "id": "crystal_024",
@@ -544,7 +544,7 @@ window.GEM_DATA = {
         "紫龙晶",
         "Charoite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "charoite"
     },
     {
       "id": "crystal_025",
@@ -564,7 +564,7 @@ window.GEM_DATA = {
         "舒俱徕石",
         "Sugilite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "sugilite"
     },
     {
       "id": "crystal_026",
@@ -584,7 +584,7 @@ window.GEM_DATA = {
         "拉长石",
         "Labradorite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "labradorite"
     },
     {
       "id": "crystal_027",
@@ -604,7 +604,7 @@ window.GEM_DATA = {
         "月光石",
         "Moonstone"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "moonstone"
     },
     {
       "id": "crystal_028",
@@ -624,7 +624,7 @@ window.GEM_DATA = {
         "太阳石",
         "Sunstone"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "sunstone"
     },
     {
       "id": "crystal_029",
@@ -644,7 +644,7 @@ window.GEM_DATA = {
         "天河石",
         "Amazonite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "amazonite"
     },
     {
       "id": "crystal_030",
@@ -665,7 +665,7 @@ window.GEM_DATA = {
         "Aquamarine",
         "海蓝晶"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "aquamarine"
     },
     {
       "id": "crystal_031",
@@ -685,7 +685,7 @@ window.GEM_DATA = {
         "摩根石",
         "Morganite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "morganite"
     },
     {
       "id": "crystal_032",
@@ -708,7 +708,7 @@ window.GEM_DATA = {
         "Heliodor",
         "Golden Beryl"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "heliodor"
     },
     {
       "id": "crystal_033",
@@ -729,7 +729,7 @@ window.GEM_DATA = {
         "Topaz",
         "黄玉"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "topaz"
     },
     {
       "id": "crystal_034",
@@ -750,7 +750,7 @@ window.GEM_DATA = {
         "Tourmaline",
         "电气石"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "tourmaline"
     },
     {
       "id": "crystal_035",
@@ -770,7 +770,7 @@ window.GEM_DATA = {
         "石榴石",
         "Garnet"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "garnet"
     },
     {
       "id": "crystal_036",
@@ -790,7 +790,7 @@ window.GEM_DATA = {
         "尖晶石",
         "Spinel"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "spinel"
     },
     {
       "id": "crystal_037",
@@ -810,7 +810,7 @@ window.GEM_DATA = {
         "坦桑石",
         "Tanzanite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "tanzanite"
     },
     {
       "id": "crystal_038",
@@ -830,7 +830,7 @@ window.GEM_DATA = {
         "橄榄石",
         "Peridot"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "peridot"
     },
     {
       "id": "crystal_039",
@@ -850,7 +850,7 @@ window.GEM_DATA = {
         "锆石",
         "Zircon"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "zircon"
     },
     {
       "id": "crystal_040",
@@ -870,7 +870,7 @@ window.GEM_DATA = {
         "磷灰石",
         "Apatite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "apatite"
     },
     {
       "id": "crystal_041",
@@ -890,7 +890,7 @@ window.GEM_DATA = {
         "堇青石",
         "Iolite"
       ],
-      "imageKey": "gemstone"
+      "imageKey": "iolite"
     },
     {
       "id": "crystal_042",
@@ -910,7 +910,7 @@ window.GEM_DATA = {
         "孔雀石",
         "Malachite"
       ],
-      "imageKey": "jade"
+      "imageKey": "malachite"
     },
     {
       "id": "crystal_043",
@@ -930,7 +930,7 @@ window.GEM_DATA = {
         "青金石",
         "Lapis Lazuli"
       ],
-      "imageKey": "jade"
+      "imageKey": "lapis-lazuli"
     },
     {
       "id": "crystal_044",
@@ -950,7 +950,7 @@ window.GEM_DATA = {
         "绿松石",
         "Turquoise"
       ],
-      "imageKey": "jade"
+      "imageKey": "turquoise"
     },
     {
       "id": "crystal_045",
@@ -970,7 +970,7 @@ window.GEM_DATA = {
         "南红玛瑙",
         "Nanhong Agate"
       ],
-      "imageKey": "jade"
+      "imageKey": "nanhong-agate"
     },
     {
       "id": "crystal_046",
@@ -990,7 +990,7 @@ window.GEM_DATA = {
         "战国红玛瑙",
         "Warring States Agate"
       ],
-      "imageKey": "jade"
+      "imageKey": "zhanguo-red-agate"
     },
     {
       "id": "crystal_047",
@@ -1010,7 +1010,7 @@ window.GEM_DATA = {
         "水草玛瑙",
         "Moss Agate"
       ],
-      "imageKey": "jade"
+      "imageKey": "moss-agate"
     },
     {
       "id": "crystal_048",
@@ -1030,7 +1030,7 @@ window.GEM_DATA = {
         "萤石",
         "Fluorite"
       ],
-      "imageKey": "mineral"
+      "imageKey": "fluorite"
     },
     {
       "id": "crystal_049",
@@ -1050,7 +1050,7 @@ window.GEM_DATA = {
         "方解石",
         "Calcite"
       ],
-      "imageKey": "mineral"
+      "imageKey": "calcite"
     },
     {
       "id": "crystal_050",
@@ -1071,7 +1071,7 @@ window.GEM_DATA = {
         "Pyrite",
         "愚人金"
       ],
-      "imageKey": "mineral"
+      "imageKey": "pyrite"
     },
     {
       "id": "crystal_051",
@@ -1093,7 +1093,7 @@ window.GEM_DATA = {
         "Celestite",
         "Celestine"
       ],
-      "imageKey": "mineral"
+      "imageKey": "celestite"
     },
     {
       "id": "crystal_052",
@@ -1113,7 +1113,7 @@ window.GEM_DATA = {
         "鱼眼石",
         "Apophyllite"
       ],
-      "imageKey": "mineral"
+      "imageKey": "apophyllite"
     },
     {
       "id": "crystal_053",
@@ -1134,7 +1134,7 @@ window.GEM_DATA = {
         "Desert Rose",
         "石膏玫瑰"
       ],
-      "imageKey": "mineral"
+      "imageKey": "desert-rose"
     },
     {
       "id": "crystal_054",
@@ -1155,7 +1155,7 @@ window.GEM_DATA = {
         "Titanium Aura Quartz",
         "镀膜水晶"
       ],
-      "imageKey": "rutilated-quartz"
+      "imageKey": "titanium-aura-quartz"
     },
     {
       "id": "crystal_055",
@@ -1176,7 +1176,7 @@ window.GEM_DATA = {
         "Jadeite",
         "硬玉"
       ],
-      "imageKey": "jade"
+      "imageKey": "jadeite"
     }
   ]
 };
