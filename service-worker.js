@@ -1,5 +1,5 @@
-const CACHE_NAME = "gem-pwa-v4";
-const ASSET_VERSION = "20260605-images-v2";
+const CACHE_NAME = "gem-pwa-v5";
+const ASSET_VERSION = "20260605-detail-fit-v1";
 
 const CORE_ASSETS = [
   "./",

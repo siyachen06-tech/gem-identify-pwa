@@ -388,10 +388,12 @@ h3 {
 }
 
 .detail-art {
-  height: clamp(180px, 44vw, 280px);
+  height: clamp(320px, 92vw, 480px);
   border: 0;
   border-bottom: 2px solid var(--line);
   border-radius: 0;
+  background: #f8fafc;
+  object-fit: contain;
 }
 
 .detail-heading {
