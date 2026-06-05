@@ -34,10 +34,18 @@ const NEGATIVE_TERMS = [
   "drawing",
   "poster",
   "book cover",
+  "book",
+  "pdf",
+  "scanned",
   "necklace",
   "bracelet",
   "earring",
   "ring",
+  "person",
+  "sculptor",
+  "sacrifice",
+  "soft coral",
+  "reef",
 ];
 
 const POSITIVE_TERMS = ["specimen", "crystal", "mineral", "rough", "quartz", "gemstone", "var ", "matrix"];
@@ -219,8 +227,7 @@ async function fetchWithRetry(url, options = {}, attempts = 4) {
 function isSupportedImage(info) {
   if (!info.thumburl && !info.url) return false;
   if (info.mime === "image/svg+xml") return false;
-  if (MIME_EXTENSIONS[info.mime]) return true;
-  return Boolean(info.thumburl && /\.(jpe?g|png|webp)(?:$|\?)/i.test(info.thumburl));
+  return Boolean(MIME_EXTENSIONS[info.mime]);
 }
 
 function scoreCandidate(page, info, config) {

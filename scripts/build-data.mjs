@@ -5,11 +5,15 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const sourcePath = path.join(root, "crystals_database.json");
+const expansionPath = path.join(root, "data", "gem-expansion.json");
 const dataDir = path.join(root, "data");
 const jsonPath = path.join(dataDir, "gems.json");
 const jsPath = path.join(dataDir, "gems.js");
 
 const raw = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
+const expansion = fs.existsSync(expansionPath)
+  ? JSON.parse(fs.readFileSync(expansionPath, "utf8"))
+  : { gems: [] };
 
 const topCategories = [
   {
@@ -21,13 +25,13 @@ const topCategories = [
   {
     id: "gemstone",
     name: "彩宝类",
-    description: "覆盖海蓝宝、碧玺、石榴石、尖晶石、坦桑石等常见彩色宝石。",
+    description: "覆盖红蓝宝、祖母绿、欧泊、碧玺、石榴石、尖晶石、坦桑石、珍珠、珊瑚等常见彩色宝石。",
     imageKey: "gemstone",
   },
   {
     id: "jade",
     name: "玉石类",
-    description: "覆盖翡翠、绿松石、青金石、玛瑙等佩戴和收藏场景常见品类。",
+    description: "覆盖翡翠、和田玉、绿松石、青金石、玛瑙、玉髓、印石等佩戴和收藏场景常见品类。",
     imageKey: "jade",
   },
   {
@@ -130,6 +134,8 @@ const imageKeysById = {
 };
 
 function topCategoryFor(item) {
+  if (item.topCategory) return item.topCategory;
+
   if (
     item.category.includes("水晶") ||
     item.category.includes("发晶") ||
@@ -152,6 +158,7 @@ function topCategoryFor(item) {
 }
 
 function imageKeyFor(item, topCategory) {
+  if (item.imageKey) return item.imageKey;
   if (imageKeysById[item.id]) return imageKeysById[item.id];
 
   const name = item.name;
@@ -174,6 +181,7 @@ function aliasesFor(item) {
   const aliases = new Set();
   aliases.add(item.name);
   aliases.add(item.englishName);
+  for (const alias of item.aliases || []) aliases.add(alias);
 
   const parenMatches = [...item.name.matchAll(/[（(]([^）)]+)[）)]/g)];
   for (const match of parenMatches) aliases.add(match[1]);
@@ -186,7 +194,9 @@ function aliasesFor(item) {
   return [...aliases].filter(Boolean);
 }
 
-const gems = raw.crystals.map((item) => {
+const sourceGems = [...raw.crystals, ...(expansion.gems || [])];
+
+const gems = sourceGems.map((item) => {
   const topCategory = topCategoryFor(item);
   return {
     id: item.id,
@@ -215,7 +225,7 @@ const output = {
     name: "宝石百科与现场识别数据库",
     version: "1.0.0",
     generatedAt: new Date().toISOString(),
-    source: "crystals_database.json",
+    source: "crystals_database.json + data/gem-expansion.json",
     total: gems.length,
     fieldSchema: [
       "id",
