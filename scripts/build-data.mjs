@@ -6,6 +6,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const sourcePath = path.join(root, "crystals_database.json");
 const expansionPath = path.join(root, "data", "gem-expansion.json");
+const professionalPath = path.join(root, "data", "professional-data.json");
 const dataDir = path.join(root, "data");
 const jsonPath = path.join(dataDir, "gems.json");
 const jsPath = path.join(dataDir, "gems.js");
@@ -14,6 +15,9 @@ const raw = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
 const expansion = fs.existsSync(expansionPath)
   ? JSON.parse(fs.readFileSync(expansionPath, "utf8"))
   : { gems: [] };
+const professionalData = fs.existsSync(professionalPath)
+  ? JSON.parse(fs.readFileSync(professionalPath, "utf8"))
+  : { profiles: {}, assignments: {}, overrides: {}, references: {} };
 
 const topCategories = [
   {
@@ -194,10 +198,40 @@ function aliasesFor(item) {
   return [...aliases].filter(Boolean);
 }
 
+function professionalFor(item, topCategory, imageKey) {
+  if (!["水晶类", "彩宝类", "玉石类"].includes(topCategory)) return {};
+
+  const profileKey =
+    professionalData.assignments?.[item.id] ||
+    professionalData.assignments?.[imageKey] ||
+    professionalData.assignments?.[item.category] ||
+    null;
+  const profile = profileKey ? professionalData.profiles?.[profileKey] || {} : {};
+  const override = professionalData.overrides?.[item.id] || professionalData.overrides?.[imageKey] || {};
+  const professional = {
+    ...(profile.professional || {}),
+    ...(override.professional || {}),
+  };
+
+  if (Object.keys(professional).length === 0) return {};
+
+  const referenceKeys = [...new Set([...(profile.references || []), ...(override.references || [])])];
+  const references = referenceKeys
+    .map((key) => {
+      const reference = professionalData.references?.[key];
+      return reference ? { id: key, ...reference } : null;
+    })
+    .filter(Boolean);
+
+  return { professional, references };
+}
+
 const sourceGems = [...raw.crystals, ...(expansion.gems || [])];
 
 const gems = sourceGems.map((item) => {
   const topCategory = topCategoryFor(item);
+  const imageKey = imageKeyFor(item, topCategory);
+  const professional = professionalFor(item, topCategory, imageKey);
   return {
     id: item.id,
     name: item.name,
@@ -213,7 +247,8 @@ const gems = sourceGems.map((item) => {
     treatment: item.treatment,
     fengshui: item.fengshui,
     aliases: aliasesFor(item),
-    imageKey: imageKeyFor(item, topCategory),
+    imageKey,
+    ...professional,
   };
 });
 
@@ -225,7 +260,7 @@ const output = {
     name: "宝石百科与现场识别数据库",
     version: "1.0.0",
     generatedAt: new Date().toISOString(),
-    source: "crystals_database.json + data/gem-expansion.json",
+    source: "crystals_database.json + data/gem-expansion.json + data/professional-data.json",
     total: gems.length,
     fieldSchema: [
       "id",
@@ -243,6 +278,8 @@ const output = {
       "fengshui",
       "aliases",
       "imageKey",
+      "professional",
+      "references",
     ],
   },
   topCategories: topCategories.map((category) => ({

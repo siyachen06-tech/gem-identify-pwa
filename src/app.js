@@ -283,6 +283,8 @@
         gem.price,
         gem.authenticity,
         gem.treatment,
+        ...(gem.professional ? Object.values(gem.professional) : []),
+        ...(gem.references || []).flatMap((reference) => [reference.title, reference.author, reference.type, reference.note]),
         ...(gem.aliases || []),
       ]
         .join(" ")
@@ -364,6 +366,8 @@
         </div>
       </section>
 
+      ${renderProfessionalPanel(gem)}
+
       <section class="control-panel">
         ${sections
           .map(
@@ -377,6 +381,8 @@
           .join("")}
       </section>
 
+      ${renderReferencesPanel(gem)}
+
       <p class="disclaimer">价格仅作市场参考，风水属性属于民俗说法；现场购买和高价值收藏应以专业鉴定证书为准。</p>
     `;
 
@@ -389,6 +395,81 @@
       if (history.length > 1) history.back();
       else location.hash = "encyclopedia";
     });
+  }
+
+  function renderProfessionalPanel(gem) {
+    const professional = gem.professional;
+    if (!professional) return "";
+
+    const rows = [
+      ["矿物种属", professional.mineralSpecies],
+      ["化学成分", professional.composition],
+      ["晶系/结构", professional.crystalSystem],
+      ["莫氏硬度", professional.hardness],
+      ["折射率", professional.refractiveIndex],
+      ["相对密度", professional.specificGravity],
+      ["光性", professional.opticalCharacter],
+      ["荧光反应", professional.fluorescence],
+    ].filter(([, value]) => Boolean(value));
+
+    const notes = [
+      ["常见包裹体", professional.inclusions],
+      ["易混品", professional.lookalikes],
+      ["现场简易测试", professional.simpleTests],
+      ["送检建议", professional.labAdvice],
+    ].filter(([, value]) => Boolean(value));
+
+    return `
+      <section class="control-panel professional-panel">
+        <h2>专业参数</h2>
+        <div class="parameter-grid">
+          ${rows
+            .map(
+              ([label, value]) => `
+                <div class="parameter-row">
+                  <strong>${escapeHtml(label)}</strong>
+                  <span>${escapeHtml(value)}</span>
+                </div>
+              `,
+            )
+            .join("")}
+        </div>
+        ${notes
+          .map(
+            ([label, value]) => `
+              <article class="info-section compact">
+                <h3>${escapeHtml(label)}</h3>
+                <p>${escapeHtml(value)}</p>
+              </article>
+            `,
+          )
+          .join("")}
+      </section>
+    `;
+  }
+
+  function renderReferencesPanel(gem) {
+    const references = gem.references || [];
+    if (references.length === 0) return "";
+
+    return `
+      <section class="control-panel reference-panel">
+        <h2>参考资料</h2>
+        <ul class="reference-list">
+          ${references
+            .map(
+              (reference) => `
+                <li>
+                  <strong>${escapeHtml(reference.title)}</strong>
+                  <span>${escapeHtml([reference.author, reference.type].filter(Boolean).join(" · "))}</span>
+                  <p>${escapeHtml(reference.note || "")}</p>
+                </li>
+              `,
+            )
+            .join("")}
+        </ul>
+      </section>
+    `;
   }
 
   function renderIdentify() {
@@ -743,7 +824,7 @@
   }
 
   function renderGemReference(favorite) {
-    const gem = favorite.data;
+    const gem = currentGemForFavorite(favorite);
     if (!gem) return "";
     return `
       <section class="control-panel">
@@ -757,6 +838,8 @@
           <p>${escapeHtml(gem.authenticity)}</p>
         </article>
       </section>
+      ${renderProfessionalPanel(gem)}
+      ${renderReferencesPanel(gem)}
     `;
   }
 
