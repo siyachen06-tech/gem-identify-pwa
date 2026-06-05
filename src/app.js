@@ -8,7 +8,7 @@
   const DEFAULT_SETTINGS = {
     apiKey: "",
     baseUrl: "https://openrouter.ai/api/v1",
-    model: "openai/gpt-4o-mini",
+    model: "openai/gpt-4.1-mini",
     outdoorMode: true,
   };
 
@@ -767,7 +767,7 @@
           </label>
           <label class="field">
             <span>模型名</span>
-            <input class="input" id="model-name" type="text" value="${escapeAttribute(state.settings.model)}" placeholder="openai/gpt-4o-mini" />
+            <input class="input" id="model-name" type="text" value="${escapeAttribute(state.settings.model)}" placeholder="openai/gpt-4.1-mini" />
           </label>
           <label class="toggle-field">
             <input id="outdoor-mode" type="checkbox" ${state.settings.outdoorMode ? "checked" : ""} />
