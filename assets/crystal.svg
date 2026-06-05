@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="水晶类插画">
+  <rect width="320" height="220" rx="8" fill="#f7fbff"/>
+  <path d="M40 184 96 36l48 148H40Z" fill="#dff3ff" stroke="#124b73" stroke-width="5"/>
+  <path d="M112 184 166 20l78 164H112Z" fill="#ffffff" stroke="#124b73" stroke-width="5"/>
+  <path d="M196 184 236 58l44 126h-84Z" fill="#c5ecff" stroke="#124b73" stroke-width="5"/>
+  <path d="M166 20v164M96 36l28 148M236 58l12 126" stroke="#7ab8d9" stroke-width="4"/>
+  <circle cx="259" cy="42" r="9" fill="#ffd447"/>
+  <circle cx="68" cy="58" r="5" fill="#00a66a"/>
+</svg>

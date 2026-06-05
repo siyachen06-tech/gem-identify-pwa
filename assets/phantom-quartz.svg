@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="幽灵水晶插画">
+  <rect width="320" height="220" rx="8" fill="#f6fff9"/>
+  <path d="M80 182 136 28l72 154H80Z" fill="#eafbf2" stroke="#134d30" stroke-width="5"/>
+  <path d="M116 150 150 84l40 66h-74Z" fill="#1fb46a" opacity=".8"/>
+  <path d="M136 28v154M104 116h92" stroke="#78cfa0" stroke-width="4"/>
+  <path d="M190 182 236 70l34 112h-80Z" fill="#ffffff" stroke="#134d30" stroke-width="5"/>
+</svg>

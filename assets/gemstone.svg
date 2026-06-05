@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="彩宝类插画">
+  <rect width="320" height="220" rx="8" fill="#fffaf1"/>
+  <path d="M64 78h192l-36 104H100L64 78Z" fill="#f7d365" stroke="#2d2612" stroke-width="5"/>
+  <path d="M64 78 112 38h96l48 40H64Z" fill="#ffffff" stroke="#2d2612" stroke-width="5"/>
+  <path d="M112 38 100 182M160 38v144M208 38l12 144M64 78l96 104 96-104" stroke="#ad7a00" stroke-width="4"/>
+  <path d="M102 98h116" stroke="#005bd3" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="245" cy="47" r="10" fill="#d81846"/>
+</svg>

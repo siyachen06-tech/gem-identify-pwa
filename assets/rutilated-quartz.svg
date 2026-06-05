@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="发晶插画">
+  <rect width="320" height="220" rx="8" fill="#fffdf6"/>
+  <path d="M78 180 134 34l80 146H78Z" fill="#fff7d2" stroke="#3c2c00" stroke-width="5"/>
+  <path d="M116 160 178 56M132 172 198 72M98 136l78-60M154 170l42-78" stroke="#c08200" stroke-width="5" stroke-linecap="round"/>
+  <path d="M134 34v146" stroke="#fff" stroke-width="4"/>
+  <path d="M198 180 238 76l34 104h-74Z" fill="#ffd447" stroke="#3c2c00" stroke-width="5" opacity=".88"/>
+</svg>

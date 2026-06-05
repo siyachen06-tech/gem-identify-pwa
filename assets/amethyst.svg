@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="紫水晶插画">
+  <rect width="320" height="220" rx="8" fill="#fbf8ff"/>
+  <path d="M52 178 92 72l42 106H52Z" fill="#c3a1ff" stroke="#36205a" stroke-width="5"/>
+  <path d="M118 178 168 28l68 150H118Z" fill="#7b4edb" stroke="#36205a" stroke-width="5"/>
+  <path d="M208 178 246 74l28 104h-66Z" fill="#e8d9ff" stroke="#36205a" stroke-width="5"/>
+  <path d="M168 28v150M92 72l20 106M246 74l4 104" stroke="#ffffff" stroke-width="4" opacity=".75"/>
+</svg>

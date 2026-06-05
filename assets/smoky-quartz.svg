@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="茶晶插画">
+  <rect width="320" height="220" rx="8" fill="#fffaf5"/>
+  <path d="M76 180 126 34l64 146H76Z" fill="#7b5b47" stroke="#2a1d16" stroke-width="5"/>
+  <path d="M164 180 216 58l42 122h-94Z" fill="#b0886c" stroke="#2a1d16" stroke-width="5"/>
+  <path d="M126 34v146M216 58v122" stroke="#e1c2a8" stroke-width="4"/>
+  <path d="M96 122c36 20 80 20 138-2" stroke="#3a2a20" stroke-width="5" stroke-linecap="round" opacity=".38"/>
+</svg>

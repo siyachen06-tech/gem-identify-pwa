@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="宝石识别 App 图标">
+  <rect width="192" height="192" rx="36" fill="#101216"/>
+  <path d="M42 70h108l-22 76H64L42 70Z" fill="#ffd447" stroke="#ffffff" stroke-width="8"/>
+  <path d="M42 70 70 42h52l28 28H42Z" fill="#ffffff" stroke="#ffffff" stroke-width="8"/>
+  <path d="M70 42 64 146M96 42v104M122 42l6 104M42 70l54 76 54-76" stroke="#005bd3" stroke-width="7"/>
+  <circle cx="146" cy="42" r="12" fill="#00a66a"/>
+</svg>

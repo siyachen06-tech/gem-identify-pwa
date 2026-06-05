@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#101216" />
+    <meta name="description" content="离线宝石百科与现场拍照识别 PWA" />
+    <title>宝石百科与现场识别</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">宝石百科与现场识别</p>
+          <h1 id="page-title">宝石百科</h1>
+          <p id="page-subtitle" class="page-subtitle">离线资料库正在加载</p>
+        </div>
+        <span id="network-pill" class="network-pill">检测中</span>
+      </header>
+
+      <main id="app" class="app-main" aria-live="polite">
+        <section class="loading-state">
+          <img src="assets/icon.svg" alt="" />
+          <p>正在打开宝石数据库...</p>
+        </section>
+      </main>
+    </div>
+
+    <nav id="bottom-nav" class="bottom-nav" aria-label="底部导航">
+      <button type="button" data-route="encyclopedia" class="nav-item is-active">
+        <span class="nav-symbol" aria-hidden="true">◇</span>
+        <span>百科</span>
+      </button>
+      <button type="button" data-route="identify" class="nav-item">
+        <span class="nav-symbol" aria-hidden="true">◎</span>
+        <span>识别</span>
+      </button>
+      <button type="button" data-route="favorites" class="nav-item">
+        <span class="nav-symbol" aria-hidden="true">☆</span>
+        <span>收藏</span>
+      </button>
+      <button type="button" data-route="settings" class="nav-item">
+        <span class="nav-symbol" aria-hidden="true">☰</span>
+        <span>设置</span>
+      </button>
+    </nav>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="data/gems.js" defer></script>
+    <script src="src/app.js" defer></script>
+  </body>
+</html>
