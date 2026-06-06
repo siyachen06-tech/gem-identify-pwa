@@ -2,9 +2,9 @@ window.GEM_DATA = {
   "meta": {
     "name": "宝石百科与现场识别数据库",
     "version": "1.0.0",
-    "generatedAt": "2026-06-05T15:37:29.729Z",
-    "source": "crystals_database.json + data/gem-expansion.json + data/professional-data.json",
-    "total": 91,
+    "generatedAt": "2026-06-06T14:52:24.417Z",
+    "source": "crystals_database.json + data/gem-expansion.json + data/gem-completion.json + data/professional-data.json",
+    "total": 155,
     "fieldSchema": [
       "id",
       "name",
@@ -31,21 +31,21 @@ window.GEM_DATA = {
       "name": "水晶类",
       "description": "一期重点数据，覆盖石英族水晶、幽灵水晶、发晶、特殊水晶和常见处理水晶。",
       "imageKey": "crystal",
-      "count": 23
+      "count": 37
     },
     {
       "id": "gemstone",
       "name": "彩宝类",
       "description": "覆盖红蓝宝、祖母绿、欧泊、碧玺、石榴石、尖晶石、坦桑石、珍珠、珊瑚等常见彩色宝石。",
       "imageKey": "gemstone",
-      "count": 37
+      "count": 62
     },
     {
       "id": "jade",
       "name": "玉石类",
       "description": "覆盖翡翠、和田玉、绿松石、青金石、玛瑙、玉髓、印石等佩戴和收藏场景常见品类。",
       "imageKey": "jade",
-      "count": 25
+      "count": 50
     },
     {
       "id": "mineral",
@@ -4218,11 +4218,18 @@ window.GEM_DATA = {
           "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
         },
         {
-          "id": "gia-gem-encyclopedia",
-          "title": "GIA Gem Encyclopedia",
-          "author": "Gemological Institute of America",
-          "type": "机构资料",
-          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
         },
         {
           "id": "nassau-enhancement",
@@ -4232,11 +4239,11 @@ window.GEM_DATA = {
           "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
         },
         {
-          "id": "gbt-16552",
-          "title": "GB/T 16552-2017 珠宝玉石 名称",
-          "author": "中国国家标准",
-          "type": "命名标准",
-          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
         },
         {
           "id": "gbt-16553",
@@ -4244,6 +4251,13 @@ window.GEM_DATA = {
           "author": "中国国家标准",
           "type": "鉴定标准",
           "note": "用于核对常规鉴定项目和检测表述。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
         }
       ]
     },
@@ -6139,6 +6153,4558 @@ window.GEM_DATA = {
           "author": "中国国家标准",
           "type": "命名标准",
           "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_101",
+      "name": "超七水晶",
+      "englishName": "Super Seven Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "包裹体水晶",
+      "appearance": "透明至半透明石英中含紫水晶、烟晶、白水晶及赤铁矿、纤铁矿、针铁矿等多种包裹体，常呈紫、褐、红、黑交织。",
+      "quality": "品质看点：颜色层次自然、包裹体丰富但不脏、晶体完整、裂少为佳；商业名溢价较高，不能只因叫“超七”就高价。",
+      "origins": "巴西、马达加斯加、印度等，市场上产地和包裹体组合差异很大。",
+      "uses": "手串、吊坠、晶柱和收藏晶体；更偏水晶审美和包裹体观赏。",
+      "price": "市场参考：普通珠串约几十至数百元；包裹体丰富、晶体通透的大件约数百至数千元；精品晶体可更高。",
+      "authenticity": "辨别要点：注意普通发晶、草莓晶、染色石英被泛称超七；天然包裹体应有立体深浅和自然边界。",
+      "treatment": "常见处理：染色、注胶、拼合、商业改名。识别看裂隙聚色、胶感和包裹体是否浮在表面。",
+      "fengshui": "民俗说法中常被包装为综合能量水晶；此类说法只作文化说明。",
+      "aliases": [
+        "超七水晶",
+        "Super Seven Quartz",
+        "Super 7",
+        "三轮骨干",
+        "包裹体水晶"
+      ],
+      "imageKey": "super-seven-quartz",
+      "professional": {
+        "mineralSpecies": "石英，内含针状、片状或层状矿物包裹体",
+        "composition": "SiO2；包裹体可为金红石、赤铁矿、绿泥石、电气石、阳起石等",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "主体石英硬度7",
+        "refractiveIndex": "主体石英1.544-1.553",
+        "specificGravity": "主体约2.65，随包裹体含量略变",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，包裹体可能影响观察",
+        "inclusions": "重点看包裹体是否在晶体内部、有无立体层次、是否沿裂隙染色或胶结。",
+        "lookalikes": "玻璃内嵌金属丝、染色石英、注色幽灵、拼合水晶",
+        "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
+        "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_102",
+      "name": "草莓晶",
+      "englishName": "Strawberry Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "包裹体水晶",
+      "appearance": "粉红至红色半透明石英，内部常见赤铁矿、纤铁矿或云母类细点状包裹体，像草莓籽。",
+      "quality": "品质看点：颜色柔和均匀、内含物细密自然、通透度好、裂少为佳；过艳过红且价格低要谨慎。",
+      "origins": "俄罗斯、哈萨克斯坦、墨西哥、巴西、非洲部分地区，市场来源较复杂。",
+      "uses": "手串、吊坠和小雕件，适合日常饰品和水晶收藏。",
+      "price": "市场参考：普通珠串几十至数百元；颜色好、晶体透、内含物漂亮者数百至数千元。",
+      "authenticity": "辨别要点：染色石英、粉色玻璃和红点玻璃常冒充；真品红点在晶体内部有深浅层次。",
+      "treatment": "常见处理：染色、加色、注胶。识别看裂隙是否聚红、颜色是否浮且过艳。",
+      "fengshui": "民俗说法中象征桃花、人缘和温柔情绪，不作为功效承诺。",
+      "aliases": [
+        "草莓晶",
+        "Strawberry Quartz",
+        "士多啤梨晶"
+      ],
+      "imageKey": "strawberry-quartz",
+      "professional": {
+        "mineralSpecies": "石英，内含针状、片状或层状矿物包裹体",
+        "composition": "SiO2；包裹体可为金红石、赤铁矿、绿泥石、电气石、阳起石等",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "主体石英硬度7",
+        "refractiveIndex": "主体石英1.544-1.553",
+        "specificGravity": "主体约2.65，随包裹体含量略变",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，包裹体可能影响观察",
+        "inclusions": "重点看包裹体是否在晶体内部、有无立体层次、是否沿裂隙染色或胶结。",
+        "lookalikes": "玻璃内嵌金属丝、染色石英、注色幽灵、拼合水晶",
+        "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
+        "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_103",
+      "name": "胶花水晶",
+      "englishName": "Hematoid Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "包裹体水晶",
+      "appearance": "透明石英中含黄色、橙色、红色或褐色絮状、片状铁氧化物包裹体，像胶花或云雾。",
+      "quality": "品质看点：花纹分布有画面感、颜色自然、晶体通透、裂少为佳；过于鲜艳统一的颜色需警惕染色。",
+      "origins": "巴西、马达加斯加、中国和非洲部分地区。",
+      "uses": "手串、吊坠、雕件和观赏晶体，价值看花纹和通透度。",
+      "price": "市场参考：普通珠串几十至数百元；花纹漂亮、晶体干净者数百至数千元。",
+      "authenticity": "辨别要点：天然铁氧化物包裹体有不规则边界和层次；染色品常沿裂隙集中。",
+      "treatment": "常见处理：染色、注胶、加热改善色调。识别看颜色是否只在裂隙或表层。",
+      "fengshui": "民俗说法中常被称为招财、活力或太阳能量水晶。",
+      "aliases": [
+        "胶花水晶",
+        "Hematoid Quartz",
+        "红胶花",
+        "黄胶花",
+        "火焰水晶"
+      ],
+      "imageKey": "hematoid-quartz",
+      "professional": {
+        "mineralSpecies": "石英，内含针状、片状或层状矿物包裹体",
+        "composition": "SiO2；包裹体可为金红石、赤铁矿、绿泥石、电气石、阳起石等",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "主体石英硬度7",
+        "refractiveIndex": "主体石英1.544-1.553",
+        "specificGravity": "主体约2.65，随包裹体含量略变",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，包裹体可能影响观察",
+        "inclusions": "重点看包裹体是否在晶体内部、有无立体层次、是否沿裂隙染色或胶结。",
+        "lookalikes": "玻璃内嵌金属丝、染色石英、注色幽灵、拼合水晶",
+        "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
+        "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_104",
+      "name": "赫基蒙水晶",
+      "englishName": "Herkimer Diamond Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "特殊水晶",
+      "appearance": "自然双尖透明石英晶体，常见短柱、双终端、玻璃光泽强，因产自纽约赫基蒙地区而得名。",
+      "quality": "品质看点：双尖完整、透明度高、晶面光亮、黑碳质包裹体少、缺口少为佳；“赫基蒙钻石”不是钻石。",
+      "origins": "美国纽约赫基蒙地区最经典，其他地区也有类似双尖石英但名称应谨慎。",
+      "uses": "原石收藏、吊坠和矿物标本；适合观察自然双尖生长。",
+      "price": "市场参考：小颗粒几十至数百元；透明完整大晶体数百至数千元；产地清晰精品更高。",
+      "authenticity": "辨别要点：玻璃切磨品和普通双尖水晶会冒充；看晶面天然生长纹、端面和产地说明。",
+      "treatment": "常见处理较少，主要风险是普通双尖石英借名。",
+      "fengshui": "民俗说法中象征清明、放大意图和快速能量。",
+      "aliases": [
+        "赫基蒙水晶",
+        "Herkimer Diamond Quartz",
+        "赫基蒙钻石",
+        "Herkimer Diamond"
+      ],
+      "imageKey": "herkimer-diamond",
+      "professional": {
+        "mineralSpecies": "石英，结晶二氧化硅",
+        "composition": "SiO2",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "7",
+        "refractiveIndex": "1.544-1.553",
+        "specificGravity": "约2.65",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，品种和包裹体不同会有差异",
+        "inclusions": "气液包裹体、愈合裂隙、色带、棉絮、矿物包裹体常见",
+        "lookalikes": "玻璃、合成石英、染色石英、白色玉髓、托帕石",
+        "simpleTests": "看硬度、气泡、色带和内部包裹体；用偏光镜、折射仪可做基础区分。",
+        "labAdvice": "高价值大晶体、声称天然无处理或特殊产地时，建议送检确认天然性和处理状态。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gic-gemology",
+          "title": "宝石学教程",
+          "author": "GIC系列教材",
+          "type": "中文宝石学教材",
+          "note": "用于核对基础宝石学参数、仪器鉴定和命名习惯。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_105",
+      "name": "喜马拉雅水晶",
+      "englishName": "Himalayan Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "产地水晶",
+      "appearance": "无色、烟色或淡粉色石英晶体，常带泥土、氧化铁皮壳或特殊生长纹，卖点多为产地。",
+      "quality": "品质看点：产地可信、晶体完整、光泽好、自然皮壳和生长纹清楚为佳；只凭“喜马拉雅”名称不等于高价值。",
+      "origins": "印度北部、尼泊尔、巴基斯坦等喜马拉雅山系相关地区。",
+      "uses": "原石、晶簇、冥想摆件和矿物收藏。",
+      "price": "市场参考：普通小晶体几十至数百元；完整大晶簇或特殊形态数百至数千元以上。",
+      "authenticity": "辨别要点：普通白水晶可能被冠以喜马拉雅产地；需看可靠来源和产地记录。",
+      "treatment": "常见处理：清洗、酸洗、染色皮壳或人为做旧。识别看皮壳是否自然连续。",
+      "fengshui": "民俗说法中常被称为高山净化水晶。",
+      "aliases": [
+        "喜马拉雅水晶",
+        "Himalayan Quartz",
+        "Himalayan Crystal",
+        "喜马拉雅白水晶"
+      ],
+      "imageKey": "himalayan-quartz",
+      "professional": {
+        "mineralSpecies": "石英，结晶二氧化硅",
+        "composition": "SiO2",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "7",
+        "refractiveIndex": "1.544-1.553",
+        "specificGravity": "约2.65",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，品种和包裹体不同会有差异",
+        "inclusions": "气液包裹体、愈合裂隙、色带、棉絮、矿物包裹体常见",
+        "lookalikes": "玻璃、合成石英、染色石英、白色玉髓、托帕石",
+        "simpleTests": "看硬度、气泡、色带和内部包裹体；用偏光镜、折射仪可做基础区分。",
+        "labAdvice": "高价值大晶体、声称天然无处理或特殊产地时，建议送检确认天然性和处理状态。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gic-gemology",
+          "title": "宝石学教程",
+          "author": "GIC系列教材",
+          "type": "中文宝石学教材",
+          "note": "用于核对基础宝石学参数、仪器鉴定和命名习惯。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_106",
+      "name": "星光粉晶",
+      "englishName": "Star Rose Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "特殊水晶",
+      "appearance": "粉色半透明石英弧面或球体，在点光源下可出现六射星光，星光来自定向针状包裹体。",
+      "quality": "品质看点：粉色柔和、星线居中清晰、表面抛光好、裂少为佳；星线太机械或固定要谨慎。",
+      "origins": "马达加斯加、巴西、斯里兰卡等。",
+      "uses": "球体、弧面吊坠、戒面和收藏小件。",
+      "price": "市场参考：普通小件几十至数百元；星线明显、颜色好的球或戒面数百至数千元。",
+      "authenticity": "辨别要点：天然星光应随光源移动；玻璃或表面刻线仿品星线不自然。",
+      "treatment": "常见处理：染色、表面处理、拼合。识别看颜色和星线是否来自内部。",
+      "fengshui": "民俗说法中象征情感修复、人缘和温柔表达。",
+      "aliases": [
+        "星光粉晶",
+        "Star Rose Quartz",
+        "星彩粉晶"
+      ],
+      "imageKey": "star-rose-quartz",
+      "professional": {
+        "mineralSpecies": "石英，内含针状、片状或层状矿物包裹体",
+        "composition": "SiO2；包裹体可为金红石、赤铁矿、绿泥石、电气石、阳起石等",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "主体石英硬度7",
+        "refractiveIndex": "主体石英1.544-1.553",
+        "specificGravity": "主体约2.65，随包裹体含量略变",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，包裹体可能影响观察",
+        "inclusions": "重点看包裹体是否在晶体内部、有无立体层次、是否沿裂隙染色或胶结。",
+        "lookalikes": "玻璃内嵌金属丝、染色石英、注色幽灵、拼合水晶",
+        "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
+        "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_107",
+      "name": "紫钛晶",
+      "englishName": "Purple Rutilated Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "发晶",
+      "appearance": "透明至紫色石英中含紫褐、红褐或金属感针状包裹体，市场常以钛晶、发晶细分销售。",
+      "quality": "品质看点：发丝清晰立体、方向自然、晶体通透、裂少为佳；紫色过艳或发丝过整齐需谨慎。",
+      "origins": "巴西、马达加斯加、非洲部分地区。",
+      "uses": "手串、戒面、吊坠和晶体收藏。",
+      "price": "市场参考：普通珠串数百元内；发丝密而美、晶体透者数百至数千元，精品可更高。",
+      "authenticity": "辨别要点：玻璃内嵌金属丝、染色石英和注胶品常见；真发丝在晶体内部有深浅和穿插关系。",
+      "treatment": "常见处理：染色、注胶、拼合。识别看发丝是否穿透晶体、是否有气泡和胶感。",
+      "fengshui": "民俗说法中常被包装为行动力、财富和贵人能量。",
+      "aliases": [
+        "紫钛晶",
+        "Purple Rutilated Quartz",
+        "紫发晶"
+      ],
+      "imageKey": "purple-rutilated-quartz",
+      "professional": {
+        "mineralSpecies": "石英，内含针状、片状或层状矿物包裹体",
+        "composition": "SiO2；包裹体可为金红石、赤铁矿、绿泥石、电气石、阳起石等",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "主体石英硬度7",
+        "refractiveIndex": "主体石英1.544-1.553",
+        "specificGravity": "主体约2.65，随包裹体含量略变",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，包裹体可能影响观察",
+        "inclusions": "重点看包裹体是否在晶体内部、有无立体层次、是否沿裂隙染色或胶结。",
+        "lookalikes": "玻璃内嵌金属丝、染色石英、注色幽灵、拼合水晶",
+        "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
+        "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_108",
+      "name": "绿钛晶",
+      "englishName": "Green Rutilated Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "发晶",
+      "appearance": "透明石英中含绿色针状或纤维状包裹体，常与阳起石、绿泥石等包裹体相关，颜色呈绿丝或绿雾。",
+      "quality": "品质看点：绿色包裹体自然、晶体通透、裂少、发丝立体为佳；过于鲜艳均匀的绿需警惕染色。",
+      "origins": "巴西、马达加斯加、印度和非洲部分地区。",
+      "uses": "手串、吊坠、晶体观赏和发晶收藏。",
+      "price": "市场参考：普通珠串几十至数百元；发丝漂亮、晶体干净者数百至数千元。",
+      "authenticity": "辨别要点：染色石英颜色常沿裂隙集中；玻璃仿品可见气泡且发丝无立体穿插。",
+      "treatment": "常见处理：染色、注胶、拼合。识别看裂隙聚色和包裹体边界。",
+      "fengshui": "民俗说法中象征生长、事业和财富流动。",
+      "aliases": [
+        "绿钛晶",
+        "Green Rutilated Quartz",
+        "绿发晶",
+        "Green Rutile Quartz"
+      ],
+      "imageKey": "green-rutilated-quartz",
+      "professional": {
+        "mineralSpecies": "石英，内含针状、片状或层状矿物包裹体",
+        "composition": "SiO2；包裹体可为金红石、赤铁矿、绿泥石、电气石、阳起石等",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "主体石英硬度7",
+        "refractiveIndex": "主体石英1.544-1.553",
+        "specificGravity": "主体约2.65，随包裹体含量略变",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，包裹体可能影响观察",
+        "inclusions": "重点看包裹体是否在晶体内部、有无立体层次、是否沿裂隙染色或胶结。",
+        "lookalikes": "玻璃内嵌金属丝、染色石英、注色幽灵、拼合水晶",
+        "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
+        "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_109",
+      "name": "黑水晶（墨晶）",
+      "englishName": "Morion Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "石英族水晶",
+      "appearance": "深烟色至近黑色石英晶体，透强光可见褐色或烟灰色调，玻璃光泽。",
+      "quality": "品质看点：颜色自然不过死黑、晶体完整、晶面好、裂少为佳；完全不透且价格异常高需谨慎。",
+      "origins": "巴西、瑞士、俄罗斯、乌克兰、中国等。",
+      "uses": "原石、摆件、手串和矿物收藏。",
+      "price": "市场参考：普通小件几十至数百元；完整晶体或大件数百至数千元。",
+      "authenticity": "辨别要点：染色石英、玻璃和人工辐照烟晶易混；强光下观察颜色过渡和内部包裹体。",
+      "treatment": "常见处理：人工辐照使颜色加深。识别需结合颜色分布、包裹体和证书。",
+      "fengshui": "民俗说法中象征防护、稳定和吸收负面情绪。",
+      "aliases": [
+        "黑水晶（墨晶）",
+        "Morion Quartz",
+        "墨晶",
+        "Morion",
+        "黑茶晶"
+      ],
+      "imageKey": "morion-quartz",
+      "professional": {
+        "mineralSpecies": "石英，结晶二氧化硅",
+        "composition": "SiO2",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "7",
+        "refractiveIndex": "1.544-1.553",
+        "specificGravity": "约2.65",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，品种和包裹体不同会有差异",
+        "inclusions": "气液包裹体、愈合裂隙、色带、棉絮、矿物包裹体常见",
+        "lookalikes": "玻璃、合成石英、染色石英、白色玉髓、托帕石",
+        "simpleTests": "看硬度、气泡、色带和内部包裹体；用偏光镜、折射仪可做基础区分。",
+        "labAdvice": "高价值大晶体、声称天然无处理或特殊产地时，建议送检确认天然性和处理状态。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gic-gemology",
+          "title": "宝石学教程",
+          "author": "GIC系列教材",
+          "type": "中文宝石学教材",
+          "note": "用于核对基础宝石学参数、仪器鉴定和命名习惯。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_110",
+      "name": "黑曜石",
+      "englishName": "Obsidian",
+      "topCategory": "水晶类",
+      "subCategory": "火山玻璃",
+      "appearance": "黑色至深褐色天然火山玻璃，贝壳状断口，玻璃光泽，通常不具晶体结构。",
+      "quality": "品质看点：质地细腻、抛光好、裂少、颜色均匀或特殊光效明显为佳；黑曜石不是石英水晶。",
+      "origins": "墨西哥、美国、冰岛、日本、印度尼西亚、中国等火山活动地区。",
+      "uses": "手串、吊坠、雕件、刀刃标本和装饰品。",
+      "price": "市场参考：普通黑曜石饰品几十至数百元；特殊光效或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：玻璃仿品、塑料和染色玻璃可冒充；真黑曜石常有流纹、气泡拉长痕和贝壳状断口。",
+      "treatment": "常见处理：染色、镀膜、玻璃仿制。识别看光泽、流纹和断口。",
+      "fengshui": "民俗说法中常被当作防护、辟邪和稳定情绪材料。",
+      "aliases": [
+        "黑曜石",
+        "Obsidian",
+        "火山玻璃"
+      ],
+      "imageKey": "obsidian",
+      "professional": {
+        "mineralSpecies": "天然火山玻璃，商业上常归入水晶饰品但不是石英晶体",
+        "composition": "以SiO2为主的非晶质火山玻璃，含水和铁镁等杂质",
+        "crystalSystem": "非晶质，无晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.48-1.51",
+        "specificGravity": "约2.35-2.60",
+        "opticalCharacter": "单折射，非晶质",
+        "fluorescence": "通常无至弱，处理品可能异常",
+        "inclusions": "流纹、拉长气泡、雪花状球粒、金色或彩虹晕彩微结构。",
+        "lookalikes": "人造玻璃、塑料、染色玻璃、镀膜黑曜石",
+        "simpleTests": "看内部流纹、光效深度和贝壳状断口；不要在成品上做破坏性划刻。",
+        "labAdvice": "高价金曜石、彩虹黑曜石和宣称特殊产地时，建议确认是否镀膜或玻璃仿制。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_111",
+      "name": "雪花黑曜石",
+      "englishName": "Snowflake Obsidian",
+      "topCategory": "水晶类",
+      "subCategory": "火山玻璃",
+      "appearance": "黑色火山玻璃中分布白色或灰白色雪花状球粒，形成黑白斑点图案。",
+      "quality": "品质看点：雪花分布自然、黑白对比清楚、抛光好、裂少为佳；图案过于规则要谨慎。",
+      "origins": "美国、墨西哥、冰岛等。",
+      "uses": "手串、吊坠、小雕件和装饰石。",
+      "price": "市场参考：普通饰品几十至数百元；图案漂亮或雕工好者数百元以上。",
+      "authenticity": "辨别要点：染色玻璃和印花仿品可能冒充；真雪花结构在材料内部，不是表面印刷。",
+      "treatment": "常见处理：染色、玻璃仿制、表面涂层。识别看图案是否深入内部。",
+      "fengshui": "民俗说法中象征平衡、清理和稳定。",
+      "aliases": [
+        "雪花黑曜石",
+        "Snowflake Obsidian",
+        "雪花曜石"
+      ],
+      "imageKey": "snowflake-obsidian",
+      "professional": {
+        "mineralSpecies": "天然火山玻璃，商业上常归入水晶饰品但不是石英晶体",
+        "composition": "以SiO2为主的非晶质火山玻璃，含水和铁镁等杂质",
+        "crystalSystem": "非晶质，无晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.48-1.51",
+        "specificGravity": "约2.35-2.60",
+        "opticalCharacter": "单折射，非晶质",
+        "fluorescence": "通常无至弱，处理品可能异常",
+        "inclusions": "流纹、拉长气泡、雪花状球粒、金色或彩虹晕彩微结构。",
+        "lookalikes": "人造玻璃、塑料、染色玻璃、镀膜黑曜石",
+        "simpleTests": "看内部流纹、光效深度和贝壳状断口；不要在成品上做破坏性划刻。",
+        "labAdvice": "高价金曜石、彩虹黑曜石和宣称特殊产地时，建议确认是否镀膜或玻璃仿制。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_112",
+      "name": "金曜石",
+      "englishName": "Gold Sheen Obsidian",
+      "topCategory": "水晶类",
+      "subCategory": "火山玻璃",
+      "appearance": "黑曜石中因微小气泡或包裹体排列产生金色闪光，转动可见金色猫眼状或片状光泽。",
+      "quality": "品质看点：金光强、方向清晰、底色黑亮、裂少为佳；表面镀膜金光需警惕。",
+      "origins": "墨西哥较常见，其他火山产区也有。",
+      "uses": "手串、吊坠、雕件和装饰摆件。",
+      "price": "市场参考：普通珠串几十至数百元；金光强、雕工好者数百至数千元。",
+      "authenticity": "辨别要点：真金曜石光效来自内部微结构；镀膜或玻璃仿品光在表面且易磨损。",
+      "treatment": "常见处理：染色、镀膜、玻璃仿制。识别看金光是否随内部角度变化。",
+      "fengshui": "民俗说法中常被包装为财富、防护和行动力。",
+      "aliases": [
+        "金曜石",
+        "Gold Sheen Obsidian",
+        "金眼黑曜石"
+      ],
+      "imageKey": "gold-sheen-obsidian",
+      "professional": {
+        "mineralSpecies": "天然火山玻璃，商业上常归入水晶饰品但不是石英晶体",
+        "composition": "以SiO2为主的非晶质火山玻璃，含水和铁镁等杂质",
+        "crystalSystem": "非晶质，无晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.48-1.51",
+        "specificGravity": "约2.35-2.60",
+        "opticalCharacter": "单折射，非晶质",
+        "fluorescence": "通常无至弱，处理品可能异常",
+        "inclusions": "流纹、拉长气泡、雪花状球粒、金色或彩虹晕彩微结构。",
+        "lookalikes": "人造玻璃、塑料、染色玻璃、镀膜黑曜石",
+        "simpleTests": "看内部流纹、光效深度和贝壳状断口；不要在成品上做破坏性划刻。",
+        "labAdvice": "高价金曜石、彩虹黑曜石和宣称特殊产地时，建议确认是否镀膜或玻璃仿制。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_113",
+      "name": "彩虹黑曜石",
+      "englishName": "Rainbow Obsidian",
+      "topCategory": "水晶类",
+      "subCategory": "火山玻璃",
+      "appearance": "黑曜石内部可见绿色、紫色、金色或彩虹状晕彩，通常需在特定角度强光下观察。",
+      "quality": "品质看点：彩虹光带明显、颜色丰富、抛光好、裂少为佳；自然光效应有角度变化，不应像涂层一样浮在表面。",
+      "origins": "墨西哥、美国等火山产区。",
+      "uses": "手串、吊坠、雕件和观赏石。",
+      "price": "市场参考：普通珠串几十至数百元；彩虹光强且雕工好者数百至数千元。",
+      "authenticity": "辨别要点：表面镀膜玻璃和染色材料易混；观察彩虹是否来自内部层状结构。",
+      "treatment": "常见处理：镀膜、染色、玻璃仿制。识别看磨损处和光效深度。",
+      "fengshui": "民俗说法中象征转化、保护和情绪释放。",
+      "aliases": [
+        "彩虹黑曜石",
+        "Rainbow Obsidian",
+        "彩曜石"
+      ],
+      "imageKey": "rainbow-obsidian",
+      "professional": {
+        "mineralSpecies": "天然火山玻璃，商业上常归入水晶饰品但不是石英晶体",
+        "composition": "以SiO2为主的非晶质火山玻璃，含水和铁镁等杂质",
+        "crystalSystem": "非晶质，无晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.48-1.51",
+        "specificGravity": "约2.35-2.60",
+        "opticalCharacter": "单折射，非晶质",
+        "fluorescence": "通常无至弱，处理品可能异常",
+        "inclusions": "流纹、拉长气泡、雪花状球粒、金色或彩虹晕彩微结构。",
+        "lookalikes": "人造玻璃、塑料、染色玻璃、镀膜黑曜石",
+        "simpleTests": "看内部流纹、光效深度和贝壳状断口；不要在成品上做破坏性划刻。",
+        "labAdvice": "高价金曜石、彩虹黑曜石和宣称特殊产地时，建议确认是否镀膜或玻璃仿制。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "crystal_114",
+      "name": "银发晶",
+      "englishName": "Silver Rutilated Quartz",
+      "topCategory": "水晶类",
+      "subCategory": "发晶",
+      "appearance": "透明石英中含银白色、灰白色或金属光泽针状包裹体，发丝可稀疏或密集。",
+      "quality": "品质看点：发丝明亮立体、晶体通透、裂少、发丝分布有美感为佳；金属丝仿品需警惕。",
+      "origins": "巴西、马达加斯加、非洲部分地区。",
+      "uses": "手串、戒面、吊坠和发晶收藏。",
+      "price": "市场参考：普通珠串几十至数百元；晶体透、发丝美者数百至数千元。",
+      "authenticity": "辨别要点：玻璃内嵌金属丝常排列过于整齐且有气泡；真发丝在晶体内部穿插自然。",
+      "treatment": "常见处理：注胶、拼合、染色。识别看发丝立体关系和裂隙胶感。",
+      "fengshui": "民俗说法中象征清晰、保护和专注。",
+      "aliases": [
+        "银发晶",
+        "Silver Rutilated Quartz",
+        "银钛晶",
+        "白发晶",
+        "Silver Rutile Quartz"
+      ],
+      "imageKey": "silver-rutilated-quartz",
+      "professional": {
+        "mineralSpecies": "石英，内含针状、片状或层状矿物包裹体",
+        "composition": "SiO2；包裹体可为金红石、赤铁矿、绿泥石、电气石、阳起石等",
+        "crystalSystem": "三方晶系，常见六方柱状外形",
+        "hardness": "主体石英硬度7",
+        "refractiveIndex": "主体石英1.544-1.553",
+        "specificGravity": "主体约2.65，随包裹体含量略变",
+        "opticalCharacter": "一轴晶正光性",
+        "fluorescence": "通常无至弱，包裹体可能影响观察",
+        "inclusions": "重点看包裹体是否在晶体内部、有无立体层次、是否沿裂隙染色或胶结。",
+        "lookalikes": "玻璃内嵌金属丝、染色石英、注色幽灵、拼合水晶",
+        "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
+        "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_101",
+      "name": "钻石",
+      "englishName": "Diamond",
+      "topCategory": "彩宝类",
+      "subCategory": "碳矿物",
+      "appearance": "无色至浅黄、褐或其他颜色，金刚光泽，火彩强，硬度10，常见八面体晶形或切磨明亮式。",
+      "quality": "品质看点：4C是基础，即颜色、净度、切工、克拉；还要看荧光、奶咖绿、证书和是否处理。",
+      "origins": "南非、博茨瓦纳、俄罗斯、加拿大、澳大利亚、印度等。",
+      "uses": "订婚戒、珠宝镶嵌和投资收藏；高价值必须看权威证书。",
+      "price": "市场参考：碎钻几十至数百元/颗；1克拉商业品质约数万元起，高色高净高切工明显更高；天然与培育价格体系不同。",
+      "authenticity": "辨别要点：合成立方氧化锆、莫桑石、玻璃和培育钻易混；仅靠肉眼不能区分天然钻与培育钻。",
+      "treatment": "常见处理：高温高压改色、辐照、激光钻孔、裂隙充填。识别需专业仪器和证书。",
+      "fengshui": "民俗说法中象征坚定、承诺和清晰意志。",
+      "aliases": [
+        "钻石",
+        "Diamond",
+        "金刚石"
+      ],
+      "imageKey": "diamond",
+      "professional": {
+        "mineralSpecies": "钻石，宝石级金刚石",
+        "composition": "C",
+        "crystalSystem": "等轴晶系",
+        "hardness": "10",
+        "refractiveIndex": "2.417",
+        "specificGravity": "约3.52",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "可无至强，常见蓝白荧光",
+        "inclusions": "晶体包裹体、羽裂、云状物、针点、双晶纹等。",
+        "lookalikes": "莫桑石、合成立方氧化锆、玻璃、白色蓝宝石、培育钻石",
+        "simpleTests": "看证书、腰码、火彩和热导只能辅助；天然钻与培育钻不能靠肉眼可靠区分。",
+        "labAdvice": "钻石和彩钻购买必须看权威证书，确认天然/培育、处理、颜色成因和4C。"
+      },
+      "references": [
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        },
+        {
+          "id": "cibjo-blue-books",
+          "title": "CIBJO Blue Books",
+          "author": "World Jewellery Confederation",
+          "type": "国际披露规则",
+          "note": "用于参考宝石、珍珠、珊瑚等材料的名称和披露原则。"
+        }
+      ]
+    },
+    {
+      "id": "gem_102",
+      "name": "彩色钻石",
+      "englishName": "Fancy Color Diamond",
+      "topCategory": "彩宝类",
+      "subCategory": "碳矿物",
+      "appearance": "黄色、粉色、蓝色、绿色、橙色、红色、褐色等天然或处理彩色钻石，颜色是价值核心。",
+      "quality": "品质看点：颜色成因、色级、饱和度和天然性最重要；粉、蓝、绿、红等天然色极稀有，证书必须明确。",
+      "origins": "澳大利亚、南非、俄罗斯、巴西、加拿大等。",
+      "uses": "高级珠宝和收藏裸石；高端市场非常依赖证书与来源。",
+      "price": "市场参考：处理彩钻和培育彩钻价格跨度很大；天然稀有色可从数万元到数百万元以上。",
+      "authenticity": "辨别要点：辐照改色、涂层、培育钻和合成材料风险高；颜色是否天然不能凭照片判断。",
+      "treatment": "常见处理：辐照、退火、HPHT、涂层。必须看实验室报告。",
+      "fengshui": "民俗说法中不同颜色有不同象征，整体代表稀有和高辨识度。",
+      "aliases": [
+        "彩色钻石",
+        "Fancy Color Diamond",
+        "Fancy Diamond",
+        "彩钻"
+      ],
+      "imageKey": "fancy-color-diamond",
+      "professional": {
+        "mineralSpecies": "钻石，宝石级金刚石",
+        "composition": "C",
+        "crystalSystem": "等轴晶系",
+        "hardness": "10",
+        "refractiveIndex": "2.417",
+        "specificGravity": "约3.52",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "可无至强，常见蓝白荧光",
+        "inclusions": "晶体包裹体、羽裂、云状物、针点、双晶纹等。",
+        "lookalikes": "莫桑石、合成立方氧化锆、玻璃、白色蓝宝石、培育钻石",
+        "simpleTests": "看证书、腰码、火彩和热导只能辅助；天然钻与培育钻不能靠肉眼可靠区分。",
+        "labAdvice": "钻石和彩钻购买必须看权威证书，确认天然/培育、处理、颜色成因和4C。"
+      },
+      "references": [
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        },
+        {
+          "id": "cibjo-blue-books",
+          "title": "CIBJO Blue Books",
+          "author": "World Jewellery Confederation",
+          "type": "国际披露规则",
+          "note": "用于参考宝石、珍珠、珊瑚等材料的名称和披露原则。"
+        }
+      ]
+    },
+    {
+      "id": "gem_103",
+      "name": "粉色蓝宝石",
+      "englishName": "Pink Sapphire",
+      "topCategory": "彩宝类",
+      "subCategory": "刚玉族",
+      "appearance": "粉色至紫粉色刚玉，透明，硬度9，颜色可柔和或鲜艳。",
+      "quality": "品质看点：颜色饱和明亮、不过灰不过暗、净度好、切工亮为佳；与浅色红宝石边界依赖实验室和市场定义。",
+      "origins": "斯里兰卡、马达加斯加、缅甸、莫桑比克、坦桑尼亚。",
+      "uses": "戒面、吊坠、耳饰和婚戒彩宝。",
+      "price": "市场参考：商业品质数百至数千元/克拉；颜色好、未加热、净度佳者数千至数万元/克拉。",
+      "authenticity": "辨别要点：粉色玻璃、合成尖晶石、合成刚玉和扩散处理刚玉需警惕。",
+      "treatment": "常见处理：热处理、扩散处理。识别需看包裹体、色带和证书。",
+      "fengshui": "民俗说法中象征温柔、爱意和人缘。",
+      "aliases": [
+        "粉色蓝宝石",
+        "Pink Sapphire",
+        "粉蓝宝"
+      ],
+      "imageKey": "pink-sapphire",
+      "professional": {
+        "mineralSpecies": "刚玉族",
+        "composition": "Al2O3，铬致红色，铁钛等致蓝色和其他色",
+        "crystalSystem": "三方晶系",
+        "hardness": "9",
+        "refractiveIndex": "约1.762-1.770",
+        "specificGravity": "约4.00",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "红宝石常可见红色荧光，蓝宝石多弱至无",
+        "inclusions": "金红石针、色带、晶体包裹体、愈合裂隙、指纹状包裹体常见。",
+        "lookalikes": "尖晶石、石榴石、玻璃、合成刚玉、扩散处理刚玉",
+        "simpleTests": "看二色性、色带、包裹体和硬度；仅凭照片不能判断天然、合成和加热。",
+        "labAdvice": "高价值必须送检确认天然性、加热、扩散、充填和产地意见。"
+      },
+      "references": [
+        {
+          "id": "hughes-ruby-sapphire",
+          "title": "Ruby & Sapphire: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "红蓝宝专著",
+          "note": "用于核对刚玉族产地、颜色评价、包裹体与处理风险。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_104",
+      "name": "黄色蓝宝石",
+      "englishName": "Yellow Sapphire",
+      "topCategory": "彩宝类",
+      "subCategory": "刚玉族",
+      "appearance": "黄色至金黄色刚玉，透明，玻璃光泽，颜色从淡黄到浓金黄。",
+      "quality": "品质看点：颜色明亮浓郁、无明显褐调、净度好、切工不漏底为佳；未加热优质品价值更高。",
+      "origins": "斯里兰卡、泰国、马达加斯加、澳大利亚、坦桑尼亚。",
+      "uses": "戒面、吊坠和日常耐磨彩宝。",
+      "price": "市场参考：商业品质数百至数千元/克拉；颜色浓、净度好、未加热者数千至数万元/克拉。",
+      "authenticity": "辨别要点：黄水晶、黄色玻璃、托帕石、合成蓝宝和扩散处理易混。",
+      "treatment": "常见处理：热处理、铍扩散。识别需实验室检测扩散和色因。",
+      "fengshui": "民俗说法中象征财富、明朗和学习运。",
+      "aliases": [
+        "黄色蓝宝石",
+        "Yellow Sapphire",
+        "黄蓝宝"
+      ],
+      "imageKey": "yellow-sapphire",
+      "professional": {
+        "mineralSpecies": "刚玉族",
+        "composition": "Al2O3，铬致红色，铁钛等致蓝色和其他色",
+        "crystalSystem": "三方晶系",
+        "hardness": "9",
+        "refractiveIndex": "约1.762-1.770",
+        "specificGravity": "约4.00",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "红宝石常可见红色荧光，蓝宝石多弱至无",
+        "inclusions": "金红石针、色带、晶体包裹体、愈合裂隙、指纹状包裹体常见。",
+        "lookalikes": "尖晶石、石榴石、玻璃、合成刚玉、扩散处理刚玉",
+        "simpleTests": "看二色性、色带、包裹体和硬度；仅凭照片不能判断天然、合成和加热。",
+        "labAdvice": "高价值必须送检确认天然性、加热、扩散、充填和产地意见。"
+      },
+      "references": [
+        {
+          "id": "hughes-ruby-sapphire",
+          "title": "Ruby & Sapphire: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "红蓝宝专著",
+          "note": "用于核对刚玉族产地、颜色评价、包裹体与处理风险。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_105",
+      "name": "绿色蓝宝石",
+      "englishName": "Green Sapphire",
+      "topCategory": "彩宝类",
+      "subCategory": "刚玉族",
+      "appearance": "绿色、蓝绿色至黄绿色刚玉，颜色常由蓝黄组分叠加形成。",
+      "quality": "品质看点：颜色清爽明亮、净度好、切工亮为佳；过暗或灰调明显会影响价值。",
+      "origins": "澳大利亚、斯里兰卡、泰国、马达加斯加、美国蒙大拿。",
+      "uses": "戒面、吊坠和个性彩宝镶嵌。",
+      "price": "市场参考：普通商业品质数百至数千元/克拉；颜色好、净度好、产地特色明确者更高。",
+      "authenticity": "辨别要点：绿色碧玺、石榴石、玻璃和合成刚玉可混淆。",
+      "treatment": "常见处理：热处理、扩散处理。识别需证书确认。",
+      "fengshui": "民俗说法中象征稳定成长和清醒判断。",
+      "aliases": [
+        "绿色蓝宝石",
+        "Green Sapphire",
+        "绿蓝宝"
+      ],
+      "imageKey": "green-sapphire",
+      "professional": {
+        "mineralSpecies": "刚玉族",
+        "composition": "Al2O3，铬致红色，铁钛等致蓝色和其他色",
+        "crystalSystem": "三方晶系",
+        "hardness": "9",
+        "refractiveIndex": "约1.762-1.770",
+        "specificGravity": "约4.00",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "红宝石常可见红色荧光，蓝宝石多弱至无",
+        "inclusions": "金红石针、色带、晶体包裹体、愈合裂隙、指纹状包裹体常见。",
+        "lookalikes": "尖晶石、石榴石、玻璃、合成刚玉、扩散处理刚玉",
+        "simpleTests": "看二色性、色带、包裹体和硬度；仅凭照片不能判断天然、合成和加热。",
+        "labAdvice": "高价值必须送检确认天然性、加热、扩散、充填和产地意见。"
+      },
+      "references": [
+        {
+          "id": "hughes-ruby-sapphire",
+          "title": "Ruby & Sapphire: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "红蓝宝专著",
+          "note": "用于核对刚玉族产地、颜色评价、包裹体与处理风险。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_106",
+      "name": "西瓜碧玺",
+      "englishName": "Watermelon Tourmaline",
+      "topCategory": "彩宝类",
+      "subCategory": "电气石族",
+      "appearance": "同一晶体中出现粉红中心与绿色外圈，横切面像西瓜，也可呈红绿分带。",
+      "quality": "品质看点：红绿分带清晰、颜色鲜明、晶体完整、裂少为佳；切片过薄或注胶多会影响价值。",
+      "origins": "巴西、阿富汗、尼日利亚、马达加斯加、美国。",
+      "uses": "吊坠、切片、戒面和矿物晶体收藏。",
+      "price": "市场参考：普通切片几十至数百元；颜色好、分带完整、晶体大者数百至数千元以上。",
+      "authenticity": "辨别要点：染色石英、拼合玻璃和注胶切片常见；真分带应在晶体生长结构中自然过渡。",
+      "treatment": "常见处理：注胶、染色、拼合。识别看颜色边界、裂隙聚色和胶感。",
+      "fengshui": "民俗说法中象征平衡、关系和情绪流动。",
+      "aliases": [
+        "西瓜碧玺",
+        "Watermelon Tourmaline",
+        "双色碧玺"
+      ],
+      "imageKey": "watermelon-tourmaline",
+      "professional": {
+        "mineralSpecies": "电气石族",
+        "composition": "复杂硼硅酸盐，颜色由铁、锰、铬、铜等影响",
+        "crystalSystem": "三方晶系",
+        "hardness": "7-7.5",
+        "refractiveIndex": "约1.62-1.65",
+        "specificGravity": "约3.00-3.26",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "通常无至弱，品种差异大",
+        "inclusions": "平行管状包裹体、液体包裹体、色带和生长纹常见。",
+        "lookalikes": "玻璃、合成尖晶石、磷灰石、托帕石、染色石英",
+        "simpleTests": "看强二色性、棱线重影和纵向色带；霓虹蓝绿色需谨慎。",
+        "labAdvice": "帕拉伊巴必须检测铜锰致色；高价红碧玺需确认处理和天然性。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_107",
+      "name": "铬碧玺",
+      "englishName": "Chrome Tourmaline",
+      "topCategory": "彩宝类",
+      "subCategory": "电气石族",
+      "appearance": "由铬或钒致色的浓绿色碧玺，颜色鲜绿，透明至半透明。",
+      "quality": "品质看点：颜色鲜绿明亮、净度好、切工亮为佳；过黑过暗会降低价值。",
+      "origins": "坦桑尼亚、肯尼亚等东非地区。",
+      "uses": "戒面、吊坠和绿色彩宝镶嵌。",
+      "price": "市场参考：小颗粒数百至数千元/克拉；颜色好、大颗粒、净度佳者数千至数万元/克拉。",
+      "authenticity": "辨别要点：绿色碧玺、铬透辉石、祖母绿、沙弗莱易混；需看折射率、光谱和包裹体。",
+      "treatment": "常见处理较少，主要风险是品种混淆。",
+      "fengshui": "民俗说法中象征成长、财富和活力。",
+      "aliases": [
+        "铬碧玺",
+        "Chrome Tourmaline",
+        "绿碧玺"
+      ],
+      "imageKey": "chrome-tourmaline",
+      "professional": {
+        "mineralSpecies": "电气石族",
+        "composition": "复杂硼硅酸盐，颜色由铁、锰、铬、铜等影响",
+        "crystalSystem": "三方晶系",
+        "hardness": "7-7.5",
+        "refractiveIndex": "约1.62-1.65",
+        "specificGravity": "约3.00-3.26",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "通常无至弱，品种差异大",
+        "inclusions": "平行管状包裹体、液体包裹体、色带和生长纹常见。",
+        "lookalikes": "玻璃、合成尖晶石、磷灰石、托帕石、染色石英",
+        "simpleTests": "看强二色性、棱线重影和纵向色带；霓虹蓝绿色需谨慎。",
+        "labAdvice": "帕拉伊巴必须检测铜锰致色；高价红碧玺需确认处理和天然性。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_108",
+      "name": "铬透辉石",
+      "englishName": "Chrome Diopside",
+      "topCategory": "彩宝类",
+      "subCategory": "辉石族",
+      "appearance": "鲜绿色至深绿色透辉石，玻璃光泽，常呈明亮祖母绿色调但硬度较低。",
+      "quality": "品质看点：颜色鲜绿、净度好、切工亮为佳；大颗粒常偏暗，硬度低不适合高强度佩戴。",
+      "origins": "俄罗斯西伯利亚最著名，也见于巴基斯坦、缅甸等。",
+      "uses": "戒面、吊坠和绿色彩宝替代选择。",
+      "price": "市场参考：小颗粒几十至数百元/克拉；颜色好、大颗粒数百至数千元/克拉。",
+      "authenticity": "辨别要点：祖母绿、沙弗莱、绿色玻璃易混；硬度低、折射率和双折射特征不同。",
+      "treatment": "常见处理较少，主要注意裂隙和品种误称。",
+      "fengshui": "民俗说法中象征自然、生机和恢复。",
+      "aliases": [
+        "铬透辉石",
+        "Chrome Diopside",
+        "西伯利亚祖母绿"
+      ],
+      "imageKey": "chrome-diopside",
+      "professional": {
+        "mineralSpecies": "辉石族铬透辉石",
+        "composition": "CaMgSi2O6，铬致绿色",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约5.5-6.5",
+        "refractiveIndex": "约1.66-1.72",
+        "specificGravity": "约3.27-3.32",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "晶体、液体包裹体和裂隙常见。",
+        "lookalikes": "祖母绿、沙弗莱、绿色玻璃、绿色碧玺",
+        "simpleTests": "硬度低于多数高端绿色宝石，折射率和双折射可辅助区分。",
+        "labAdvice": "高价绿色切磨品建议送检确认不是祖母绿或沙弗莱。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_109",
+      "name": "葡萄石",
+      "englishName": "Prehnite",
+      "topCategory": "彩宝类",
+      "subCategory": "硅酸盐矿物",
+      "appearance": "浅绿、黄绿至近无色，常半透明，呈葡萄状集合体或弧面宝石，光泽柔和。",
+      "quality": "品质看点：颜色清新、透明度好、棉裂少、弧面饱满为佳；过混浊或裂多价值低。",
+      "origins": "澳大利亚、南非、中国、美国、马里等。",
+      "uses": "手串、吊坠、弧面戒面和矿物标本。",
+      "price": "市场参考：普通珠串几十至数百元；透明度好、颜色佳者数百至数千元。",
+      "authenticity": "辨别要点：绿玉髓、玻璃、葡萄状玉髓易混；葡萄石硬度和折射率不同。",
+      "treatment": "常见处理较少，注意染色和玻璃仿品。",
+      "fengshui": "民俗说法中象征平静、整理和温柔守护。",
+      "aliases": [
+        "葡萄石",
+        "Prehnite",
+        "绿葡萄石"
+      ],
+      "imageKey": "prehnite",
+      "professional": {
+        "mineralSpecies": "葡萄石",
+        "composition": "Ca2Al(AlSi3O10)(OH)2",
+        "crystalSystem": "斜方晶系",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "约1.61-1.67",
+        "specificGravity": "约2.80-2.95",
+        "opticalCharacter": "双轴晶",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维状、葡萄状结构和云雾状包裹体常见。",
+        "lookalikes": "绿玉髓、玻璃、葡萄状玉髓、浅绿萤石",
+        "simpleTests": "看柔和蜡状光泽、折射率和集合体结构。",
+        "labAdvice": "高价透明绿色材料建议送检确认种属和是否染色。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_110",
+      "name": "榍石",
+      "englishName": "Sphene / Titanite",
+      "topCategory": "彩宝类",
+      "subCategory": "岛状硅酸盐",
+      "appearance": "黄绿、褐绿至金黄色宝石，色散强，火彩明显，但硬度较低。",
+      "quality": "品质看点：颜色鲜亮、火彩强、净度好、切工好为佳；硬度低，镶嵌需保护。",
+      "origins": "马达加斯加、巴西、巴基斯坦、俄罗斯、奥地利等。",
+      "uses": "收藏裸石和低频佩戴珠宝；更适合欣赏火彩。",
+      "price": "市场参考：小颗粒数百至数千元/克拉；颜色好、净度好、大颗粒可更高。",
+      "authenticity": "辨别要点：橄榄石、翠榴石、锆石、玻璃易混；强色散和高折射率是线索。",
+      "treatment": "常见处理较少，主要注意裂隙和仿品。",
+      "fengshui": "民俗说法中象征灵感、明亮和创造力。",
+      "aliases": [
+        "榍石",
+        "Sphene / Titanite",
+        "Titanite",
+        "Sphene"
+      ],
+      "imageKey": "titanite",
+      "professional": {
+        "mineralSpecies": "榍石/钛榍石",
+        "composition": "CaTiSiO5",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.84-2.11",
+        "specificGravity": "约3.45-3.55",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "高色散、裂隙和晶体包裹体常见。",
+        "lookalikes": "锆石、翠榴石、橄榄石、玻璃",
+        "simpleTests": "强火彩和高折射率是线索，但硬度低需防磨损。",
+        "labAdvice": "高价榍石建议确认种属和裂隙情况。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_111",
+      "name": "赛黄晶（丹泉石）",
+      "englishName": "Danburite",
+      "topCategory": "彩宝类",
+      "subCategory": "硼硅酸盐矿物",
+      "appearance": "无色、淡黄、粉色或香槟色透明宝石，玻璃光泽，外观可似黄水晶或托帕石。",
+      "quality": "品质看点：透明度高、颜色柔和、净度好、切工亮为佳；市场认知较小，价格不应按高端彩宝盲目溢价。",
+      "origins": "墨西哥、缅甸、日本、俄罗斯、马达加斯加等。",
+      "uses": "切磨宝石、吊坠和矿物晶体收藏。",
+      "price": "市场参考：普通切磨品几十至数百元/克拉；大颗粒、净度好、颜色佳者数百至数千元。",
+      "authenticity": "辨别要点：黄水晶、托帕石、玻璃易混；需折射率和密度区分。",
+      "treatment": "常见处理较少，注意误称和玻璃仿品。",
+      "fengshui": "民俗说法中象征清透、平和和净化。",
+      "aliases": [
+        "赛黄晶（丹泉石）",
+        "Danburite",
+        "丹泉石"
+      ],
+      "imageKey": "danburite",
+      "professional": {
+        "mineralSpecies": "丹泉石/赛黄晶",
+        "composition": "CaB2Si2O8",
+        "crystalSystem": "斜方晶系",
+        "hardness": "7-7.5",
+        "refractiveIndex": "约1.63-1.64",
+        "specificGravity": "约2.97-3.03",
+        "opticalCharacter": "双轴晶负光性",
+        "fluorescence": "通常弱至无",
+        "inclusions": "液体包裹体、晶体包裹体和生长纹可见。",
+        "lookalikes": "黄水晶、托帕石、玻璃、无色蓝宝石",
+        "simpleTests": "折射率和密度可与黄水晶、托帕石区分。",
+        "labAdvice": "高价大颗粒或特殊颜色建议送检。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_112",
+      "name": "方柱石",
+      "englishName": "Scapolite",
+      "topCategory": "彩宝类",
+      "subCategory": "架状硅酸盐",
+      "appearance": "黄色、紫色、粉色、无色等透明宝石，常见长柱状晶体，玻璃光泽。",
+      "quality": "品质看点：颜色明亮、净度好、切工亮为佳；硬度中等，裂隙少更好。",
+      "origins": "坦桑尼亚、马达加斯加、缅甸、巴西、加拿大等。",
+      "uses": "戒面、吊坠和矿物收藏。",
+      "price": "市场参考：普通小颗粒几十至数百元/克拉；颜色特别或猫眼品种可更高。",
+      "authenticity": "辨别要点：黄水晶、紫水晶、托帕石、玻璃易混；需折射率和光谱确认。",
+      "treatment": "常见处理较少，注意辐照改色和仿品。",
+      "fengshui": "民俗说法中象征清晰表达和方向感。",
+      "aliases": [
+        "方柱石",
+        "Scapolite"
+      ],
+      "imageKey": "scapolite",
+      "professional": {
+        "mineralSpecies": "方柱石",
+        "composition": "钠钙铝硅酸盐，含Cl/CO3/SO4等",
+        "crystalSystem": "四方晶系",
+        "hardness": "约5.5-6",
+        "refractiveIndex": "约1.54-1.58",
+        "specificGravity": "约2.55-2.74",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "可有黄、橙、粉等荧光变化",
+        "inclusions": "管状、液体和晶体包裹体常见。",
+        "lookalikes": "黄水晶、紫水晶、托帕石、玻璃",
+        "simpleTests": "硬度、折射率和荧光可辅助识别。",
+        "labAdvice": "高价猫眼方柱石或特殊颜色建议送检。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_113",
+      "name": "宝石级萤石",
+      "englishName": "Gem Fluorite",
+      "topCategory": "彩宝类",
+      "subCategory": "卤化物矿物",
+      "appearance": "紫、绿、蓝、黄、多色带状透明萤石，玻璃光泽，硬度低，解理明显。",
+      "quality": "品质看点：颜色鲜艳、透明度好、色带美、裂少为佳；硬度4，佩戴耐久差，更适合收藏。",
+      "origins": "中国、英国、美国、墨西哥、西班牙、纳米比亚等。",
+      "uses": "矿物收藏、切磨收藏石和低频佩戴吊坠。",
+      "price": "市场参考：普通切磨品几十至数百元；颜色特别或大颗粒精品数百至数千元。",
+      "authenticity": "辨别要点：玻璃、紫水晶、合成材料易混；萤石硬度低、常有荧光和完全解理。",
+      "treatment": "常见处理：染色、充填较少见但需注意；切磨品需防磕碰。",
+      "fengshui": "民俗说法中象征清理思绪、学习和专注。",
+      "aliases": [
+        "宝石级萤石",
+        "Gem Fluorite",
+        "Fluorite Gemstone",
+        "宝石萤石"
+      ],
+      "imageKey": "gem-fluorite",
+      "professional": {
+        "mineralSpecies": "萤石",
+        "composition": "CaF2",
+        "crystalSystem": "等轴晶系",
+        "hardness": "4",
+        "refractiveIndex": "约1.434",
+        "specificGravity": "约3.18",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "常见明显荧光，颜色变化大",
+        "inclusions": "色带、解理裂隙和液体包裹体常见。",
+        "lookalikes": "玻璃、紫水晶、合成材料、托帕石",
+        "simpleTests": "硬度低、完全解理和荧光是现场线索。",
+        "labAdvice": "宝石级萤石主要看是否染色、充填和耐久性。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_114",
+      "name": "闪锌矿",
+      "englishName": "Sphalerite",
+      "topCategory": "彩宝类",
+      "subCategory": "硫化物矿物",
+      "appearance": "黄、橙、红褐至黑色透明或半透明宝石，色散极强，火彩明显但硬度低。",
+      "quality": "品质看点：颜色明亮、透明、火彩强、裂少为佳；硬度3.5-4，不适合日常戒指。",
+      "origins": "西班牙、墨西哥、美国、中国、保加利亚等。",
+      "uses": "收藏切磨石和矿物标本。",
+      "price": "市场参考：普通小颗粒数十至数百元；大颗粒透明火彩好者数百至数千元以上。",
+      "authenticity": "辨别要点：锆石、榍石、玻璃易混；高色散和低硬度是重要线索。",
+      "treatment": "常见处理少，主要注意裂隙和仿品。",
+      "fengshui": "民俗说法中较少，常被视为火彩和洞察象征。",
+      "aliases": [
+        "闪锌矿",
+        "Sphalerite",
+        "闪锌矿宝石"
+      ],
+      "imageKey": "sphalerite",
+      "professional": {
+        "mineralSpecies": "闪锌矿",
+        "composition": "ZnS，可含Fe等杂质",
+        "crystalSystem": "等轴晶系",
+        "hardness": "约3.5-4",
+        "refractiveIndex": "约2.37",
+        "specificGravity": "约3.9-4.1",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "可有橙、红等荧光或磷光",
+        "inclusions": "强色散、解理和裂隙常见。",
+        "lookalikes": "锆石、榍石、玻璃、合成材料",
+        "simpleTests": "低硬度和极强火彩是重要线索。",
+        "labAdvice": "切磨闪锌矿易损，高价收藏石建议送检确认。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_115",
+      "name": "蓝铜矿",
+      "englishName": "Azurite",
+      "topCategory": "彩宝类",
+      "subCategory": "碳酸盐矿物",
+      "appearance": "深蓝至靛蓝色铜矿物，可呈块状、晶簇或与孔雀石共生，硬度低。",
+      "quality": "品质看点：颜色浓艳、晶体完整或蓝绿共生图案美、裂少为佳；稳定性和硬度限制佩戴。",
+      "origins": "摩洛哥、纳米比亚、美国、澳大利亚、中国等。",
+      "uses": "矿物标本、雕件、吊坠和蓝绿共生观赏石。",
+      "price": "市场参考：普通小件几十至数百元；晶体完整或共生图案漂亮者数百至数千元以上。",
+      "authenticity": "辨别要点：染色石、青金石、玻璃易混；真蓝铜矿颜色浓且硬度低，常与孔雀石共生。",
+      "treatment": "常见处理：稳定处理、上胶、染色仿品。识别看颜色渗透和胶感。",
+      "fengshui": "民俗说法中象征洞察、表达和深度思考。",
+      "aliases": [
+        "蓝铜矿",
+        "Azurite",
+        "蓝铜矿宝石"
+      ],
+      "imageKey": "azurite",
+      "professional": {
+        "mineralSpecies": "蓝铜矿",
+        "composition": "Cu3(CO3)2(OH)2",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约3.5-4",
+        "refractiveIndex": "约1.73-1.84",
+        "specificGravity": "约3.7-3.9",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无",
+        "inclusions": "常与孔雀石共生，裂隙、土状集合体常见。",
+        "lookalikes": "青金石、染色石、玻璃、蓝色树脂",
+        "simpleTests": "硬度低、铜矿物颜色和共生孔雀石是线索。",
+        "labAdvice": "高价雕件和蓝绿共生料需确认染色、稳定处理。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_116",
+      "name": "海纹石",
+      "englishName": "Larimar",
+      "topCategory": "彩宝类",
+      "subCategory": "针钠钙石",
+      "appearance": "浅蓝、蓝白相间至绿蓝色不透明宝石，常有云朵或海浪状白色纹理。",
+      "quality": "品质看点：颜色天蓝、纹理像海浪、质地细、裂少为佳；发灰、发绿或白多价值较低。",
+      "origins": "多米尼加共和国是主要商业产地。",
+      "uses": "吊坠、手串、戒面和夏季风格饰品。",
+      "price": "市场参考：普通小件几十至数百元；蓝色浓、纹理好、体积大的成品数百至数千元。",
+      "authenticity": "辨别要点：染色石英、蓝色方解石、玻璃、塑料易混；真海纹石纹理自然且多为不透明。",
+      "treatment": "常见处理：染色、注胶、覆膜。识别看裂隙聚色、表面涂层和证书。",
+      "fengshui": "民俗说法中象征海洋、放松和沟通。",
+      "aliases": [
+        "海纹石",
+        "Larimar",
+        "拉利玛",
+        "海纹玉"
+      ],
+      "imageKey": "larimar",
+      "professional": {
+        "mineralSpecies": "针钠钙石/海纹石",
+        "composition": "NaCa2Si3O8(OH)",
+        "crystalSystem": "三斜晶系，商业品多为集合体",
+        "hardness": "约4.5-5",
+        "refractiveIndex": "约1.59-1.64",
+        "specificGravity": "约2.70-2.90",
+        "opticalCharacter": "双轴晶，集合体点测为主",
+        "fluorescence": "通常弱至无",
+        "inclusions": "云朵状白纹、蓝白斑块和裂隙常见。",
+        "lookalikes": "蓝色方解石、染色石英、玻璃、塑料",
+        "simpleTests": "看海浪状天然纹理和不透明集合体结构。",
+        "labAdvice": "高价海纹石需确认是否染色、注胶和产地。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_117",
+      "name": "绿玉髓",
+      "englishName": "Chrysoprase",
+      "topCategory": "彩宝类",
+      "subCategory": "石英族宝石",
+      "appearance": "苹果绿至黄绿色隐晶质石英，半透明至不透明，颜色由镍致色，质地细腻。",
+      "quality": "品质看点：颜色鲜嫩均匀、半透明、裂少、无明显杂色为佳；过艳过均匀低价需警惕染色。",
+      "origins": "澳大利亚、坦桑尼亚、巴西、波兰、美国等。",
+      "uses": "珠串、戒面、吊坠和雕件。",
+      "price": "市场参考：普通小件几十至数百元；颜色好、质地细的大件数百至数千元。",
+      "authenticity": "辨别要点：染色玉髓、玻璃、翡翠、东陵石易混；染色品裂隙聚色明显。",
+      "treatment": "常见处理：染色、浸蜡。识别看颜色分布和裂隙。",
+      "fengshui": "民俗说法中象征新生、财富和心境舒展。",
+      "aliases": [
+        "绿玉髓",
+        "Chrysoprase",
+        "澳玉"
+      ],
+      "imageKey": "chrysoprase",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_118",
+      "name": "变色石榴石",
+      "englishName": "Color Change Garnet",
+      "topCategory": "彩宝类",
+      "subCategory": "石榴石族",
+      "appearance": "在日光和白炽灯下呈蓝绿、紫红、褐红等变化的石榴石，通常为多组分石榴石。",
+      "quality": "品质看点：变色幅度大、颜色漂亮、净度好、切工亮为佳；大颗粒优质品较少。",
+      "origins": "坦桑尼亚、马达加斯加、斯里兰卡、俄罗斯、肯尼亚等。",
+      "uses": "收藏裸石和个性彩宝镶嵌。",
+      "price": "市场参考：普通小颗粒数百至数千元/克拉；变色强、大颗粒优质品可达数千至数万元/克拉。",
+      "authenticity": "辨别要点：变石、合成变色刚玉和玻璃易混；石榴石为单折射，需折射率和光谱确认。",
+      "treatment": "常见处理少，主要风险是冒充变石或光源误导。",
+      "fengshui": "民俗说法中象征变化、转机和适应力。",
+      "aliases": [
+        "变色石榴石",
+        "Color Change Garnet",
+        "变色榴石"
+      ],
+      "imageKey": "color-change-garnet",
+      "professional": {
+        "mineralSpecies": "石榴石族",
+        "composition": "岛状硅酸盐族，成分随镁铝榴石、铁铝榴石、钙铝榴石、钙铁榴石等变化",
+        "crystalSystem": "等轴晶系",
+        "hardness": "约6.5-7.5",
+        "refractiveIndex": "约1.72-1.89，随品种变化",
+        "specificGravity": "约3.5-4.3",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "通常弱至无",
+        "inclusions": "晶体包裹体、针状包裹体；翠榴石可见马尾状包裹体。",
+        "lookalikes": "红宝石、尖晶石、玻璃、绿色碧玺、铬透辉石",
+        "simpleTests": "石榴石通常无双折射，查尔斯滤色镜和折射率有辅助价值。",
+        "labAdvice": "高价沙弗莱、翠榴石应确认品种、产地特征和是否裂隙处理。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_119",
+      "name": "芬达石",
+      "englishName": "Spessartine Garnet",
+      "topCategory": "彩宝类",
+      "subCategory": "石榴石族",
+      "appearance": "橙色至橙红色锰铝榴石，颜色像汽水橙，玻璃光泽，火彩好。",
+      "quality": "品质看点：颜色鲜橙明亮、净度好、切工亮为佳；褐调重或裂多会降低价值。",
+      "origins": "纳米比亚、尼日利亚、坦桑尼亚、马达加斯加、巴西等。",
+      "uses": "戒面、吊坠和收藏裸石。",
+      "price": "市场参考：小颗粒数百至数千元/克拉；颜色浓艳、净度好、大颗粒者数千至数万元/克拉。",
+      "authenticity": "辨别要点：橙色玻璃、火欧泊、锆石、合成材料易混；折射率和单折射可辅助。",
+      "treatment": "常见处理少，主要注意裂隙和颜色评价。",
+      "fengshui": "民俗说法中象征活力、热情和创造力。",
+      "aliases": [
+        "芬达石",
+        "Spessartine Garnet",
+        "Spessartine",
+        "Spessartite",
+        "橙榴石"
+      ],
+      "imageKey": "spessartine",
+      "professional": {
+        "mineralSpecies": "石榴石族",
+        "composition": "岛状硅酸盐族，成分随镁铝榴石、铁铝榴石、钙铝榴石、钙铁榴石等变化",
+        "crystalSystem": "等轴晶系",
+        "hardness": "约6.5-7.5",
+        "refractiveIndex": "约1.72-1.89，随品种变化",
+        "specificGravity": "约3.5-4.3",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "通常弱至无",
+        "inclusions": "晶体包裹体、针状包裹体；翠榴石可见马尾状包裹体。",
+        "lookalikes": "红宝石、尖晶石、玻璃、绿色碧玺、铬透辉石",
+        "simpleTests": "石榴石通常无双折射，查尔斯滤色镜和折射率有辅助价值。",
+        "labAdvice": "高价沙弗莱、翠榴石应确认品种、产地特征和是否裂隙处理。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_120",
+      "name": "红绿宝",
+      "englishName": "Ruby in Zoisite",
+      "topCategory": "彩宝类",
+      "subCategory": "多矿物集合体",
+      "appearance": "绿色黝帘石基底中含红色红宝石斑块，常伴黑色角闪石，颜色红绿对比强。",
+      "quality": "品质看点：红色斑块鲜明、绿色基底漂亮、结构紧密、裂少和雕工好为佳。",
+      "origins": "坦桑尼亚最常见。",
+      "uses": "手串、雕件、摆件和特色饰品。",
+      "price": "市场参考：普通珠串几十至数百元；红绿分布美、雕工好的大件数百至数千元。",
+      "authenticity": "辨别要点：染色石、红绿玻璃、拼合材料可冒充；真品红绿矿物边界自然。",
+      "treatment": "常见处理：染色、注胶、拼合。识别看颜色是否浮和裂隙聚色。",
+      "fengshui": "民俗说法中象征活力与疗愈、心力平衡。",
+      "aliases": [
+        "红绿宝",
+        "Ruby in Zoisite",
+        "Ruby Zoisite",
+        "Anyolite",
+        "红宝黝帘石"
+      ],
+      "imageKey": "ruby-zoisite",
+      "professional": {
+        "mineralSpecies": "红宝黝帘石集合体",
+        "composition": "黝帘石基底含红宝石和角闪石等",
+        "crystalSystem": "集合体",
+        "hardness": "约6-7，红宝石局部硬度9",
+        "refractiveIndex": "点测随矿物变化",
+        "specificGravity": "约3.1-3.5",
+        "opticalCharacter": "集合体，结构观察为主",
+        "fluorescence": "红宝石部分可有红色荧光",
+        "inclusions": "红色刚玉斑块、绿色黝帘石和黑色角闪石共生。",
+        "lookalikes": "染色石、拼合材料、红绿玻璃",
+        "simpleTests": "看红绿矿物边界是否自然，放大观察矿物颗粒。",
+        "labAdvice": "大件和高价红绿宝建议确认是否染色、注胶或拼合。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_121",
+      "name": "蓝晶石",
+      "englishName": "Kyanite",
+      "topCategory": "彩宝类",
+      "subCategory": "岛状硅酸盐",
+      "appearance": "蓝色至蓝灰色柱状或片状晶体，常有明显方向性颜色和解理，硬度具方向差异。",
+      "quality": "品质看点：颜色蓝而明亮、透明度好、裂少、切工顺方向为佳；脆性和解理影响佩戴。",
+      "origins": "尼泊尔、巴西、缅甸、肯尼亚、坦桑尼亚、瑞士等。",
+      "uses": "切磨宝石、吊坠和矿物晶体收藏。",
+      "price": "市场参考：普通切磨品几十至数百元/克拉；颜色好、净度好者数百至数千元。",
+      "authenticity": "辨别要点：蓝宝石、坦桑石、堇青石和玻璃易混；硬度方向差和解理明显。",
+      "treatment": "常见处理少，注意染色和玻璃仿品。",
+      "fengshui": "民俗说法中象征沟通、清理和方向感。",
+      "aliases": [
+        "蓝晶石",
+        "Kyanite",
+        "蓝线石"
+      ],
+      "imageKey": "kyanite",
+      "professional": {
+        "mineralSpecies": "蓝晶石",
+        "composition": "Al2SiO5",
+        "crystalSystem": "三斜晶系",
+        "hardness": "方向硬度约4.5-7",
+        "refractiveIndex": "约1.71-1.73",
+        "specificGravity": "约3.53-3.68",
+        "opticalCharacter": "双轴晶负光性",
+        "fluorescence": "通常无",
+        "inclusions": "解理、色带、针状包裹体常见。",
+        "lookalikes": "蓝宝石、坦桑石、堇青石、玻璃",
+        "simpleTests": "明显多色性和方向硬度是线索。",
+        "labAdvice": "高价蓝色切磨品建议送检确认种属。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_122",
+      "name": "矽线石猫眼",
+      "englishName": "Sillimanite Cat Eye",
+      "topCategory": "彩宝类",
+      "subCategory": "岛状硅酸盐",
+      "appearance": "灰绿、褐、黄或无色弧面宝石，可见猫眼效应，纤维状结构明显。",
+      "quality": "品质看点：猫眼线清楚、居中、底色干净、弧面比例好为佳。",
+      "origins": "斯里兰卡、印度、缅甸、马达加斯加等。",
+      "uses": "猫眼戒面、吊坠和收藏弧面宝石。",
+      "price": "市场参考：普通小颗粒几十至数百元/克拉；猫眼线好者数百至数千元。",
+      "authenticity": "辨别要点：石英猫眼、金绿猫眼、玻璃猫眼易混；折射率和密度可区分。",
+      "treatment": "常见处理少，主要风险是名称混淆和玻璃仿品。",
+      "fengshui": "民俗说法中象征专注、守护和目标感。",
+      "aliases": [
+        "矽线石猫眼",
+        "Sillimanite Cat Eye",
+        "矽线石"
+      ],
+      "imageKey": "sillimanite-cat-eye",
+      "professional": {
+        "mineralSpecies": "矽线石",
+        "composition": "Al2SiO5",
+        "crystalSystem": "斜方晶系",
+        "hardness": "约6.5-7.5",
+        "refractiveIndex": "约1.66-1.68",
+        "specificGravity": "约3.23-3.27",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维状包裹体可形成猫眼效应。",
+        "lookalikes": "金绿猫眼、石英猫眼、玻璃猫眼",
+        "simpleTests": "折射率、密度和猫眼结构可区分。",
+        "labAdvice": "高价猫眼类宝石建议送检确认矿物种。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_123",
+      "name": "透辉石猫眼",
+      "englishName": "Diopside Cat Eye",
+      "topCategory": "彩宝类",
+      "subCategory": "辉石族",
+      "appearance": "绿、褐绿至灰绿色弧面透辉石，因平行包裹体产生猫眼效应。",
+      "quality": "品质看点：猫眼线清楚、底色漂亮、裂少、弧面比例好为佳。",
+      "origins": "印度、斯里兰卡、缅甸、俄罗斯等。",
+      "uses": "猫眼戒面、吊坠和特色宝石。",
+      "price": "市场参考：普通小颗粒几十至数百元/克拉；猫眼明显、颜色好者数百至数千元。",
+      "authenticity": "辨别要点：金绿猫眼、石英猫眼、玻璃猫眼易混；透辉石硬度和折射率不同。",
+      "treatment": "常见处理少，主要注意裂隙和品种误称。",
+      "fengshui": "民俗说法中象征观察力和守护。",
+      "aliases": [
+        "透辉石猫眼",
+        "Diopside Cat Eye"
+      ],
+      "imageKey": "diopside-cat-eye",
+      "professional": {
+        "mineralSpecies": "辉石族铬透辉石",
+        "composition": "CaMgSi2O6，铬致绿色",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约5.5-6.5",
+        "refractiveIndex": "约1.66-1.72",
+        "specificGravity": "约3.27-3.32",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "晶体、液体包裹体和裂隙常见。",
+        "lookalikes": "祖母绿、沙弗莱、绿色玻璃、绿色碧玺",
+        "simpleTests": "硬度低于多数高端绿色宝石，折射率和双折射可辅助区分。",
+        "labAdvice": "高价绿色切磨品建议送检确认不是祖母绿或沙弗莱。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_124",
+      "name": "蓝锥矿",
+      "englishName": "Benitoite",
+      "topCategory": "彩宝类",
+      "subCategory": "稀有钡钛硅酸盐",
+      "appearance": "蓝色至蓝紫色稀有宝石，色散强，晶体常呈三角板状，硬度中等。",
+      "quality": "品质看点：颜色鲜蓝、火彩好、净度好、切工亮为佳；大颗粒非常稀少。",
+      "origins": "美国加州圣贝尼托县最著名。",
+      "uses": "收藏裸石和稀有矿物晶体。",
+      "price": "市场参考：小颗粒已可达数千元/克拉；高品质大颗粒价格很高，需看证书。",
+      "authenticity": "辨别要点：蓝宝石、坦桑石、堇青石、玻璃易混；强色散和产地稀有是线索。",
+      "treatment": "常见处理少，主要注意仿品和误称。",
+      "fengshui": "民俗说法较少，常被视为稀有、专注和独特表达。",
+      "aliases": [
+        "蓝锥矿",
+        "Benitoite",
+        "蓝锥石"
+      ],
+      "imageKey": "benitoite",
+      "professional": {
+        "mineralSpecies": "榍石/钛榍石",
+        "composition": "CaTiSiO5",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.84-2.11",
+        "specificGravity": "约3.45-3.55",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "高色散、裂隙和晶体包裹体常见。",
+        "lookalikes": "锆石、翠榴石、橄榄石、玻璃",
+        "simpleTests": "强火彩和高折射率是线索，但硬度低需防磨损。",
+        "labAdvice": "高价榍石建议确认种属和裂隙情况。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "gem_125",
+      "name": "紫色蓝宝石",
+      "englishName": "Purple Sapphire",
+      "topCategory": "彩宝类",
+      "subCategory": "刚玉族",
+      "appearance": "紫色至紫罗兰色刚玉，透明，硬度9，可带蓝紫或红紫调。",
+      "quality": "品质看点：颜色饱和明亮、不过暗、净度好、切工亮为佳；未加热品更有价值。",
+      "origins": "斯里兰卡、马达加斯加、缅甸、坦桑尼亚等。",
+      "uses": "戒面、吊坠、耳饰和个性彩宝镶嵌。",
+      "price": "市场参考：普通商业品数百至数千元/克拉；颜色好、净度好、未加热者数千至数万元/克拉。",
+      "authenticity": "辨别要点：紫水晶、堇青石、尖晶石、玻璃和合成刚玉易混。",
+      "treatment": "常见处理：热处理、扩散处理。识别需证书。",
+      "fengshui": "民俗说法中象征灵感、直觉和冷静。",
+      "aliases": [
+        "紫色蓝宝石",
+        "Purple Sapphire",
+        "紫蓝宝"
+      ],
+      "imageKey": "purple-sapphire",
+      "professional": {
+        "mineralSpecies": "刚玉族",
+        "composition": "Al2O3，铬致红色，铁钛等致蓝色和其他色",
+        "crystalSystem": "三方晶系",
+        "hardness": "9",
+        "refractiveIndex": "约1.762-1.770",
+        "specificGravity": "约4.00",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "红宝石常可见红色荧光，蓝宝石多弱至无",
+        "inclusions": "金红石针、色带、晶体包裹体、愈合裂隙、指纹状包裹体常见。",
+        "lookalikes": "尖晶石、石榴石、玻璃、合成刚玉、扩散处理刚玉",
+        "simpleTests": "看二色性、色带、包裹体和硬度；仅凭照片不能判断天然、合成和加热。",
+        "labAdvice": "高价值必须送检确认天然性、加热、扩散、充填和产地意见。"
+      },
+      "references": [
+        {
+          "id": "hughes-ruby-sapphire",
+          "title": "Ruby & Sapphire: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "红蓝宝专著",
+          "note": "用于核对刚玉族产地、颜色评价、包裹体与处理风险。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "photoatlas",
+          "title": "Photoatlas of Inclusions in Gemstones",
+          "author": "E. J. Gubelin / J. I. Koivula",
+          "type": "包裹体图谱",
+          "note": "用于整理天然、合成与处理宝石的放大观察要点。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_101",
+      "name": "和田青玉",
+      "englishName": "Green-Gray Nephrite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "透闪石玉",
+      "appearance": "青灰、青绿至深青色软玉，油脂光泽，结构细密，颜色比白玉更沉稳。",
+      "quality": "品质看点：细度、油性、颜色沉稳均匀、裂少为佳；细腻老熟的青玉有工艺和收藏价值。",
+      "origins": "新疆、青海、俄罗斯、加拿大等。",
+      "uses": "牌子、手镯、把件、器皿和雕件。",
+      "price": "市场参考：普通小件几十至数百元；细润青玉成品数百至数千元；工艺大件和精品更高。",
+      "authenticity": "辨别要点：石英岩、蛇纹石玉、染色材料易混；看纤维交织结构和油脂光泽。",
+      "treatment": "常见处理：染色、煮蜡、染皮。识别看颜色过渡和证书。",
+      "fengshui": "民俗说法中象征稳重、守成和平安。",
+      "aliases": [
+        "和田青玉",
+        "Green-Gray Nephrite Jade",
+        "青玉",
+        "Nephrite Jade"
+      ],
+      "imageKey": "green-gray-nephrite",
+      "professional": {
+        "mineralSpecies": "软玉，透闪石-阳起石系列集合体",
+        "composition": "Ca2(Mg,Fe)5Si8O22(OH)2",
+        "crystalSystem": "单斜晶系，玉石为纤维交织集合体",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "点测约1.60-1.62",
+        "specificGravity": "约2.90-3.10",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维交织结构、絮状结构、皮色、黑点和裂隙常见。",
+        "lookalikes": "石英岩玉、阿富汗玉、大理石、玻璃、蛇纹石玉、染皮料",
+        "simpleTests": "看油脂光泽、细度、结构和皮色过渡；不要用刮划破坏成品。",
+        "labAdvice": "籽料、高价白玉、染皮疑点和产地争议必须送检。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_102",
+      "name": "和田青白玉",
+      "englishName": "Greenish White Nephrite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "透闪石玉",
+      "appearance": "白中带青或青中带白的软玉，半透明至微透明，油脂光泽，常见细腻温润质感。",
+      "quality": "品质看点：细度、油性、白度与青调协调、干净少裂为佳；比白玉更常见，性价比较高。",
+      "origins": "新疆、青海、俄罗斯、韩国等。",
+      "uses": "手镯、牌子、挂件和雕件。",
+      "price": "市场参考：普通小件几十至数百元；细润手镯或牌子数百至数千元；精品可更高。",
+      "authenticity": "辨别要点：阿富汗玉、石英岩和玻璃常冒充；真软玉有纤维交织结构。",
+      "treatment": "常见处理：染皮、煮蜡、注胶。识别看皮色和光泽。",
+      "fengshui": "民俗说法中象征平和、内敛和守护。",
+      "aliases": [
+        "和田青白玉",
+        "Greenish White Nephrite Jade",
+        "青白玉",
+        "Greenish White Jade"
+      ],
+      "imageKey": "greenish-white-nephrite",
+      "professional": {
+        "mineralSpecies": "软玉，透闪石-阳起石系列集合体",
+        "composition": "Ca2(Mg,Fe)5Si8O22(OH)2",
+        "crystalSystem": "单斜晶系，玉石为纤维交织集合体",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "点测约1.60-1.62",
+        "specificGravity": "约2.90-3.10",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维交织结构、絮状结构、皮色、黑点和裂隙常见。",
+        "lookalikes": "石英岩玉、阿富汗玉、大理石、玻璃、蛇纹石玉、染皮料",
+        "simpleTests": "看油脂光泽、细度、结构和皮色过渡；不要用刮划破坏成品。",
+        "labAdvice": "籽料、高价白玉、染皮疑点和产地争议必须送检。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_103",
+      "name": "和田黄玉",
+      "englishName": "Yellow Nephrite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "透闪石玉",
+      "appearance": "黄色至黄绿色软玉，油脂光泽，优质品颜色温暖、质地细腻。",
+      "quality": "品质看点：颜色正黄、细腻油润、裂少、杂色少为佳；真正优质黄玉稀少，市场名称易混乱。",
+      "origins": "新疆若羌、且末等，也有青海和其他来源黄口料。",
+      "uses": "挂件、牌子、手镯和收藏雕件。",
+      "price": "市场参考：普通黄口料小件数百元内至数千元；颜色好、细润精品可达数千至数万元以上。",
+      "authenticity": "辨别要点：黄蜡石、黄龙玉、染色石英岩和黄色玻璃易混；需确认是否透闪石玉。",
+      "treatment": "常见处理：染色、染皮、煮蜡。识别看颜色是否浮和裂隙聚色。",
+      "fengshui": "民俗说法中象征富足、稳重和贵气。",
+      "aliases": [
+        "和田黄玉",
+        "Yellow Nephrite Jade",
+        "黄玉",
+        "黄口料",
+        "Yellow Nephrite"
+      ],
+      "imageKey": "yellow-nephrite",
+      "professional": {
+        "mineralSpecies": "软玉，透闪石-阳起石系列集合体",
+        "composition": "Ca2(Mg,Fe)5Si8O22(OH)2",
+        "crystalSystem": "单斜晶系，玉石为纤维交织集合体",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "点测约1.60-1.62",
+        "specificGravity": "约2.90-3.10",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维交织结构、絮状结构、皮色、黑点和裂隙常见。",
+        "lookalikes": "石英岩玉、阿富汗玉、大理石、玻璃、蛇纹石玉、染皮料",
+        "simpleTests": "看油脂光泽、细度、结构和皮色过渡；不要用刮划破坏成品。",
+        "labAdvice": "籽料、高价白玉、染皮疑点和产地争议必须送检。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_104",
+      "name": "和田糖玉",
+      "englishName": "Brown Sugar Nephrite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "透闪石玉",
+      "appearance": "软玉中带糖色、褐黄至红褐色调，常与白玉、青白玉形成糖白或糖青组合。",
+      "quality": "品质看点：糖色干净浓郁、过渡自然、玉质细润、裂少为佳；糖色脏暗或裂多价值降低。",
+      "origins": "新疆且末、若羌、青海、俄罗斯等。",
+      "uses": "手镯、牌子、巧雕和挂件。",
+      "price": "市场参考：普通小件几十至数百元；糖白分明、玉质细润者数百至数千元；精品更高。",
+      "authenticity": "辨别要点：染色糖皮和人工烧色需警惕；天然糖色与结构过渡自然。",
+      "treatment": "常见处理：染糖色、染皮、煮蜡。识别看颜色沿裂隙集中与否。",
+      "fengshui": "民俗说法中象征温暖、积累和踏实。",
+      "aliases": [
+        "和田糖玉",
+        "Brown Sugar Nephrite Jade",
+        "糖玉",
+        "糖白玉",
+        "Sugar Jade"
+      ],
+      "imageKey": "sugar-nephrite",
+      "professional": {
+        "mineralSpecies": "软玉，透闪石-阳起石系列集合体",
+        "composition": "Ca2(Mg,Fe)5Si8O22(OH)2",
+        "crystalSystem": "单斜晶系，玉石为纤维交织集合体",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "点测约1.60-1.62",
+        "specificGravity": "约2.90-3.10",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维交织结构、絮状结构、皮色、黑点和裂隙常见。",
+        "lookalikes": "石英岩玉、阿富汗玉、大理石、玻璃、蛇纹石玉、染皮料",
+        "simpleTests": "看油脂光泽、细度、结构和皮色过渡；不要用刮划破坏成品。",
+        "labAdvice": "籽料、高价白玉、染皮疑点和产地争议必须送检。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_105",
+      "name": "青花料",
+      "englishName": "Black and White Nephrite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "透闪石玉",
+      "appearance": "白色或青白软玉中含石墨等深色矿物，形成黑白水墨状纹理。",
+      "quality": "品质看点：黑白对比清楚、白肉细润、墨色聚散有画面感、裂少为佳；脏乱灰暗会降低价值。",
+      "origins": "新疆、青海、俄罗斯等。",
+      "uses": "牌子、巧雕、手镯、把件和文房题材。",
+      "price": "市场参考：普通小件几十至数百元；画面好、玉质细者数百至数千元；精品巧雕更高。",
+      "authenticity": "辨别要点：染色黑白石英岩、青海烟青料和其他黑白石材易混；需看软玉结构。",
+      "treatment": "常见处理：染黑、煮蜡、注胶。识别看黑色是否自然进入结构。",
+      "fengshui": "民俗说法中象征水墨意境、稳重和文气。",
+      "aliases": [
+        "青花料",
+        "Black and White Nephrite Jade",
+        "青花玉",
+        "墨玉青花",
+        "Black White Nephrite"
+      ],
+      "imageKey": "black-white-nephrite",
+      "professional": {
+        "mineralSpecies": "软玉，透闪石-阳起石系列集合体",
+        "composition": "Ca2(Mg,Fe)5Si8O22(OH)2",
+        "crystalSystem": "单斜晶系，玉石为纤维交织集合体",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "点测约1.60-1.62",
+        "specificGravity": "约2.90-3.10",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维交织结构、絮状结构、皮色、黑点和裂隙常见。",
+        "lookalikes": "石英岩玉、阿富汗玉、大理石、玻璃、蛇纹石玉、染皮料",
+        "simpleTests": "看油脂光泽、细度、结构和皮色过渡；不要用刮划破坏成品。",
+        "labAdvice": "籽料、高价白玉、染皮疑点和产地争议必须送检。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_106",
+      "name": "翠青玉",
+      "englishName": "Green-White Nephrite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "透闪石玉",
+      "appearance": "白色或青白软玉上带鲜绿色或翠绿色色带、色斑，常见清新绿白对比。",
+      "quality": "品质看点：绿色鲜而不浮、白肉细润、色带自然、裂少为佳；高品质翠青料近年市场关注度高。",
+      "origins": "青海、新疆、俄罗斯等。",
+      "uses": "手镯、牌子、挂件和巧雕。",
+      "price": "市场参考：普通小件数百元内；颜色漂亮、细润成品数百至数千元；精品手镯可更高。",
+      "authenticity": "辨别要点：染色软玉、石英岩和翡翠混淆；看纤维交织结构和颜色过渡。",
+      "treatment": "常见处理：染色、煮蜡、染皮。识别看裂隙聚绿和证书。",
+      "fengshui": "民俗说法中象征清新、生机和平安。",
+      "aliases": [
+        "翠青玉",
+        "Green-White Nephrite Jade",
+        "翠青",
+        "翠青和田玉",
+        "翠青料"
+      ],
+      "imageKey": "green-white-nephrite",
+      "professional": {
+        "mineralSpecies": "软玉，透闪石-阳起石系列集合体",
+        "composition": "Ca2(Mg,Fe)5Si8O22(OH)2",
+        "crystalSystem": "单斜晶系，玉石为纤维交织集合体",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "点测约1.60-1.62",
+        "specificGravity": "约2.90-3.10",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维交织结构、絮状结构、皮色、黑点和裂隙常见。",
+        "lookalikes": "石英岩玉、阿富汗玉、大理石、玻璃、蛇纹石玉、染皮料",
+        "simpleTests": "看油脂光泽、细度、结构和皮色过渡；不要用刮划破坏成品。",
+        "labAdvice": "籽料、高价白玉、染皮疑点和产地争议必须送检。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_107",
+      "name": "墨翠",
+      "englishName": "Black Jadeite",
+      "topCategory": "玉石类",
+      "subCategory": "翡翠细分",
+      "appearance": "外观近黑色至墨绿色翡翠，透射光下可见绿色，主要由绿辉石等组成。",
+      "quality": "品质看点：黑度好、透光绿正、结构细、裂少、种水好为佳；表面黑但透光灰绿或脏会影响价值。",
+      "origins": "缅甸为主，危地马拉也有相关翡翠材料。",
+      "uses": "戒面、吊坠、牌子和男款翡翠饰品。",
+      "price": "市场参考：普通小件数百至数千元；种水好、黑亮透绿者数千至数万元以上。",
+      "authenticity": "辨别要点：黑曜石、黑玛瑙、黑色玻璃、墨玉易混；透射绿和翡翠结构是关键。",
+      "treatment": "常见处理：B货、C货、覆膜和染色。识别看酸蚀纹、荧光和证书。",
+      "fengshui": "民俗说法中象征稳重、防护和聚气。",
+      "aliases": [
+        "墨翠",
+        "Black Jadeite",
+        "墨翠翡翠"
+      ],
+      "imageKey": "black-jadeite",
+      "professional": {
+        "mineralSpecies": "硬玉岩，翡翠",
+        "composition": "以NaAlSi2O6硬玉为主，可含绿辉石、钠铬辉石等",
+        "crystalSystem": "单斜晶系，玉石为多晶集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "点测约1.66",
+        "specificGravity": "约3.30-3.36",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "天然A货多无至弱；B货、B+C货可有异常荧光",
+        "inclusions": "纤维粒状交织结构、翠性、色根、裂隙和棉常见。",
+        "lookalikes": "软玉、东陵石、石英岩玉、玻璃、钠长石玉、染色翡翠",
+        "simpleTests": "看翠性、结构、色根和酸蚀网纹；滤色镜和紫外灯只能辅助。",
+        "labAdvice": "任何高价值翡翠必须送检区分A货、B货、C货、B+C货和覆膜。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_108",
+      "name": "紫罗兰翡翠",
+      "englishName": "Lavender Jadeite",
+      "topCategory": "玉石类",
+      "subCategory": "翡翠细分",
+      "appearance": "紫色至粉紫色翡翠，常见淡紫、粉紫或蓝紫调，半透明至不透明。",
+      "quality": "品质看点：紫色浓艳明亮、种水好、底干净、裂少为佳；见光死、发灰会降低价值。",
+      "origins": "缅甸为主，危地马拉也有紫色翡翠材料。",
+      "uses": "手镯、吊坠、戒面和雕件。",
+      "price": "市场参考：普通淡紫小件数百至数千元；种水色俱佳者数千至数万元以上。",
+      "authenticity": "辨别要点：紫色石英岩、染色翡翠和玻璃易混；需看翡翠结构和染色痕迹。",
+      "treatment": "常见处理：染色、注胶、覆膜。识别看裂隙聚色和紫外反应。",
+      "fengshui": "民俗说法中象征浪漫、贵气和温柔气质。",
+      "aliases": [
+        "紫罗兰翡翠",
+        "Lavender Jadeite",
+        "春色翡翠"
+      ],
+      "imageKey": "lavender-jadeite",
+      "professional": {
+        "mineralSpecies": "硬玉岩，翡翠",
+        "composition": "以NaAlSi2O6硬玉为主，可含绿辉石、钠铬辉石等",
+        "crystalSystem": "单斜晶系，玉石为多晶集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "点测约1.66",
+        "specificGravity": "约3.30-3.36",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "天然A货多无至弱；B货、B+C货可有异常荧光",
+        "inclusions": "纤维粒状交织结构、翠性、色根、裂隙和棉常见。",
+        "lookalikes": "软玉、东陵石、石英岩玉、玻璃、钠长石玉、染色翡翠",
+        "simpleTests": "看翠性、结构、色根和酸蚀网纹；滤色镜和紫外灯只能辅助。",
+        "labAdvice": "任何高价值翡翠必须送检区分A货、B货、C货、B+C货和覆膜。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_109",
+      "name": "冰种翡翠",
+      "englishName": "Ice Jadeite",
+      "topCategory": "玉石类",
+      "subCategory": "翡翠细分",
+      "appearance": "透明至半透明翡翠，质地清亮如冰，常有棉絮和微裂，颜色可无色、绿色或其他色。",
+      "quality": "品质看点：透明度、细腻度、起光、棉裂少、颜色干净为佳；有色冰种价值更高。",
+      "origins": "缅甸为主。",
+      "uses": "手镯、蛋面、吊坠和高端翡翠饰品。",
+      "price": "市场参考：普通冰种小件数千元起；种水好、颜色好或手镯可达数万元至更高。",
+      "authenticity": "辨别要点：玻璃、石英岩、B货翡翠易混；看翠性、结构、证书和酸蚀纹。",
+      "treatment": "常见处理：酸洗注胶、染色、覆膜。识别看荧光、网纹和证书。",
+      "fengshui": "民俗说法中象征清透、平安和贵气。",
+      "aliases": [
+        "冰种翡翠",
+        "Ice Jadeite",
+        "冰种",
+        "高冰翡翠"
+      ],
+      "imageKey": "ice-jadeite",
+      "professional": {
+        "mineralSpecies": "硬玉岩，翡翠",
+        "composition": "以NaAlSi2O6硬玉为主，可含绿辉石、钠铬辉石等",
+        "crystalSystem": "单斜晶系，玉石为多晶集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "点测约1.66",
+        "specificGravity": "约3.30-3.36",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "天然A货多无至弱；B货、B+C货可有异常荧光",
+        "inclusions": "纤维粒状交织结构、翠性、色根、裂隙和棉常见。",
+        "lookalikes": "软玉、东陵石、石英岩玉、玻璃、钠长石玉、染色翡翠",
+        "simpleTests": "看翠性、结构、色根和酸蚀网纹；滤色镜和紫外灯只能辅助。",
+        "labAdvice": "任何高价值翡翠必须送检区分A货、B货、C货、B+C货和覆膜。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_110",
+      "name": "糯种翡翠",
+      "englishName": "Waxy Jadeite",
+      "topCategory": "玉石类",
+      "subCategory": "翡翠细分",
+      "appearance": "半透明至微透明翡翠，质地像糯米汤，细腻但透明度低于冰种。",
+      "quality": "品质看点：细腻、底子干净、颜色协调、裂少为佳；糯冰、细糯比粗糯价值更高。",
+      "origins": "缅甸为主。",
+      "uses": "手镯、挂件、牌子和日常翡翠饰品。",
+      "price": "市场参考：普通小件数百至数千元；颜色好、细糯手镯数千至数万元。",
+      "authenticity": "辨别要点：石英岩玉、B货翡翠和染色翡翠常混淆；看结构和证书。",
+      "treatment": "常见处理：酸洗注胶、染色。识别看酸蚀纹、荧光和颜色分布。",
+      "fengshui": "民俗说法中象征温润、稳定和平安。",
+      "aliases": [
+        "糯种翡翠",
+        "Waxy Jadeite",
+        "糯冰翡翠"
+      ],
+      "imageKey": "waxy-jadeite",
+      "professional": {
+        "mineralSpecies": "硬玉岩，翡翠",
+        "composition": "以NaAlSi2O6硬玉为主，可含绿辉石、钠铬辉石等",
+        "crystalSystem": "单斜晶系，玉石为多晶集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "点测约1.66",
+        "specificGravity": "约3.30-3.36",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "天然A货多无至弱；B货、B+C货可有异常荧光",
+        "inclusions": "纤维粒状交织结构、翠性、色根、裂隙和棉常见。",
+        "lookalikes": "软玉、东陵石、石英岩玉、玻璃、钠长石玉、染色翡翠",
+        "simpleTests": "看翠性、结构、色根和酸蚀网纹；滤色镜和紫外灯只能辅助。",
+        "labAdvice": "任何高价值翡翠必须送检区分A货、B货、C货、B+C货和覆膜。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_111",
+      "name": "豆种翡翠",
+      "englishName": "Coarse Jadeite",
+      "topCategory": "玉石类",
+      "subCategory": "翡翠细分",
+      "appearance": "颗粒感较明显、透明度较低的翡翠，常呈绿色、白色或灰绿，结构像豆粒。",
+      "quality": "品质看点：颜色鲜明、颗粒不要太粗、裂少、雕工好为佳；总体属于大众翡翠常见类型。",
+      "origins": "缅甸为主。",
+      "uses": "手镯、挂件、小雕件和入门翡翠。",
+      "price": "市场参考：普通小件几十至数百元；颜色好、无裂手镯数百至数千元。",
+      "authenticity": "辨别要点：染色翡翠、东陵石、石英岩玉易混；看翠性和结构。",
+      "treatment": "常见处理：染色、注胶、覆膜。识别看裂隙聚色和证书。",
+      "fengshui": "民俗说法中象征朴实、平安和日常守护。",
+      "aliases": [
+        "豆种翡翠",
+        "Coarse Jadeite",
+        "豆种"
+      ],
+      "imageKey": "coarse-jadeite",
+      "professional": {
+        "mineralSpecies": "硬玉岩，翡翠",
+        "composition": "以NaAlSi2O6硬玉为主，可含绿辉石、钠铬辉石等",
+        "crystalSystem": "单斜晶系，玉石为多晶集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "点测约1.66",
+        "specificGravity": "约3.30-3.36",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "天然A货多无至弱；B货、B+C货可有异常荧光",
+        "inclusions": "纤维粒状交织结构、翠性、色根、裂隙和棉常见。",
+        "lookalikes": "软玉、东陵石、石英岩玉、玻璃、钠长石玉、染色翡翠",
+        "simpleTests": "看翠性、结构、色根和酸蚀网纹；滤色镜和紫外灯只能辅助。",
+        "labAdvice": "任何高价值翡翠必须送检区分A货、B货、C货、B+C货和覆膜。"
+      },
+      "references": [
+        {
+          "id": "hughes-jade",
+          "title": "Jade: A Gemologist's Guide",
+          "author": "Richard W. Hughes",
+          "type": "玉石专著",
+          "note": "用于核对翡翠、软玉、仿玉和处理识别。"
+        },
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gia-gem-encyclopedia",
+          "title": "GIA Gem Encyclopedia",
+          "author": "Gemological Institute of America",
+          "type": "机构资料",
+          "note": "用于核对主流宝石品类、品质因素和处理披露。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_112",
+      "name": "蓝田玉",
+      "englishName": "Lantian Jade",
+      "topCategory": "玉石类",
+      "subCategory": "地方玉",
+      "appearance": "中国传统地方玉石名称，常见蛇纹石化大理岩或相关玉石材料，颜色有白、黄绿、浅绿等。",
+      "quality": "品质看点：质地细腻、颜色柔和、裂少、工艺好为佳；名称范围较宽，购买时需看标准鉴定名称。",
+      "origins": "中国陕西蓝田。",
+      "uses": "摆件、手镯、挂件和旅游纪念玉石。",
+      "price": "市场参考：普通小件几十至数百元；雕工和体量好的作品数百至数千元。",
+      "authenticity": "辨别要点：常与阿富汗玉、蛇纹石玉、石英岩玉混淆；需证书写明实际矿物名称。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看颜色和结构。",
+      "fengshui": "民俗说法中象征古玉文化、平安和地域人文。",
+      "aliases": [
+        "蓝田玉",
+        "Lantian Jade"
+      ],
+      "imageKey": "lantian-jade",
+      "professional": {
+        "mineralSpecies": "蛇纹石玉",
+        "composition": "蛇纹石族含水镁硅酸盐",
+        "crystalSystem": "集合体",
+        "hardness": "约2.5-5.5，随组成变化",
+        "refractiveIndex": "约1.55-1.57",
+        "specificGravity": "约2.44-2.80",
+        "opticalCharacter": "集合体，点测为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "蜡状光泽、纤维状或斑块状结构常见。",
+        "lookalikes": "软玉、翡翠、绿色石英岩、玻璃",
+        "simpleTests": "硬度通常低于软玉和翡翠，光泽偏蜡状，结构较软。",
+        "labAdvice": "高价河磨玉或冒充和田玉、翡翠时建议送检。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_113",
+      "name": "祁连玉",
+      "englishName": "Qilian Jade",
+      "topCategory": "玉石类",
+      "subCategory": "地方玉",
+      "appearance": "绿色至暗绿色地方玉石，常见斑驳纹理和蜡状光泽，商业名称范围较宽。",
+      "quality": "品质看点：颜色均匀、质地细、裂少、工艺好为佳；需确认实际矿物组成。",
+      "origins": "中国甘肃、青海祁连山一带。",
+      "uses": "摆件、手镯、挂件和地方玉收藏。",
+      "price": "市场参考：普通小件几十至数百元；大件或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：蛇纹石玉、石英岩玉和染色石材易混；证书名称比商贸名更重要。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看裂隙聚色和光泽。",
+      "fengshui": "民俗说法中象征山岳稳定和平安。",
+      "aliases": [
+        "祁连玉",
+        "Qilian Jade",
+        "酒泉玉"
+      ],
+      "imageKey": "qilian-jade",
+      "professional": {
+        "mineralSpecies": "蛇纹石玉",
+        "composition": "蛇纹石族含水镁硅酸盐",
+        "crystalSystem": "集合体",
+        "hardness": "约2.5-5.5，随组成变化",
+        "refractiveIndex": "约1.55-1.57",
+        "specificGravity": "约2.44-2.80",
+        "opticalCharacter": "集合体，点测为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "蜡状光泽、纤维状或斑块状结构常见。",
+        "lookalikes": "软玉、翡翠、绿色石英岩、玻璃",
+        "simpleTests": "硬度通常低于软玉和翡翠，光泽偏蜡状，结构较软。",
+        "labAdvice": "高价河磨玉或冒充和田玉、翡翠时建议送检。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_114",
+      "name": "佘太翠",
+      "englishName": "She Taicui Quartzite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "石英质玉石",
+      "appearance": "绿色、白绿色至青绿色石英质玉石，常见细粒结构和油蜡状光泽，市场多做手镯。",
+      "quality": "品质看点：颜色清爽、质地细、裂少、镯形好为佳；名称是商贸名，需看证书是否为石英岩玉。",
+      "origins": "中国内蒙古等地市场常见。",
+      "uses": "手镯、挂件和大众玉石饰品。",
+      "price": "市场参考：普通手镯几十至数百元；颜色好、质地细者数百至数千元。",
+      "authenticity": "辨别要点：常被与翡翠、和田碧玉混淆；石英质粒状结构和折射率可区分。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看颜色是否浮和证书。",
+      "fengshui": "民俗说法中象征清新、平安和日常佩戴。",
+      "aliases": [
+        "佘太翠",
+        "She Taicui Quartzite Jade",
+        "佘太玉",
+        "She Taicui"
+      ],
+      "imageKey": "she-taicui",
+      "professional": {
+        "mineralSpecies": "石英质玉石，石英岩或隐晶质石英集合体",
+        "composition": "以SiO2为主，可含云母、赤铁矿、黏土矿物等",
+        "crystalSystem": "岩石集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.54-1.55",
+        "specificGravity": "约2.60-2.70",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "粒状石英结构、色带、砂金效应或杂质斑点常见。",
+        "lookalikes": "翡翠、软玉、玉髓、玻璃、染色石英岩",
+        "simpleTests": "看颗粒感和玻璃至油脂光泽，放大常见粒状结构而非纤维交织。",
+        "labAdvice": "高价售卖为和田玉或翡翠时必须送检确认名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gic-gemology",
+          "title": "宝石学教程",
+          "author": "GIC系列教材",
+          "type": "中文宝石学教材",
+          "note": "用于核对基础宝石学参数、仪器鉴定和命名习惯。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_115",
+      "name": "密玉",
+      "englishName": "Mi Jade",
+      "topCategory": "玉石类",
+      "subCategory": "石英质玉石",
+      "appearance": "河南密县一带绿色至浅绿色石英质玉石，常微透明至不透明，质地较细。",
+      "quality": "品质看点：颜色均匀、质地细腻、裂少、雕工好为佳；高价需核验证书。",
+      "origins": "中国河南新密等地。",
+      "uses": "雕件、摆件、挂件和地方玉收藏。",
+      "price": "市场参考：普通小件几十至数百元；颜色好或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：翡翠、东陵石、染色石英岩易混；看粒状结构和证书。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看裂隙聚色。",
+      "fengshui": "民俗说法中象征地域文化、稳重和朴实。",
+      "aliases": [
+        "密玉",
+        "Mi Jade",
+        "河南密玉"
+      ],
+      "imageKey": "mi-jade",
+      "professional": {
+        "mineralSpecies": "石英质玉石，石英岩或隐晶质石英集合体",
+        "composition": "以SiO2为主，可含云母、赤铁矿、黏土矿物等",
+        "crystalSystem": "岩石集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.54-1.55",
+        "specificGravity": "约2.60-2.70",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "粒状石英结构、色带、砂金效应或杂质斑点常见。",
+        "lookalikes": "翡翠、软玉、玉髓、玻璃、染色石英岩",
+        "simpleTests": "看颗粒感和玻璃至油脂光泽，放大常见粒状结构而非纤维交织。",
+        "labAdvice": "高价售卖为和田玉或翡翠时必须送检确认名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gic-gemology",
+          "title": "宝石学教程",
+          "author": "GIC系列教材",
+          "type": "中文宝石学教材",
+          "note": "用于核对基础宝石学参数、仪器鉴定和命名习惯。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_116",
+      "name": "京白玉",
+      "englishName": "Jingbai Jade",
+      "topCategory": "玉石类",
+      "subCategory": "石英质玉石",
+      "appearance": "白色至乳白色石英岩玉，质地较细，玻璃至油脂光泽，常被用作白玉替代材料。",
+      "quality": "品质看点：白度、细腻度、裂少和雕工为主；价值通常低于优质和田白玉。",
+      "origins": "中国北京及周边曾有相关商业名称，市场泛指白色石英岩玉。",
+      "uses": "雕件、摆件、珠串和入门饰品。",
+      "price": "市场参考：普通小件几十至数百元；工艺件数百至数千元。",
+      "authenticity": "辨别要点：常冒充和田白玉；石英岩粒状结构和折射率不同，手感也较玻璃。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看结构和证书。",
+      "fengshui": "民俗说法中象征洁净和平安。",
+      "aliases": [
+        "京白玉",
+        "Jingbai Jade",
+        "White Quartzite Jade"
+      ],
+      "imageKey": "jingbai-jade",
+      "professional": {
+        "mineralSpecies": "石英质玉石，石英岩或隐晶质石英集合体",
+        "composition": "以SiO2为主，可含云母、赤铁矿、黏土矿物等",
+        "crystalSystem": "岩石集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.54-1.55",
+        "specificGravity": "约2.60-2.70",
+        "opticalCharacter": "集合体，点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "粒状石英结构、色带、砂金效应或杂质斑点常见。",
+        "lookalikes": "翡翠、软玉、玉髓、玻璃、染色石英岩",
+        "simpleTests": "看颗粒感和玻璃至油脂光泽，放大常见粒状结构而非纤维交织。",
+        "labAdvice": "高价售卖为和田玉或翡翠时必须送检确认名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gic-gemology",
+          "title": "宝石学教程",
+          "author": "GIC系列教材",
+          "type": "中文宝石学教材",
+          "note": "用于核对基础宝石学参数、仪器鉴定和命名习惯。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_117",
+      "name": "樱花玛瑙",
+      "englishName": "Cherry Blossom Agate",
+      "topCategory": "玉石类",
+      "subCategory": "石英族玉石",
+      "appearance": "半透明玉髓或玛瑙中带粉白、粉橙、花朵状包裹体或图案，常见柔和粉色调。",
+      "quality": "品质看点：花纹清晰自然、颜色柔和、通透度好、裂少为佳；染色和注胶需谨慎。",
+      "origins": "马达加斯加、印度尼西亚等市场常见。",
+      "uses": "手串、吊坠、雕件和装饰小件。",
+      "price": "市场参考：普通珠串几十至数百元；花纹漂亮、通透度好者数百至数千元。",
+      "authenticity": "辨别要点：染色玉髓、玻璃和树脂仿品易混；真花纹应在材料内部。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看裂隙聚色和气泡。",
+      "fengshui": "民俗说法中象征温柔、春天和人缘。",
+      "aliases": [
+        "樱花玛瑙",
+        "Cherry Blossom Agate",
+        "樱花玉髓"
+      ],
+      "imageKey": "cherry-blossom-agate",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_118",
+      "name": "盐源玛瑙",
+      "englishName": "Yanyuan Agate",
+      "topCategory": "玉石类",
+      "subCategory": "石英族玉石",
+      "appearance": "颜色丰富的玛瑙，常见粉、紫、绿、黄、灰、黑等多色，质地细腻，常制成珠串。",
+      "quality": "品质看点：颜色饱满协调、质地细、裂少、珠子圆整为佳；过艳过均匀需警惕染色。",
+      "origins": "中国四川盐源地区最有代表性。",
+      "uses": "手串、挂件、雕件和文玩饰品。",
+      "price": "市场参考：普通珠串几十至数百元；颜色好、质地细、雕工佳者数百至数千元。",
+      "authenticity": "辨别要点：染色玛瑙和外地玛瑙冒充；看颜色自然度和证书来源。",
+      "treatment": "常见处理：染色、烤色、上蜡。识别看裂隙聚色和颜色过渡。",
+      "fengshui": "民俗说法中象征丰富、温暖和情绪稳定。",
+      "aliases": [
+        "盐源玛瑙",
+        "Yanyuan Agate",
+        "七彩玛瑙"
+      ],
+      "imageKey": "yanyuan-agate",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_119",
+      "name": "缠丝玛瑙",
+      "englishName": "Banded Agate",
+      "topCategory": "玉石类",
+      "subCategory": "石英族玉石",
+      "appearance": "具有明显平行或曲折条带的玛瑙，颜色可黑白、红白、黄褐等，条纹像缠丝。",
+      "quality": "品质看点：条带清楚、图案美、颜色自然、裂少为佳；规则但自然的纹理更有观赏性。",
+      "origins": "巴西、印度、马达加斯加、中国、乌拉圭等。",
+      "uses": "珠串、雕件、印章、摆件和收藏切片。",
+      "price": "市场参考：普通小件几十至数百元；图案特殊、颜色美者数百至数千元。",
+      "authenticity": "辨别要点：染色玛瑙、玻璃和树脂仿品易混；真条带有自然过渡和层次。",
+      "treatment": "常见处理：染色、烤色。识别看颜色是否沿孔道和裂隙集中。",
+      "fengshui": "民俗说法中象征守护、秩序和稳定。",
+      "aliases": [
+        "缠丝玛瑙",
+        "Banded Agate",
+        "缟玛瑙"
+      ],
+      "imageKey": "banded-agate",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_120",
+      "name": "火玛瑙",
+      "englishName": "Fire Agate",
+      "topCategory": "玉石类",
+      "subCategory": "石英族玉石",
+      "appearance": "褐色至橙红色玛瑙，内部薄层结构产生火焰状虹彩，常需弧面或雕刻显色。",
+      "quality": "品质看点：虹彩强、颜色多、覆盖面积大、层次清楚为佳；切磨过深会损失火彩。",
+      "origins": "墨西哥、美国亚利桑那和加州等。",
+      "uses": "戒面、吊坠和收藏弧面宝石。",
+      "price": "市场参考：普通小件数百元内；火彩强、图案好者数百至数千元以上。",
+      "authenticity": "辨别要点：染色玛瑙和镀膜玻璃易混；真火彩来自内部薄层，不是表面涂层。",
+      "treatment": "常见处理：染色、覆膜、拼合。识别看侧面层状结构和表面磨损。",
+      "fengshui": "民俗说法中象征活力、勇气和保护。",
+      "aliases": [
+        "火玛瑙",
+        "Fire Agate",
+        "火焰玛瑙"
+      ],
+      "imageKey": "fire-agate",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_121",
+      "name": "海洋玉髓",
+      "englishName": "Ocean Jasper / Ocean Chalcedony",
+      "topCategory": "玉石类",
+      "subCategory": "石英族玉石",
+      "appearance": "多色玉髓或碧石类材料，常见圆斑、海浪状、苔藓状图案，颜色丰富。",
+      "quality": "品质看点：图案独特、颜色协调、抛光好、裂少为佳；市场名称范围较宽。",
+      "origins": "马达加斯加、印度尼西亚等。",
+      "uses": "吊坠、手串、雕件和观赏切片。",
+      "price": "市场参考：普通小件几十至数百元；图案漂亮的大件数百至数千元。",
+      "authenticity": "辨别要点：染色碧石、树脂仿品和普通花纹石易混；看硬度、结构和颜色自然度。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看裂隙聚色和胶感。",
+      "fengshui": "民俗说法中象征流动、松弛和自然疗愈。",
+      "aliases": [
+        "海洋玉髓",
+        "Ocean Jasper / Ocean Chalcedony",
+        "Ocean Jasper",
+        "海洋石",
+        "Ocean Chalcedony"
+      ],
+      "imageKey": "ocean-jasper",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_122",
+      "name": "葡萄玛瑙",
+      "englishName": "Grape Agate Chalcedony",
+      "topCategory": "玉石类",
+      "subCategory": "石英族玉石",
+      "appearance": "紫色、绿色或灰色葡萄状玉髓集合体，由许多小球状晶体聚集而成。",
+      "quality": "品质看点：球粒完整、颜色均匀自然、晶面闪亮、破损少为佳；多作为标本而非耐磨首饰。",
+      "origins": "印度尼西亚苏拉威西等地最常见。",
+      "uses": "矿物标本、摆件、吊坠和小收藏。",
+      "price": "市场参考：普通小标本几十至数百元；颜色好、形态完整者数百至数千元。",
+      "authenticity": "辨别要点：染色葡萄状石英、树脂仿品可能出现；看球粒晶面和内部结构。",
+      "treatment": "常见处理：染色、胶粘修补。识别看颜色是否自然和胶痕。",
+      "fengshui": "民俗说法中象征丰盛、放松和灵感。",
+      "aliases": [
+        "葡萄玛瑙",
+        "Grape Agate Chalcedony",
+        "Grape Agate",
+        "葡萄玉髓"
+      ],
+      "imageKey": "grape-agate",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_123",
+      "name": "阿拉善玛瑙",
+      "englishName": "Alashan Agate",
+      "topCategory": "玉石类",
+      "subCategory": "石英族玉石",
+      "appearance": "产自戈壁环境的玛瑙、碧玉、玉髓类石英质材料，颜色多样，常见风化皮和奇石形态。",
+      "quality": "品质看点：颜色、质地、皮壳、形态和图案综合判断；雕件看工艺，原石看天然形态。",
+      "origins": "中国内蒙古阿拉善及周边戈壁地区。",
+      "uses": "手串、雕件、奇石、吊坠和文玩饰品。",
+      "price": "市场参考：普通小件几十至数百元；颜色特别、图案或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：染色玛瑙、外地戈壁石冒充；看皮壳自然度和证书来源。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看裂隙和孔洞聚色。",
+      "fengshui": "民俗说法中象征戈壁能量、坚韧和平安。",
+      "aliases": [
+        "阿拉善玛瑙",
+        "Alashan Agate",
+        "阿拉善玉",
+        "Alxa Agate"
+      ],
+      "imageKey": "alashan-agate",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_124",
+      "name": "木化玉",
+      "englishName": "Petrified Wood Jade",
+      "topCategory": "玉石类",
+      "subCategory": "硅化木",
+      "appearance": "古代木材被二氧化硅交代形成，保留木纹和年轮状结构，可呈黄、褐、红、灰等色。",
+      "quality": "品质看点：木纹清晰、硅化程度好、颜色漂亮、裂少、抛光好为佳。",
+      "origins": "中国新疆、内蒙古、云南，美国、马达加斯加、印度尼西亚等。",
+      "uses": "摆件、手串、雕件、切片和观赏石。",
+      "price": "市场参考：普通小件几十至数百元；纹理美、大件或精品切片数百至数千元以上。",
+      "authenticity": "辨别要点：染色石英岩、树脂仿木纹和普通木化石易混；看硅化结构和纹理连续性。",
+      "treatment": "常见处理：染色、上蜡、树脂填充。识别看颜色和裂隙。",
+      "fengshui": "民俗说法中象征时间沉淀、稳定和生命记忆。",
+      "aliases": [
+        "木化玉",
+        "Petrified Wood Jade",
+        "硅化木",
+        "Petrified Wood"
+      ],
+      "imageKey": "petrified-wood",
+      "professional": {
+        "mineralSpecies": "隐晶质石英，玉髓/玛瑙/碧石类",
+        "composition": "SiO2，含微量杂质和水",
+        "crystalSystem": "隐晶质石英集合体",
+        "hardness": "约6.5-7",
+        "refractiveIndex": "约1.53-1.54",
+        "specificGravity": "约2.58-2.65",
+        "opticalCharacter": "集合体，常见异常消光",
+        "fluorescence": "变化大，可有弱荧光",
+        "inclusions": "条带、苔藓状包裹体、色团、裂隙和染色聚集常见。",
+        "lookalikes": "玻璃、塑料、染色石英岩、优化玛瑙",
+        "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
+        "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "nassau-enhancement",
+          "title": "Gemstone Enhancement",
+          "author": "Kurt Nassau",
+          "type": "优化处理专著",
+          "note": "用于整理加热、染色、扩散、充填、辐照等处理方式。"
+        },
+        {
+          "id": "gbt-16552",
+          "title": "GB/T 16552-2017 珠宝玉石 名称",
+          "author": "中国国家标准",
+          "type": "命名标准",
+          "note": "用于规范天然、优化处理、仿制品和商贸名称。"
+        },
+        {
+          "id": "gbt-16553",
+          "title": "GB/T 16553-2017 珠宝玉石 鉴定",
+          "author": "中国国家标准",
+          "type": "鉴定标准",
+          "note": "用于核对常规鉴定项目和检测表述。"
+        }
+      ]
+    },
+    {
+      "id": "jade_125",
+      "name": "桃花玉（蔷薇辉石）",
+      "englishName": "Rhodonite Jade",
+      "topCategory": "玉石类",
+      "subCategory": "硅酸盐玉石",
+      "appearance": "粉红至玫红色蔷薇辉石集合体，常伴黑色锰氧化物脉纹，外观像桃花。",
+      "quality": "品质看点：粉色鲜明、黑纹适度、质地细、裂少、抛光好为佳。",
+      "origins": "俄罗斯、澳大利亚、巴西、美国、中国等。",
+      "uses": "手串、吊坠、雕件和装饰品。",
+      "price": "市场参考：普通珠串几十至数百元；颜色好、雕工好者数百至数千元。",
+      "authenticity": "辨别要点：染色石英、红纹石、粉色玻璃易混；蔷薇辉石黑色脉纹和硬度有特征。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看裂隙聚色和胶感。",
+      "fengshui": "民俗说法中象征桃花、人缘和情绪修复。",
+      "aliases": [
+        "桃花玉（蔷薇辉石）",
+        "Rhodonite Jade",
+        "Rhodonite",
+        "蔷薇辉石",
+        "桃花石"
+      ],
+      "imageKey": "rhodonite-jade",
+      "professional": {
+        "mineralSpecies": "蔷薇辉石",
+        "composition": "MnSiO3，可含Ca、Fe、Mg等元素",
+        "crystalSystem": "三斜晶系",
+        "hardness": "约5.5-6.5",
+        "refractiveIndex": "约1.71-1.74",
+        "specificGravity": "约3.40-3.70",
+        "opticalCharacter": "双轴晶，集合体常以点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "黑色锰氧化物脉纹、粉红至玫瑰红色块状结构常见。",
+        "lookalikes": "菱锰矿、粉色玉髓、染色石英岩、粉色玻璃",
+        "simpleTests": "蔷薇辉石硬度高于菱锰矿，常见黑色脉纹；不建议酸测试或破坏性刻划。",
+        "labAdvice": "高价桃花玉、透明蔷薇辉石或颜色异常鲜艳者，建议送检确认矿物种和染色处理。"
+      },
+      "references": [
+        {
+          "id": "system-gemology",
+          "title": "系统宝石学",
+          "author": "张蓓莉主编",
+          "type": "中文宝石学教材",
+          "note": "用于核对宝石分类、物理性质、鉴定项目和常见处理。"
+        },
+        {
+          "id": "gemstones-world",
+          "title": "Gemstones of the World",
+          "author": "Walter Schumann",
+          "type": "宝石图鉴",
+          "note": "用于核对常见宝石外观、性质和易混品。"
+        },
+        {
+          "id": "matlins-identification",
+          "title": "Gem Identification Made Easy",
+          "author": "Antoinette Matlins",
+          "type": "现场鉴定手册",
+          "note": "用于整理便携工具、肉眼观察和购买风险提示。"
         },
         {
           "id": "gbt-16553",

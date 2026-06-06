@@ -1,5 +1,5 @@
-const CACHE_NAME = "gem-pwa-v7";
-const ASSET_VERSION = "20260605-professional-v1";
+const CACHE_NAME = "gem-pwa-v8";
+const ASSET_VERSION = "20260606-completion-v1";
 
 const CORE_ASSETS = [
   "./",
@@ -10,9 +10,11 @@ const CORE_ASSETS = [
   "./src/app.js",
   `./src/app.js?v=${ASSET_VERSION}`,
   "./data/gems.json",
+  `./data/gems.json?v=${ASSET_VERSION}`,
   "./data/gems.js",
   `./data/gems.js?v=${ASSET_VERSION}`,
   "./data/image-credits.json",
+  `./data/image-credits.json?v=${ASSET_VERSION}`,
   "./data/image-credits.js",
   `./data/image-credits.js?v=${ASSET_VERSION}`,
   "./assets/icon.svg",
@@ -103,7 +105,7 @@ async function cacheFirst(request) {
 
 async function loadImageAssets() {
   try {
-    const response = await fetch("./data/image-credits.json", { cache: "no-store" });
+    const response = await fetch(`./data/image-credits.json?v=${ASSET_VERSION}`, { cache: "no-store" });
     if (!response.ok) return [];
     const credits = await response.json();
     return Object.values(credits.images || {})

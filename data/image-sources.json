@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "source": "Wikimedia Commons",
   "note": "每个 imageKey 对应一个公开图库搜索词。下载脚本会保存本地图片和署名信息；中文商业名条目优先选择相近矿物或玉石类别照片。",
   "images": {
@@ -1295,6 +1295,817 @@
       "preferredTitles": [
         "Calcite-223214.jpg",
         "Calcite, Mexico-8827.jpg"
+      ]
+    },
+    "super-seven-quartz": {
+      "label": "超七水晶",
+      "queries": [
+        "Lepidocrocite quartz specimen",
+        "Cacoxenite amethyst quartz",
+        "Super Seven quartz specimen"
+      ],
+      "matchTerms": [
+        "quartz",
+        "lepidocrocite"
+      ],
+      "preferredTitles": [
+        "Quartz-Lepidocrocite-162422.jpg"
+      ]
+    },
+    "strawberry-quartz": {
+      "label": "草莓晶",
+      "queries": [
+        "Quartz hematite inclusions specimen",
+        "Lepidocrocite quartz specimen",
+        "Strawberry quartz specimen"
+      ],
+      "matchTerms": [
+        "quartz",
+        "hematite"
+      ],
+      "preferredTitles": [
+        "Quartz-Hematite-49945.jpg"
+      ]
+    },
+    "hematoid-quartz": {
+      "label": "胶花水晶",
+      "queries": [
+        "Hematoid quartz specimen",
+        "Limonite quartz specimen",
+        "Iron oxide included quartz"
+      ],
+      "matchTerms": [
+        "quartz"
+      ]
+    },
+    "herkimer-diamond": {
+      "label": "赫基蒙水晶",
+      "queries": [
+        "Herkimer diamond quartz",
+        "Herkimer quartz crystal",
+        "Double terminated Herkimer quartz"
+      ],
+      "matchTerms": [
+        "herkimer",
+        "quartz"
+      ]
+    },
+    "himalayan-quartz": {
+      "label": "喜马拉雅水晶",
+      "queries": [
+        "Quartz crystal Himalaya",
+        "Quartz Tibet crystal",
+        "Himalayan rock crystal"
+      ],
+      "matchTerms": [
+        "quartz"
+      ],
+      "preferredTitles": [
+        "Quartz, Tibet.jpg"
+      ]
+    },
+    "star-rose-quartz": {
+      "label": "星光粉晶",
+      "queries": [
+        "Star rose quartz",
+        "Rose quartz star cabochon",
+        "Asterism rose quartz"
+      ],
+      "matchTerms": [
+        "rose",
+        "quartz"
+      ]
+    },
+    "purple-rutilated-quartz": {
+      "label": "紫钛晶",
+      "queries": [
+        "Purple rutilated quartz",
+        "Amethyst rutilated quartz",
+        "Purple included quartz"
+      ],
+      "matchTerms": [
+        "quartz"
+      ]
+    },
+    "green-rutilated-quartz": {
+      "label": "绿钛晶",
+      "queries": [
+        "Green rutilated quartz",
+        "Actinolite quartz green inclusions",
+        "Green included quartz"
+      ],
+      "matchTerms": [
+        "quartz"
+      ]
+    },
+    "morion-quartz": {
+      "label": "黑水晶（墨晶）",
+      "queries": [
+        "Black smoky quartz crystal",
+        "Morion quartz specimen",
+        "Smoky quartz crystal"
+      ],
+      "matchTerms": [
+        "quartz",
+        "morion"
+      ],
+      "preferredTitles": [
+        "Quartz Noir Morion.JPG"
+      ]
+    },
+    "obsidian": {
+      "label": "黑曜石",
+      "queries": [
+        "Black obsidian volcanic glass",
+        "Obsidian specimen",
+        "Obsidian stone"
+      ],
+      "matchTerms": [
+        "obsidian"
+      ],
+      "preferredTitles": [
+        "ObsidianOregon.jpg"
+      ]
+    },
+    "snowflake-obsidian": {
+      "label": "雪花黑曜石",
+      "queries": [
+        "Snowflake obsidian",
+        "Snowflake obsidian stone",
+        "Obsidian snowflake"
+      ],
+      "matchTerms": [
+        "obsidian"
+      ]
+    },
+    "gold-sheen-obsidian": {
+      "label": "金曜石",
+      "queries": [
+        "Gold sheen obsidian",
+        "Golden sheen obsidian",
+        "Obsidian gold sheen"
+      ],
+      "matchTerms": [
+        "obsidian"
+      ]
+    },
+    "rainbow-obsidian": {
+      "label": "彩虹黑曜石",
+      "queries": [
+        "Rainbow obsidian specimen",
+        "Rainbow sheen obsidian",
+        "Obsidian interference colors"
+      ],
+      "matchTerms": [
+        "obsidian"
+      ],
+      "preferredTitles": [
+        "Two-beam interference colors in obsidian.jpg"
+      ],
+      "requiredTerms": [
+        "obsidian"
+      ]
+    },
+    "silver-rutilated-quartz": {
+      "label": "银发晶",
+      "queries": [
+        "Rutilated quartz specimen",
+        "Silver rutilated quartz",
+        "Rutile quartz specimen"
+      ],
+      "matchTerms": [
+        "quartz",
+        "rutile"
+      ],
+      "preferredTitles": [
+        "Rutilated quartz.jpg"
+      ]
+    },
+    "diamond": {
+      "label": "钻石",
+      "queries": [
+        "Diamond crystal specimen",
+        "Rough diamond crystal",
+        "Diamond gemstone"
+      ],
+      "matchTerms": [
+        "diamond"
+      ]
+    },
+    "fancy-color-diamond": {
+      "label": "彩色钻石",
+      "queries": [
+        "Fancy color diamond",
+        "Yellow diamond gemstone",
+        "Colored diamond gemstone"
+      ],
+      "matchTerms": [
+        "diamond"
+      ]
+    },
+    "pink-sapphire": {
+      "label": "粉色蓝宝石",
+      "queries": [
+        "Pink sapphire gemstone",
+        "Pink sapphire corundum",
+        "Pink corundum gemstone"
+      ],
+      "matchTerms": [
+        "sapphire"
+      ]
+    },
+    "yellow-sapphire": {
+      "label": "黄色蓝宝石",
+      "queries": [
+        "Yellow sapphire gemstone",
+        "Yellow sapphire corundum",
+        "Yellow corundum gemstone"
+      ],
+      "matchTerms": [
+        "sapphire"
+      ]
+    },
+    "green-sapphire": {
+      "label": "绿色蓝宝石",
+      "queries": [
+        "Green sapphire gemstone",
+        "Green sapphire corundum",
+        "Green corundum gemstone"
+      ],
+      "matchTerms": [
+        "sapphire"
+      ]
+    },
+    "watermelon-tourmaline": {
+      "label": "西瓜碧玺",
+      "queries": [
+        "Watermelon tourmaline crystal",
+        "Watermelon tourmaline slice",
+        "Elbaite watermelon tourmaline"
+      ],
+      "matchTerms": [
+        "tourmaline"
+      ]
+    },
+    "chrome-tourmaline": {
+      "label": "铬碧玺",
+      "queries": [
+        "Chrome tourmaline gemstone",
+        "Green tourmaline gemstone",
+        "Chrome dravite tourmaline"
+      ],
+      "matchTerms": [
+        "tourmaline"
+      ],
+      "requiredTerms": [
+        "tourmaline"
+      ]
+    },
+    "chrome-diopside": {
+      "label": "铬透辉石",
+      "queries": [
+        "Chrome diopside gemstone",
+        "Chrome diopside crystal",
+        "Green diopside gemstone"
+      ],
+      "matchTerms": [
+        "diopside"
+      ]
+    },
+    "prehnite": {
+      "label": "葡萄石",
+      "queries": [
+        "Prehnite mineral",
+        "Prehnite gemstone",
+        "Prehnite specimen"
+      ],
+      "matchTerms": [
+        "prehnite"
+      ],
+      "requiredTerms": [
+        "prehnite"
+      ],
+      "preferredTitles": [
+        "Prehnite - Southbury, Connecticut, USA.jpg"
+      ]
+    },
+    "titanite": {
+      "label": "榍石",
+      "queries": [
+        "Titanite sphene gemstone",
+        "Sphene titanite crystal",
+        "Titanite mineral specimen"
+      ],
+      "matchTerms": [
+        "titanite",
+        "sphene"
+      ]
+    },
+    "danburite": {
+      "label": "赛黄晶（丹泉石）",
+      "queries": [
+        "Danburite crystal specimen",
+        "Danburite gemstone",
+        "Danburite mineral"
+      ],
+      "matchTerms": [
+        "danburite"
+      ]
+    },
+    "scapolite": {
+      "label": "方柱石",
+      "queries": [
+        "Scapolite gemstone",
+        "Scapolite crystal specimen",
+        "Yellow scapolite gemstone"
+      ],
+      "matchTerms": [
+        "scapolite"
+      ]
+    },
+    "gem-fluorite": {
+      "label": "宝石级萤石",
+      "queries": [
+        "Fluorite gemstone cut",
+        "Fluorite crystal specimen",
+        "Gem fluorite"
+      ],
+      "matchTerms": [
+        "fluorite"
+      ]
+    },
+    "sphalerite": {
+      "label": "闪锌矿",
+      "queries": [
+        "Sphalerite gemstone",
+        "Sphalerite mineral specimen",
+        "Cut sphalerite"
+      ],
+      "matchTerms": [
+        "sphalerite"
+      ]
+    },
+    "azurite": {
+      "label": "蓝铜矿",
+      "queries": [
+        "Azurite mineral specimen",
+        "Azurite gemstone",
+        "Azurite malachite specimen"
+      ],
+      "matchTerms": [
+        "azurite"
+      ]
+    },
+    "larimar": {
+      "label": "海纹石",
+      "queries": [
+        "Larimar gemstone",
+        "Larimar stone",
+        "Larimar cabochon"
+      ],
+      "matchTerms": [
+        "larimar"
+      ]
+    },
+    "chrysoprase": {
+      "label": "绿玉髓",
+      "queries": [
+        "Chrysoprase gemstone",
+        "Chrysoprase rough",
+        "Green chrysoprase"
+      ],
+      "matchTerms": [
+        "chrysoprase"
+      ]
+    },
+    "color-change-garnet": {
+      "label": "变色石榴石",
+      "queries": [
+        "Color change garnet gemstone",
+        "Color-change garnet",
+        "Garnet color change"
+      ],
+      "matchTerms": [
+        "garnet"
+      ]
+    },
+    "spessartine": {
+      "label": "芬达石",
+      "queries": [
+        "Spessartine garnet gemstone",
+        "Spessartite garnet orange",
+        "Mandarin garnet"
+      ],
+      "matchTerms": [
+        "spessartine",
+        "garnet"
+      ]
+    },
+    "ruby-zoisite": {
+      "label": "红绿宝",
+      "queries": [
+        "Ruby in zoisite",
+        "Anyolite ruby zoisite",
+        "Ruby zoisite gemstone"
+      ],
+      "matchTerms": [
+        "zoisite",
+        "ruby"
+      ]
+    },
+    "kyanite": {
+      "label": "蓝晶石",
+      "queries": [
+        "Kyanite gemstone",
+        "Blue kyanite crystal",
+        "Kyanite mineral specimen"
+      ],
+      "matchTerms": [
+        "kyanite"
+      ]
+    },
+    "sillimanite-cat-eye": {
+      "label": "矽线石猫眼",
+      "queries": [
+        "Sillimanite mineral specimen",
+        "Sillimanite gemstone",
+        "Sillimanite"
+      ],
+      "matchTerms": [
+        "sillimanite"
+      ],
+      "requiredTerms": [
+        "sillimanite"
+      ]
+    },
+    "diopside-cat-eye": {
+      "label": "透辉石猫眼",
+      "queries": [
+        "Diopside cat eye gemstone",
+        "Cat eye diopside",
+        "Diopside cabochon"
+      ],
+      "matchTerms": [
+        "diopside"
+      ]
+    },
+    "benitoite": {
+      "label": "蓝锥矿",
+      "queries": [
+        "Benitoite gemstone",
+        "Benitoite crystal",
+        "Benitoite mineral specimen"
+      ],
+      "matchTerms": [
+        "benitoite"
+      ]
+    },
+    "purple-sapphire": {
+      "label": "紫色蓝宝石",
+      "queries": [
+        "Purple sapphire corundum",
+        "Purple sapphire gemstone",
+        "Corundum sapphire specimen"
+      ],
+      "matchTerms": [
+        "sapphire"
+      ],
+      "preferredTitles": [
+        "Sapphire (GeoDIL number - 1021).jpg"
+      ],
+      "requiredTerms": [
+        "sapphire"
+      ]
+    },
+    "green-gray-nephrite": {
+      "label": "和田青玉",
+      "queries": [
+        "Green nephrite jade",
+        "Nephrite jade green gray",
+        "Green nephrite rough"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "greenish-white-nephrite": {
+      "label": "和田青白玉",
+      "queries": [
+        "White green nephrite jade",
+        "Greenish white nephrite",
+        "Nephrite jade pale green"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "yellow-nephrite": {
+      "label": "和田黄玉",
+      "queries": [
+        "Yellow nephrite jade",
+        "Yellow jade nephrite",
+        "Nephrite yellow jade"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "sugar-nephrite": {
+      "label": "和田糖玉",
+      "queries": [
+        "Brown nephrite jade",
+        "Sugar jade nephrite",
+        "Brown white nephrite jade"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "black-white-nephrite": {
+      "label": "青花料",
+      "queries": [
+        "Black white nephrite jade",
+        "Ink nephrite jade",
+        "Black and white jade nephrite"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "green-white-nephrite": {
+      "label": "翠青玉",
+      "queries": [
+        "Green white nephrite jade",
+        "White jade green patches nephrite",
+        "Nephrite jade green white"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "black-jadeite": {
+      "label": "墨翠",
+      "queries": [
+        "Black jadeite jade",
+        "Maw-sit-sit jadeite black green",
+        "Black jadeite gemstone"
+      ],
+      "matchTerms": [
+        "jadeite"
+      ]
+    },
+    "lavender-jadeite": {
+      "label": "紫罗兰翡翠",
+      "queries": [
+        "Lavender jadeite",
+        "Lavender jadeite jade",
+        "Purple jadeite"
+      ],
+      "matchTerms": [
+        "jadeite"
+      ]
+    },
+    "ice-jadeite": {
+      "label": "冰种翡翠",
+      "queries": [
+        "Jadeite jade translucent",
+        "Ice jadeite jade",
+        "Jadeite gemstone"
+      ],
+      "matchTerms": [
+        "jadeite"
+      ],
+      "preferredTitles": [
+        "Jadeite (GeoDIL number - 1607).jpg"
+      ],
+      "requiredTerms": [
+        "jadeite"
+      ]
+    },
+    "waxy-jadeite": {
+      "label": "糯种翡翠",
+      "queries": [
+        "Jadeite jade bangle",
+        "Translucent jadeite",
+        "Jadeite gemstone"
+      ],
+      "matchTerms": [
+        "jadeite"
+      ],
+      "preferredTitles": [
+        "Jadeite (GeoDIL number - 1607).jpg"
+      ],
+      "requiredTerms": [
+        "jadeite"
+      ]
+    },
+    "coarse-jadeite": {
+      "label": "豆种翡翠",
+      "queries": [
+        "Green jadeite jade",
+        "Coarse jadeite jade",
+        "Jadeite rough green"
+      ],
+      "matchTerms": [
+        "jadeite"
+      ]
+    },
+    "lantian-jade": {
+      "label": "蓝田玉",
+      "queries": [
+        "Lantian jade",
+        "Chinese Lantian jade",
+        "Serpentine jade China"
+      ],
+      "matchTerms": [
+        "jade"
+      ]
+    },
+    "qilian-jade": {
+      "label": "祁连玉",
+      "queries": [
+        "Qilian jade",
+        "Green serpentine jade",
+        "Jiuquan jade"
+      ],
+      "matchTerms": [
+        "jade"
+      ]
+    },
+    "she-taicui": {
+      "label": "佘太翠",
+      "queries": [
+        "Green quartzite jade",
+        "Quartzite jade green",
+        "Quartzite gemstone"
+      ],
+      "matchTerms": [
+        "quartzite"
+      ],
+      "preferredTitles": [
+        "Green Harlequin Quartzite (fuchsitic quartzite).jpg"
+      ],
+      "requiredTerms": [
+        "quartzite"
+      ]
+    },
+    "mi-jade": {
+      "label": "密玉",
+      "queries": [
+        "Green quartzite jade",
+        "Quartzite jade specimen",
+        "Quartzite gemstone"
+      ],
+      "matchTerms": [
+        "quartzite"
+      ],
+      "preferredTitles": [
+        "Green Harlequin Quartzite (fuchsitic quartzite).jpg"
+      ],
+      "requiredTerms": [
+        "quartzite"
+      ]
+    },
+    "jingbai-jade": {
+      "label": "京白玉",
+      "queries": [
+        "White quartzite stone",
+        "Quartzite white gemstone",
+        "Quartzite specimen"
+      ],
+      "matchTerms": [
+        "quartzite"
+      ],
+      "preferredTitles": [
+        "Green Harlequin Quartzite (fuchsitic quartzite).jpg"
+      ],
+      "requiredTerms": [
+        "quartzite"
+      ]
+    },
+    "cherry-blossom-agate": {
+      "label": "樱花玛瑙",
+      "queries": [
+        "Flower agate chalcedony",
+        "Cherry blossom agate",
+        "Pink agate chalcedony"
+      ],
+      "matchTerms": [
+        "agate"
+      ],
+      "requiredTerms": [
+        "agate"
+      ]
+    },
+    "yanyuan-agate": {
+      "label": "盐源玛瑙",
+      "queries": [
+        "Sichuan agate",
+        "Yanyuan agate",
+        "Colored agate"
+      ],
+      "matchTerms": [
+        "agate"
+      ],
+      "preferredTitles": [
+        "Agate banded 750pix.jpg"
+      ],
+      "requiredTerms": [
+        "agate"
+      ]
+    },
+    "banded-agate": {
+      "label": "缠丝玛瑙",
+      "queries": [
+        "Banded agate specimen",
+        "Banded agate gemstone",
+        "Sardonyx agate"
+      ],
+      "matchTerms": [
+        "agate"
+      ]
+    },
+    "fire-agate": {
+      "label": "火玛瑙",
+      "queries": [
+        "Fire agate mineral",
+        "Fire agate gemstone",
+        "Fire agate cabochon"
+      ],
+      "matchTerms": [
+        "agate"
+      ],
+      "preferredTitles": [
+        "Fire Agate-150542 (cropped).jpg"
+      ],
+      "requiredTerms": [
+        "agate"
+      ]
+    },
+    "ocean-jasper": {
+      "label": "海洋玉髓",
+      "queries": [
+        "Ocean jasper",
+        "Ocean jasper gemstone",
+        "Orbicular jasper"
+      ],
+      "matchTerms": [
+        "jasper"
+      ]
+    },
+    "grape-agate": {
+      "label": "葡萄玛瑙",
+      "queries": [
+        "Grape agate chalcedony",
+        "Botryoidal grape agate",
+        "Purple grape agate"
+      ],
+      "matchTerms": [
+        "agate",
+        "chalcedony"
+      ]
+    },
+    "alashan-agate": {
+      "label": "阿拉善玛瑙",
+      "queries": [
+        "Gobi agate China",
+        "Alashan agate",
+        "Alxa agate"
+      ],
+      "matchTerms": [
+        "agate"
+      ],
+      "preferredTitles": [
+        "Cut and oiled yellow jasper 2.JPG"
+      ]
+    },
+    "petrified-wood": {
+      "label": "木化玉",
+      "queries": [
+        "Petrified wood polished",
+        "Petrified wood gemstone",
+        "Silicified wood"
+      ],
+      "matchTerms": [
+        "petrified",
+        "wood"
+      ]
+    },
+    "rhodonite-jade": {
+      "label": "桃花玉",
+      "queries": [
+        "Rhodonite gemstone",
+        "Rhodonite polished stone",
+        "Pink rhodonite"
+      ],
+      "matchTerms": [
+        "rhodonite"
       ]
     }
   }

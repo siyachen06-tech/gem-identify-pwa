@@ -189,24 +189,53 @@ async function commonsSearch(query) {
   return Object.values(json.query?.pages || {}).sort((a, b) => (a.index || 999) - (b.index || 999));
 }
 
-async function fetchJson(url) {
-  const response = await fetchWithRetry(url, {
-    headers: { "User-Agent": USER_AGENT },
-  });
-  if (!response.ok) throw new Error(`Wikimedia API ${response.status}: ${await response.text()}`);
-  return response.json();
+async function fetchJson(url, attempts = 5) {
+  let lastError = null;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetchWithRetry(
+        url,
+        {
+          headers: { "User-Agent": USER_AGENT },
+        },
+        1,
+      );
+      if (!response.ok) throw new Error(`Wikimedia API ${response.status}: ${await response.text()}`);
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+      if (attempt === attempts) break;
+      await sleep(900 * attempt);
+    }
+  }
+  throw lastError;
 }
 
-async function downloadFile(url, outputPath) {
-  const response = await fetchWithRetry(url, {
-    headers: { "User-Agent": USER_AGENT },
-  });
-  if (!response.ok) throw new Error(`Download ${response.status}: ${url}`);
-  const buffer = Buffer.from(await response.arrayBuffer());
-  fs.writeFileSync(outputPath, buffer);
+async function downloadFile(url, outputPath, attempts = 5) {
+  let lastError = null;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetchWithRetry(
+        url,
+        {
+          headers: { "User-Agent": USER_AGENT },
+        },
+        1,
+      );
+      if (!response.ok) throw new Error(`Download ${response.status}: ${url}`);
+      const buffer = Buffer.from(await response.arrayBuffer());
+      fs.writeFileSync(outputPath, buffer);
+      return;
+    } catch (error) {
+      lastError = error;
+      if (attempt === attempts) break;
+      await sleep(900 * attempt);
+    }
+  }
+  throw lastError;
 }
 
-async function fetchWithRetry(url, options = {}, attempts = 4) {
+async function fetchWithRetry(url, options = {}, attempts = 7) {
   let lastError = null;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
     const controller = new AbortController();
@@ -216,7 +245,7 @@ async function fetchWithRetry(url, options = {}, attempts = 4) {
     } catch (error) {
       lastError = error;
       if (attempt === attempts) break;
-      await sleep(500 * attempt);
+      await sleep(800 * attempt);
     } finally {
       clearTimeout(timeout);
     }

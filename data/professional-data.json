@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
   "note": "专业参数为现场初筛参考，按公开宝石学资料、教材与标准整理，不替代实验室鉴定。",
   "references": {
     "system-gemology": {
@@ -91,7 +91,13 @@
         "simpleTests": "看硬度、气泡、色带和内部包裹体；用偏光镜、折射仪可做基础区分。",
         "labAdvice": "高价值大晶体、声称天然无处理或特殊产地时，建议送检确认天然性和处理状态。"
       },
-      "references": ["system-gemology", "gic-gemology", "gemstones-world", "matlins-identification", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gic-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
     },
     "included-quartz": {
       "professional": {
@@ -108,7 +114,13 @@
         "simpleTests": "强光和放大镜观察包裹体边界、深浅和立体感；可用偏光镜确认主体石英。",
         "labAdvice": "高价发晶、幽灵、水胆或声称稀有包裹体时，建议送检确认天然包裹体和是否注色。"
       },
-      "references": ["system-gemology", "photoatlas", "matlins-identification", "nassau-enhancement", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "photoatlas",
+        "matlins-identification",
+        "nassau-enhancement",
+        "gbt-16553"
+      ]
     },
     "aura-quartz": {
       "professional": {
@@ -125,7 +137,12 @@
         "simpleTests": "看颜色是否只在表面、棱角处是否磨损、裂隙内外颜色是否一致。",
         "labAdvice": "必须按处理品理解；高价购买时重点看商家是否明确披露镀膜。"
       },
-      "references": ["nassau-enhancement", "matlins-identification", "gbt-16552", "gbt-16553"]
+      "references": [
+        "nassau-enhancement",
+        "matlins-identification",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "tiger-eye": {
       "professional": {
@@ -142,7 +159,11 @@
         "simpleTests": "转动看光带是否随纤维方向移动；放大看真实纤维结构。",
         "labAdvice": "大批量低价货一般风险较低，高价特殊颜色需确认是否染色或加热。"
       },
-      "references": ["system-gemology", "gemstones-world", "matlins-identification"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification"
+      ]
     },
     "charoite": {
       "professional": {
@@ -159,7 +180,11 @@
         "simpleTests": "看自然旋涡纹和蜡状至玻璃光泽，低价过艳均匀紫色需谨慎。",
         "labAdvice": "高价深紫大件建议送检确认材质和染色。"
       },
-      "references": ["system-gemology", "gemstones-world", "matlins-identification"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification"
+      ]
     },
     "sugilite": {
       "professional": {
@@ -176,7 +201,12 @@
         "simpleTests": "观察颜色是否自然过渡，过艳且裂隙聚色要警惕染色。",
         "labAdvice": "高价帝王紫或大件建议送检，重点确认材质和染色处理。"
       },
-      "references": ["system-gemology", "gemstones-world", "matlins-identification", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
     },
     "feldspar": {
       "professional": {
@@ -193,7 +223,12 @@
         "simpleTests": "看变彩或月光效应是否来自内部层状结构，表面镀膜色通常角度窄且浮。",
         "labAdvice": "高价拉长石、月光石或太阳石应确认天然效应和是否镀膜。"
       },
-      "references": ["system-gemology", "gemstones-world", "matlins-identification", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
     },
     "beryl": {
       "professional": {
@@ -210,7 +245,13 @@
         "simpleTests": "用折射率、二色性和硬度辅助区分；颜色过艳均匀低价需谨慎。",
         "labAdvice": "高价值海蓝宝、摩根石、祖母绿需证书确认天然性和处理程度。"
       },
-      "references": ["system-gemology", "gic-gemology", "gia-gem-encyclopedia", "photoatlas", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gic-gemology",
+        "gia-gem-encyclopedia",
+        "photoatlas",
+        "gbt-16553"
+      ]
     },
     "emerald": {
       "professional": {
@@ -227,7 +268,13 @@
         "simpleTests": "祖母绿常有天然花园状包裹体；过干净、颜色极艳低价需警惕合成或玻璃。",
         "labAdvice": "必须重点确认净度优化程度，如注油、树脂充填和合成来源。"
       },
-      "references": ["system-gemology", "gia-gem-encyclopedia", "photoatlas", "nassau-enhancement", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gia-gem-encyclopedia",
+        "photoatlas",
+        "nassau-enhancement",
+        "gbt-16553"
+      ]
     },
     "corundum": {
       "professional": {
@@ -244,7 +291,14 @@
         "simpleTests": "看二色性、色带、包裹体和硬度；仅凭照片不能判断天然、合成和加热。",
         "labAdvice": "高价值必须送检确认天然性、加热、扩散、充填和产地意见。"
       },
-      "references": ["hughes-ruby-sapphire", "system-gemology", "gia-gem-encyclopedia", "photoatlas", "nassau-enhancement", "gbt-16553"]
+      "references": [
+        "hughes-ruby-sapphire",
+        "system-gemology",
+        "gia-gem-encyclopedia",
+        "photoatlas",
+        "nassau-enhancement",
+        "gbt-16553"
+      ]
     },
     "chrysoberyl": {
       "professional": {
@@ -261,7 +315,13 @@
         "simpleTests": "猫眼看光带是否锐利居中，变石看日光和白炽灯下变色强度。",
         "labAdvice": "高价变石和猫眼必须送检确认种属、天然性和处理。"
       },
-      "references": ["system-gemology", "gemstones-world", "gia-gem-encyclopedia", "photoatlas", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gia-gem-encyclopedia",
+        "photoatlas",
+        "gbt-16553"
+      ]
     },
     "tourmaline": {
       "professional": {
@@ -278,7 +338,13 @@
         "simpleTests": "看强二色性、棱线重影和纵向色带；霓虹蓝绿色需谨慎。",
         "labAdvice": "帕拉伊巴必须检测铜锰致色；高价红碧玺需确认处理和天然性。"
       },
-      "references": ["system-gemology", "gia-gem-encyclopedia", "photoatlas", "nassau-enhancement", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gia-gem-encyclopedia",
+        "photoatlas",
+        "nassau-enhancement",
+        "gbt-16553"
+      ]
     },
     "garnet": {
       "professional": {
@@ -295,7 +361,13 @@
         "simpleTests": "石榴石通常无双折射，查尔斯滤色镜和折射率有辅助价值。",
         "labAdvice": "高价沙弗莱、翠榴石应确认品种、产地特征和是否裂隙处理。"
       },
-      "references": ["system-gemology", "gemstones-world", "gia-gem-encyclopedia", "photoatlas", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gia-gem-encyclopedia",
+        "photoatlas",
+        "gbt-16553"
+      ]
     },
     "spinel": {
       "professional": {
@@ -312,7 +384,13 @@
         "simpleTests": "无双折射是区分红宝石的重要线索，需结合折射率和包裹体。",
         "labAdvice": "高价红尖晶石或钴蓝尖晶石需证书确认天然性和致色。"
       },
-      "references": ["system-gemology", "gemstones-world", "gia-gem-encyclopedia", "photoatlas", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gia-gem-encyclopedia",
+        "photoatlas",
+        "gbt-16553"
+      ]
     },
     "topaz": {
       "professional": {
@@ -329,7 +407,13 @@
         "simpleTests": "密度较高、完全解理和折射率可与水晶、海蓝宝区分。",
         "labAdvice": "蓝色托帕常经辐照加热，购买时应按处理品理解并注意披露。"
       },
-      "references": ["system-gemology", "gemstones-world", "nassau-enhancement", "gbt-16552", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "nassau-enhancement",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "zoisite": {
       "professional": {
@@ -346,7 +430,12 @@
         "simpleTests": "转动看蓝、紫、褐不同方向色；硬度和折射率低于蓝宝石。",
         "labAdvice": "市场坦桑石多经加热改善颜色，高价品应看证书和裂隙状况。"
       },
-      "references": ["system-gemology", "gia-gem-encyclopedia", "nassau-enhancement", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gia-gem-encyclopedia",
+        "nassau-enhancement",
+        "gbt-16553"
+      ]
     },
     "peridot": {
       "professional": {
@@ -363,7 +452,12 @@
         "simpleTests": "强双折射导致棱线重影明显，颜色多为黄绿至橄榄绿。",
         "labAdvice": "大颗粒优质品建议确认天然包裹体和是否裂隙填充。"
       },
-      "references": ["system-gemology", "gemstones-world", "photoatlas", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "photoatlas",
+        "gbt-16553"
+      ]
     },
     "zircon": {
       "professional": {
@@ -380,7 +474,12 @@
         "simpleTests": "强双折射是关键，CZ为单折射且密度更高。",
         "labAdvice": "高价蓝锆多经加热，需注意颜色稳定性和处理披露。"
       },
-      "references": ["system-gemology", "gemstones-world", "nassau-enhancement", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "nassau-enhancement",
+        "gbt-16553"
+      ]
     },
     "apatite": {
       "professional": {
@@ -397,7 +496,11 @@
         "simpleTests": "硬度低是重要线索，佩戴需防刮；不要用破坏性测试。",
         "labAdvice": "霓虹蓝绿色高价货需确认不是碧玺，也需看处理和耐久性。"
       },
-      "references": ["system-gemology", "gemstones-world", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gbt-16553"
+      ]
     },
     "iolite": {
       "professional": {
@@ -414,7 +517,11 @@
         "simpleTests": "转动宝石可见明显蓝紫、灰黄或近无色变化，是现场重要线索。",
         "labAdvice": "高价蓝紫色切磨品建议折射率确认，避免与坦桑石或蓝宝石混淆。"
       },
-      "references": ["system-gemology", "gemstones-world", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gbt-16553"
+      ]
     },
     "malachite": {
       "professional": {
@@ -431,7 +538,11 @@
         "simpleTests": "天然纹理不机械重复；硬度低，避免酸和汗液。",
         "labAdvice": "高价雕件或大件需确认非合成和非染色压制。"
       },
-      "references": ["system-gemology", "gemstones-world", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gbt-16553"
+      ]
     },
     "lapis": {
       "professional": {
@@ -448,7 +559,12 @@
         "simpleTests": "看蓝色是否沿裂隙聚集，丙酮擦拭可辅助发现染色但需谨慎。",
         "labAdvice": "高价无白少金青金石建议送检确认染色和充填。"
       },
-      "references": ["system-gemology", "gemstones-world", "matlins-identification", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
     },
     "turquoise": {
       "professional": {
@@ -465,7 +581,13 @@
         "simpleTests": "看孔隙、铁线自然度和蜡状光泽；过蓝过均匀低价需谨慎。",
         "labAdvice": "高价原矿绿松石必须确认是否注胶、灌蜡、染色或粉压。"
       },
-      "references": ["system-gemology", "gemstones-world", "nassau-enhancement", "gbt-16552", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "nassau-enhancement",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "jadeite": {
       "professional": {
@@ -482,7 +604,14 @@
         "simpleTests": "看翠性、结构、色根和酸蚀网纹；滤色镜和紫外灯只能辅助。",
         "labAdvice": "任何高价值翡翠必须送检区分A货、B货、C货、B+C货和覆膜。"
       },
-      "references": ["hughes-jade", "system-gemology", "gia-gem-encyclopedia", "nassau-enhancement", "gbt-16552", "gbt-16553"]
+      "references": [
+        "hughes-jade",
+        "system-gemology",
+        "gia-gem-encyclopedia",
+        "nassau-enhancement",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "nephrite": {
       "professional": {
@@ -499,7 +628,13 @@
         "simpleTests": "看油脂光泽、细度、结构和皮色过渡；不要用刮划破坏成品。",
         "labAdvice": "籽料、高价白玉、染皮疑点和产地争议必须送检。"
       },
-      "references": ["hughes-jade", "system-gemology", "gia-gem-encyclopedia", "gbt-16552", "gbt-16553"]
+      "references": [
+        "hughes-jade",
+        "system-gemology",
+        "gia-gem-encyclopedia",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "serpentine": {
       "professional": {
@@ -516,7 +651,11 @@
         "simpleTests": "硬度通常低于软玉和翡翠，光泽偏蜡状，结构较软。",
         "labAdvice": "高价河磨玉或冒充和田玉、翡翠时建议送检。"
       },
-      "references": ["system-gemology", "gemstones-world", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gbt-16553"
+      ]
     },
     "dushan": {
       "professional": {
@@ -533,7 +672,11 @@
         "simpleTests": "看多色斑块和粒状结构，避免只凭绿色判断为翡翠。",
         "labAdvice": "高价绿色独山玉或冒充翡翠时建议送检。"
       },
-      "references": ["system-gemology", "gic-gemology", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gic-gemology",
+        "gbt-16553"
+      ]
     },
     "chalcedony": {
       "professional": {
@@ -550,7 +693,13 @@
         "simpleTests": "看颜色是否沿裂隙聚集、条带是否自然、是否有气泡。",
         "labAdvice": "高价南红、战国红、稀有图案玛瑙应确认染色、拼合和商贸名称。"
       },
-      "references": ["system-gemology", "gemstones-world", "nassau-enhancement", "gbt-16552", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "nassau-enhancement",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "quartzite": {
       "professional": {
@@ -567,7 +716,36 @@
         "simpleTests": "看颗粒感和玻璃至油脂光泽，放大常见粒状结构而非纤维交织。",
         "labAdvice": "高价售卖为和田玉或翡翠时必须送检确认名称。"
       },
-      "references": ["system-gemology", "gic-gemology", "gbt-16552", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gic-gemology",
+        "gbt-16552",
+        "gbt-16553"
+      ]
+    },
+    "opal": {
+      "professional": {
+        "mineralSpecies": "欧泊，含水非晶质二氧化硅",
+        "composition": "SiO2·nH2O，含水量和结构随产地变化",
+        "crystalSystem": "非晶质",
+        "hardness": "约5-6.5",
+        "refractiveIndex": "约1.37-1.47，常见1.44左右",
+        "specificGravity": "约1.98-2.25",
+        "opticalCharacter": "非晶质，单折射，贵欧泊可见游彩",
+        "fluorescence": "白欧泊、火欧泊和埃塞俄比亚欧泊可有不同荧光反应",
+        "inclusions": "天然裂隙、色斑、柱状或斑块状游彩结构；合成欧泊可见规则蜂窝或柱状图案。",
+        "lookalikes": "合成欧泊、塑料仿品、玻璃、双层欧泊、三层欧泊、染色玉髓",
+        "simpleTests": "转动观察游彩是否自然变化，侧面看是否有拼合层，放大看图案是否过于规则。",
+        "labAdvice": "高价黑欧泊、图案欧泊、拼合疑似品和声称无处理欧泊，建议送检确认天然性、拼合和染色处理。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "photoatlas",
+        "nassau-enhancement",
+        "gia-gem-encyclopedia",
+        "gbt-16553"
+      ]
     },
     "organic-amber": {
       "professional": {
@@ -584,7 +762,13 @@
         "simpleTests": "盐水、紫外、气味只能辅助；不要用火烧和破坏性测试。",
         "labAdvice": "虫珀、蜜蜡和高价老蜡建议送检确认天然、压制或柯巴。"
       },
-      "references": ["gemstones-world", "matlins-identification", "nassau-enhancement", "cibjo-blue-books", "gbt-16553"]
+      "references": [
+        "gemstones-world",
+        "matlins-identification",
+        "nassau-enhancement",
+        "cibjo-blue-books",
+        "gbt-16553"
+      ]
     },
     "organic-pearl": {
       "professional": {
@@ -601,7 +785,13 @@
         "simpleTests": "看光泽、表皮微瑕、孔道珠层；牙咬测试不建议作为商业判断。",
         "labAdvice": "高价海水珠、天然珍珠和南洋珠需X光或专业证书确认。"
       },
-      "references": ["cibjo-blue-books", "gia-gem-encyclopedia", "matlins-identification", "gbt-16552", "gbt-16553"]
+      "references": [
+        "cibjo-blue-books",
+        "gia-gem-encyclopedia",
+        "matlins-identification",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "organic-coral": {
       "professional": {
@@ -618,7 +808,13 @@
         "simpleTests": "看生长纹和孔洞是否自然，颜色是否渗入裂隙或集中在表面。",
         "labAdvice": "高价值红珊瑚必须确认材质、染色和来源合规。"
       },
-      "references": ["cibjo-blue-books", "gia-gem-encyclopedia", "matlins-identification", "gbt-16552", "gbt-16553"]
+      "references": [
+        "cibjo-blue-books",
+        "gia-gem-encyclopedia",
+        "matlins-identification",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "spodumene": {
       "professional": {
@@ -635,7 +831,12 @@
         "simpleTests": "明显解理和较强多色性可辅助判断，佩戴需防磕碰。",
         "labAdvice": "颜色特别浓或高价大颗粒需确认辐照、加热和天然性。"
       },
-      "references": ["system-gemology", "gemstones-world", "nassau-enhancement", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "nassau-enhancement",
+        "gbt-16553"
+      ]
     },
     "rhodochrosite": {
       "professional": {
@@ -652,7 +853,33 @@
         "simpleTests": "硬度低、怕酸，条带自然者更常见；不建议酸测试。",
         "labAdvice": "透明晶体和高价雕件需确认种属和填充处理。"
       },
-      "references": ["system-gemology", "gemstones-world", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "gbt-16553"
+      ]
+    },
+    "rhodonite": {
+      "professional": {
+        "mineralSpecies": "蔷薇辉石",
+        "composition": "MnSiO3，可含Ca、Fe、Mg等元素",
+        "crystalSystem": "三斜晶系",
+        "hardness": "约5.5-6.5",
+        "refractiveIndex": "约1.71-1.74",
+        "specificGravity": "约3.40-3.70",
+        "opticalCharacter": "双轴晶，集合体常以点测和结构观察为主",
+        "fluorescence": "通常无至弱",
+        "inclusions": "黑色锰氧化物脉纹、粉红至玫瑰红色块状结构常见。",
+        "lookalikes": "菱锰矿、粉色玉髓、染色石英岩、粉色玻璃",
+        "simpleTests": "蔷薇辉石硬度高于菱锰矿，常见黑色脉纹；不建议酸测试或破坏性刻划。",
+        "labAdvice": "高价桃花玉、透明蔷薇辉石或颜色异常鲜艳者，建议送检确认矿物种和染色处理。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
     },
     "seal-stone": {
       "professional": {
@@ -669,7 +896,12 @@
         "simpleTests": "看颜色是否浮、裂隙是否聚色、刀感是否自然；避免破坏性刻划。",
         "labAdvice": "田黄、鸡血、名坑印石和名家雕件必须看来源、材质和处理证据。"
       },
-      "references": ["system-gemology", "gic-gemology", "gbt-16552", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gic-gemology",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     },
     "calcite-marble": {
       "professional": {
@@ -686,7 +918,323 @@
         "simpleTests": "硬度明显低，易被划伤；但不建议在成品上做破坏测试。",
         "labAdvice": "凡以高价白玉名义出售的阿富汗玉，应送检确认标准名称。"
       },
-      "references": ["system-gemology", "gic-gemology", "gbt-16552", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gic-gemology",
+        "gbt-16552",
+        "gbt-16553"
+      ]
+    },
+    "obsidian": {
+      "professional": {
+        "mineralSpecies": "天然火山玻璃，商业上常归入水晶饰品但不是石英晶体",
+        "composition": "以SiO2为主的非晶质火山玻璃，含水和铁镁等杂质",
+        "crystalSystem": "非晶质，无晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.48-1.51",
+        "specificGravity": "约2.35-2.60",
+        "opticalCharacter": "单折射，非晶质",
+        "fluorescence": "通常无至弱，处理品可能异常",
+        "inclusions": "流纹、拉长气泡、雪花状球粒、金色或彩虹晕彩微结构。",
+        "lookalikes": "人造玻璃、塑料、染色玻璃、镀膜黑曜石",
+        "simpleTests": "看内部流纹、光效深度和贝壳状断口；不要在成品上做破坏性划刻。",
+        "labAdvice": "高价金曜石、彩虹黑曜石和宣称特殊产地时，建议确认是否镀膜或玻璃仿制。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "diamond": {
+      "professional": {
+        "mineralSpecies": "钻石，宝石级金刚石",
+        "composition": "C",
+        "crystalSystem": "等轴晶系",
+        "hardness": "10",
+        "refractiveIndex": "2.417",
+        "specificGravity": "约3.52",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "可无至强，常见蓝白荧光",
+        "inclusions": "晶体包裹体、羽裂、云状物、针点、双晶纹等。",
+        "lookalikes": "莫桑石、合成立方氧化锆、玻璃、白色蓝宝石、培育钻石",
+        "simpleTests": "看证书、腰码、火彩和热导只能辅助；天然钻与培育钻不能靠肉眼可靠区分。",
+        "labAdvice": "钻石和彩钻购买必须看权威证书，确认天然/培育、处理、颜色成因和4C。"
+      },
+      "references": [
+        "gia-gem-encyclopedia",
+        "system-gemology",
+        "matlins-identification",
+        "nassau-enhancement",
+        "gbt-16552",
+        "gbt-16553",
+        "cibjo-blue-books"
+      ]
+    },
+    "chrome-diopside": {
+      "professional": {
+        "mineralSpecies": "辉石族铬透辉石",
+        "composition": "CaMgSi2O6，铬致绿色",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约5.5-6.5",
+        "refractiveIndex": "约1.66-1.72",
+        "specificGravity": "约3.27-3.32",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "晶体、液体包裹体和裂隙常见。",
+        "lookalikes": "祖母绿、沙弗莱、绿色玻璃、绿色碧玺",
+        "simpleTests": "硬度低于多数高端绿色宝石，折射率和双折射可辅助区分。",
+        "labAdvice": "高价绿色切磨品建议送检确认不是祖母绿或沙弗莱。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "prehnite": {
+      "professional": {
+        "mineralSpecies": "葡萄石",
+        "composition": "Ca2Al(AlSi3O10)(OH)2",
+        "crystalSystem": "斜方晶系",
+        "hardness": "约6-6.5",
+        "refractiveIndex": "约1.61-1.67",
+        "specificGravity": "约2.80-2.95",
+        "opticalCharacter": "双轴晶",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维状、葡萄状结构和云雾状包裹体常见。",
+        "lookalikes": "绿玉髓、玻璃、葡萄状玉髓、浅绿萤石",
+        "simpleTests": "看柔和蜡状光泽、折射率和集合体结构。",
+        "labAdvice": "高价透明绿色材料建议送检确认种属和是否染色。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "titanite": {
+      "professional": {
+        "mineralSpecies": "榍石/钛榍石",
+        "composition": "CaTiSiO5",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约5-5.5",
+        "refractiveIndex": "约1.84-2.11",
+        "specificGravity": "约3.45-3.55",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "高色散、裂隙和晶体包裹体常见。",
+        "lookalikes": "锆石、翠榴石、橄榄石、玻璃",
+        "simpleTests": "强火彩和高折射率是线索，但硬度低需防磨损。",
+        "labAdvice": "高价榍石建议确认种属和裂隙情况。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "danburite": {
+      "professional": {
+        "mineralSpecies": "丹泉石/赛黄晶",
+        "composition": "CaB2Si2O8",
+        "crystalSystem": "斜方晶系",
+        "hardness": "7-7.5",
+        "refractiveIndex": "约1.63-1.64",
+        "specificGravity": "约2.97-3.03",
+        "opticalCharacter": "双轴晶负光性",
+        "fluorescence": "通常弱至无",
+        "inclusions": "液体包裹体、晶体包裹体和生长纹可见。",
+        "lookalikes": "黄水晶、托帕石、玻璃、无色蓝宝石",
+        "simpleTests": "折射率和密度可与黄水晶、托帕石区分。",
+        "labAdvice": "高价大颗粒或特殊颜色建议送检。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "scapolite": {
+      "professional": {
+        "mineralSpecies": "方柱石",
+        "composition": "钠钙铝硅酸盐，含Cl/CO3/SO4等",
+        "crystalSystem": "四方晶系",
+        "hardness": "约5.5-6",
+        "refractiveIndex": "约1.54-1.58",
+        "specificGravity": "约2.55-2.74",
+        "opticalCharacter": "一轴晶负光性",
+        "fluorescence": "可有黄、橙、粉等荧光变化",
+        "inclusions": "管状、液体和晶体包裹体常见。",
+        "lookalikes": "黄水晶、紫水晶、托帕石、玻璃",
+        "simpleTests": "硬度、折射率和荧光可辅助识别。",
+        "labAdvice": "高价猫眼方柱石或特殊颜色建议送检。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "fluorite-gem": {
+      "professional": {
+        "mineralSpecies": "萤石",
+        "composition": "CaF2",
+        "crystalSystem": "等轴晶系",
+        "hardness": "4",
+        "refractiveIndex": "约1.434",
+        "specificGravity": "约3.18",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "常见明显荧光，颜色变化大",
+        "inclusions": "色带、解理裂隙和液体包裹体常见。",
+        "lookalikes": "玻璃、紫水晶、合成材料、托帕石",
+        "simpleTests": "硬度低、完全解理和荧光是现场线索。",
+        "labAdvice": "宝石级萤石主要看是否染色、充填和耐久性。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "sphalerite": {
+      "professional": {
+        "mineralSpecies": "闪锌矿",
+        "composition": "ZnS，可含Fe等杂质",
+        "crystalSystem": "等轴晶系",
+        "hardness": "约3.5-4",
+        "refractiveIndex": "约2.37",
+        "specificGravity": "约3.9-4.1",
+        "opticalCharacter": "均质体，单折射",
+        "fluorescence": "可有橙、红等荧光或磷光",
+        "inclusions": "强色散、解理和裂隙常见。",
+        "lookalikes": "锆石、榍石、玻璃、合成材料",
+        "simpleTests": "低硬度和极强火彩是重要线索。",
+        "labAdvice": "切磨闪锌矿易损，高价收藏石建议送检确认。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "azurite": {
+      "professional": {
+        "mineralSpecies": "蓝铜矿",
+        "composition": "Cu3(CO3)2(OH)2",
+        "crystalSystem": "单斜晶系",
+        "hardness": "约3.5-4",
+        "refractiveIndex": "约1.73-1.84",
+        "specificGravity": "约3.7-3.9",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无",
+        "inclusions": "常与孔雀石共生，裂隙、土状集合体常见。",
+        "lookalikes": "青金石、染色石、玻璃、蓝色树脂",
+        "simpleTests": "硬度低、铜矿物颜色和共生孔雀石是线索。",
+        "labAdvice": "高价雕件和蓝绿共生料需确认染色、稳定处理。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "larimar": {
+      "professional": {
+        "mineralSpecies": "针钠钙石/海纹石",
+        "composition": "NaCa2Si3O8(OH)",
+        "crystalSystem": "三斜晶系，商业品多为集合体",
+        "hardness": "约4.5-5",
+        "refractiveIndex": "约1.59-1.64",
+        "specificGravity": "约2.70-2.90",
+        "opticalCharacter": "双轴晶，集合体点测为主",
+        "fluorescence": "通常弱至无",
+        "inclusions": "云朵状白纹、蓝白斑块和裂隙常见。",
+        "lookalikes": "蓝色方解石、染色石英、玻璃、塑料",
+        "simpleTests": "看海浪状天然纹理和不透明集合体结构。",
+        "labAdvice": "高价海纹石需确认是否染色、注胶和产地。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "kyanite": {
+      "professional": {
+        "mineralSpecies": "蓝晶石",
+        "composition": "Al2SiO5",
+        "crystalSystem": "三斜晶系",
+        "hardness": "方向硬度约4.5-7",
+        "refractiveIndex": "约1.71-1.73",
+        "specificGravity": "约3.53-3.68",
+        "opticalCharacter": "双轴晶负光性",
+        "fluorescence": "通常无",
+        "inclusions": "解理、色带、针状包裹体常见。",
+        "lookalikes": "蓝宝石、坦桑石、堇青石、玻璃",
+        "simpleTests": "明显多色性和方向硬度是线索。",
+        "labAdvice": "高价蓝色切磨品建议送检确认种属。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "sillimanite": {
+      "professional": {
+        "mineralSpecies": "矽线石",
+        "composition": "Al2SiO5",
+        "crystalSystem": "斜方晶系",
+        "hardness": "约6.5-7.5",
+        "refractiveIndex": "约1.66-1.68",
+        "specificGravity": "约3.23-3.27",
+        "opticalCharacter": "双轴晶正光性",
+        "fluorescence": "通常无至弱",
+        "inclusions": "纤维状包裹体可形成猫眼效应。",
+        "lookalikes": "金绿猫眼、石英猫眼、玻璃猫眼",
+        "simpleTests": "折射率、密度和猫眼结构可区分。",
+        "labAdvice": "高价猫眼类宝石建议送检确认矿物种。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
+    },
+    "zoisite-ruby": {
+      "professional": {
+        "mineralSpecies": "红宝黝帘石集合体",
+        "composition": "黝帘石基底含红宝石和角闪石等",
+        "crystalSystem": "集合体",
+        "hardness": "约6-7，红宝石局部硬度9",
+        "refractiveIndex": "点测随矿物变化",
+        "specificGravity": "约3.1-3.5",
+        "opticalCharacter": "集合体，结构观察为主",
+        "fluorescence": "红宝石部分可有红色荧光",
+        "inclusions": "红色刚玉斑块、绿色黝帘石和黑色角闪石共生。",
+        "lookalikes": "染色石、拼合材料、红绿玻璃",
+        "simpleTests": "看红绿矿物边界是否自然，放大观察矿物颗粒。",
+        "labAdvice": "大件和高价红绿宝建议确认是否染色、注胶或拼合。"
+      },
+      "references": [
+        "system-gemology",
+        "gemstones-world",
+        "matlins-identification",
+        "gbt-16553"
+      ]
     }
   },
   "assignments": {
@@ -774,7 +1322,71 @@
     "jade_015": "seal-stone",
     "jade_016": "seal-stone",
     "jade_017": "seal-stone",
-    "jade_018": "calcite-marble"
+    "jade_018": "calcite-marble",
+    "crystal_101": "included-quartz",
+    "crystal_102": "included-quartz",
+    "crystal_103": "included-quartz",
+    "crystal_104": "quartz",
+    "crystal_105": "quartz",
+    "crystal_106": "included-quartz",
+    "crystal_107": "included-quartz",
+    "crystal_108": "included-quartz",
+    "crystal_109": "quartz",
+    "crystal_110": "obsidian",
+    "crystal_111": "obsidian",
+    "crystal_112": "obsidian",
+    "crystal_113": "obsidian",
+    "crystal_114": "included-quartz",
+    "gem_101": "diamond",
+    "gem_102": "diamond",
+    "gem_103": "corundum",
+    "gem_104": "corundum",
+    "gem_105": "corundum",
+    "gem_106": "tourmaline",
+    "gem_107": "tourmaline",
+    "gem_108": "chrome-diopside",
+    "gem_109": "prehnite",
+    "gem_110": "titanite",
+    "gem_111": "danburite",
+    "gem_112": "scapolite",
+    "gem_113": "fluorite-gem",
+    "gem_114": "sphalerite",
+    "gem_115": "azurite",
+    "gem_116": "larimar",
+    "gem_117": "chalcedony",
+    "gem_118": "garnet",
+    "gem_119": "garnet",
+    "gem_120": "zoisite-ruby",
+    "gem_121": "kyanite",
+    "gem_122": "sillimanite",
+    "gem_123": "chrome-diopside",
+    "gem_124": "titanite",
+    "gem_125": "corundum",
+    "jade_101": "nephrite",
+    "jade_102": "nephrite",
+    "jade_103": "nephrite",
+    "jade_104": "nephrite",
+    "jade_105": "nephrite",
+    "jade_106": "nephrite",
+    "jade_107": "jadeite",
+    "jade_108": "jadeite",
+    "jade_109": "jadeite",
+    "jade_110": "jadeite",
+    "jade_111": "jadeite",
+    "jade_112": "serpentine",
+    "jade_113": "serpentine",
+    "jade_114": "quartzite",
+    "jade_115": "quartzite",
+    "jade_116": "quartzite",
+    "jade_117": "chalcedony",
+    "jade_118": "chalcedony",
+    "jade_119": "chalcedony",
+    "jade_120": "chalcedony",
+    "jade_121": "chalcedony",
+    "jade_122": "chalcedony",
+    "jade_123": "chalcedony",
+    "jade_124": "chalcedony",
+    "jade_125": "rhodonite"
   },
   "overrides": {
     "gem_009": {
@@ -792,7 +1404,13 @@
         "simpleTests": "看游彩是否有天然方向变化，拼合欧泊要看侧面层状结构。",
         "labAdvice": "黑欧泊、图案欧泊和高价澳洲欧泊必须确认是否拼合、染色或烟熏处理。"
       },
-      "references": ["system-gemology", "gia-gem-encyclopedia", "nassau-enhancement", "gbt-16552", "gbt-16553"]
+      "references": [
+        "system-gemology",
+        "gia-gem-encyclopedia",
+        "nassau-enhancement",
+        "gbt-16552",
+        "gbt-16553"
+      ]
     }
   }
 }

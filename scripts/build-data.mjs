@@ -5,16 +5,18 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const sourcePath = path.join(root, "crystals_database.json");
-const expansionPath = path.join(root, "data", "gem-expansion.json");
 const professionalPath = path.join(root, "data", "professional-data.json");
 const dataDir = path.join(root, "data");
+const expansionPaths = ["gem-expansion.json", "gem-completion.json"].map((fileName) => path.join(dataDir, fileName));
 const jsonPath = path.join(dataDir, "gems.json");
 const jsPath = path.join(dataDir, "gems.js");
 
 const raw = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
-const expansion = fs.existsSync(expansionPath)
-  ? JSON.parse(fs.readFileSync(expansionPath, "utf8"))
-  : { gems: [] };
+const expansionGems = expansionPaths.flatMap((filePath) => {
+  if (!fs.existsSync(filePath)) return [];
+  const expansion = JSON.parse(fs.readFileSync(filePath, "utf8"));
+  return expansion.gems || [];
+});
 const professionalData = fs.existsSync(professionalPath)
   ? JSON.parse(fs.readFileSync(professionalPath, "utf8"))
   : { profiles: {}, assignments: {}, overrides: {}, references: {} };
@@ -226,7 +228,7 @@ function professionalFor(item, topCategory, imageKey) {
   return { professional, references };
 }
 
-const sourceGems = [...raw.crystals, ...(expansion.gems || [])];
+const sourceGems = [...raw.crystals, ...expansionGems];
 
 const gems = sourceGems.map((item) => {
   const topCategory = topCategoryFor(item);
@@ -260,7 +262,7 @@ const output = {
     name: "宝石百科与现场识别数据库",
     version: "1.0.0",
     generatedAt: new Date().toISOString(),
-    source: "crystals_database.json + data/gem-expansion.json + data/professional-data.json",
+    source: "crystals_database.json + data/gem-expansion.json + data/gem-completion.json + data/professional-data.json",
     total: gems.length,
     fieldSchema: [
       "id",

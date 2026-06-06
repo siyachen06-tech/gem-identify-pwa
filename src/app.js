@@ -1,4 +1,6 @@
 (() => {
+  const APP_VERSION = "20260606-completion-v1";
+
   const STORAGE = {
     favorites: "gemApp.favorites.v1",
     settings: "gemApp.settings.v1",
@@ -82,7 +84,7 @@
   async function loadGemData() {
     if (location.protocol !== "file:") {
       try {
-        const response = await fetch("data/gems.json", { cache: "no-store" });
+        const response = await fetch(`data/gems.json?v=${APP_VERSION}`, { cache: "no-store" });
         if (response.ok) {
           state.data = await response.json();
           return;
@@ -103,7 +105,7 @@
   async function loadImageCredits() {
     if (location.protocol !== "file:") {
       try {
-        const response = await fetch("data/image-credits.json", { cache: "no-store" });
+        const response = await fetch(`data/image-credits.json?v=${APP_VERSION}`, { cache: "no-store" });
         if (response.ok) {
           state.imageCredits = await response.json();
           return;

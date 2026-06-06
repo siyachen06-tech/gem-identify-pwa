@@ -1,0 +1,1302 @@
+{
+  "version": "1.0.0",
+  "note": "第二轮补齐数据，覆盖水晶、彩宝、玉石常见市场细分品类。字段与主库一致。",
+  "gems": [
+    {
+      "id": "crystal_101",
+      "name": "超七水晶",
+      "englishName": "Super Seven Quartz",
+      "topCategory": "水晶类",
+      "category": "包裹体水晶",
+      "appearance": "透明至半透明石英中含紫水晶、烟晶、白水晶及赤铁矿、纤铁矿、针铁矿等多种包裹体，常呈紫、褐、红、黑交织。",
+      "quality": "品质看点：颜色层次自然、包裹体丰富但不脏、晶体完整、裂少为佳；商业名溢价较高，不能只因叫“超七”就高价。",
+      "origins": "巴西、马达加斯加、印度等，市场上产地和包裹体组合差异很大。",
+      "uses": "手串、吊坠、晶柱和收藏晶体；更偏水晶审美和包裹体观赏。",
+      "price": "市场参考：普通珠串约几十至数百元；包裹体丰富、晶体通透的大件约数百至数千元；精品晶体可更高。",
+      "authenticity": "辨别要点：注意普通发晶、草莓晶、染色石英被泛称超七；天然包裹体应有立体深浅和自然边界。",
+      "treatment": "常见处理：染色、注胶、拼合、商业改名。识别看裂隙聚色、胶感和包裹体是否浮在表面。",
+      "fengshui": "民俗说法中常被包装为综合能量水晶；此类说法只作文化说明。",
+      "aliases": [
+        "Super 7",
+        "三轮骨干",
+        "包裹体水晶"
+      ],
+      "imageKey": "super-seven-quartz"
+    },
+    {
+      "id": "crystal_102",
+      "name": "草莓晶",
+      "englishName": "Strawberry Quartz",
+      "topCategory": "水晶类",
+      "category": "包裹体水晶",
+      "appearance": "粉红至红色半透明石英，内部常见赤铁矿、纤铁矿或云母类细点状包裹体，像草莓籽。",
+      "quality": "品质看点：颜色柔和均匀、内含物细密自然、通透度好、裂少为佳；过艳过红且价格低要谨慎。",
+      "origins": "俄罗斯、哈萨克斯坦、墨西哥、巴西、非洲部分地区，市场来源较复杂。",
+      "uses": "手串、吊坠和小雕件，适合日常饰品和水晶收藏。",
+      "price": "市场参考：普通珠串几十至数百元；颜色好、晶体透、内含物漂亮者数百至数千元。",
+      "authenticity": "辨别要点：染色石英、粉色玻璃和红点玻璃常冒充；真品红点在晶体内部有深浅层次。",
+      "treatment": "常见处理：染色、加色、注胶。识别看裂隙是否聚红、颜色是否浮且过艳。",
+      "fengshui": "民俗说法中象征桃花、人缘和温柔情绪，不作为功效承诺。",
+      "aliases": [
+        "士多啤梨晶",
+        "Strawberry Quartz"
+      ],
+      "imageKey": "strawberry-quartz"
+    },
+    {
+      "id": "crystal_103",
+      "name": "胶花水晶",
+      "englishName": "Hematoid Quartz",
+      "topCategory": "水晶类",
+      "category": "包裹体水晶",
+      "appearance": "透明石英中含黄色、橙色、红色或褐色絮状、片状铁氧化物包裹体，像胶花或云雾。",
+      "quality": "品质看点：花纹分布有画面感、颜色自然、晶体通透、裂少为佳；过于鲜艳统一的颜色需警惕染色。",
+      "origins": "巴西、马达加斯加、中国和非洲部分地区。",
+      "uses": "手串、吊坠、雕件和观赏晶体，价值看花纹和通透度。",
+      "price": "市场参考：普通珠串几十至数百元；花纹漂亮、晶体干净者数百至数千元。",
+      "authenticity": "辨别要点：天然铁氧化物包裹体有不规则边界和层次；染色品常沿裂隙集中。",
+      "treatment": "常见处理：染色、注胶、加热改善色调。识别看颜色是否只在裂隙或表层。",
+      "fengshui": "民俗说法中常被称为招财、活力或太阳能量水晶。",
+      "aliases": [
+        "红胶花",
+        "黄胶花",
+        "火焰水晶",
+        "Hematoid Quartz"
+      ],
+      "imageKey": "hematoid-quartz"
+    },
+    {
+      "id": "crystal_104",
+      "name": "赫基蒙水晶",
+      "englishName": "Herkimer Diamond Quartz",
+      "topCategory": "水晶类",
+      "category": "特殊水晶",
+      "appearance": "自然双尖透明石英晶体，常见短柱、双终端、玻璃光泽强，因产自纽约赫基蒙地区而得名。",
+      "quality": "品质看点：双尖完整、透明度高、晶面光亮、黑碳质包裹体少、缺口少为佳；“赫基蒙钻石”不是钻石。",
+      "origins": "美国纽约赫基蒙地区最经典，其他地区也有类似双尖石英但名称应谨慎。",
+      "uses": "原石收藏、吊坠和矿物标本；适合观察自然双尖生长。",
+      "price": "市场参考：小颗粒几十至数百元；透明完整大晶体数百至数千元；产地清晰精品更高。",
+      "authenticity": "辨别要点：玻璃切磨品和普通双尖水晶会冒充；看晶面天然生长纹、端面和产地说明。",
+      "treatment": "常见处理较少，主要风险是普通双尖石英借名。",
+      "fengshui": "民俗说法中象征清明、放大意图和快速能量。",
+      "aliases": [
+        "赫基蒙钻石",
+        "Herkimer Diamond"
+      ],
+      "imageKey": "herkimer-diamond"
+    },
+    {
+      "id": "crystal_105",
+      "name": "喜马拉雅水晶",
+      "englishName": "Himalayan Quartz",
+      "topCategory": "水晶类",
+      "category": "产地水晶",
+      "appearance": "无色、烟色或淡粉色石英晶体，常带泥土、氧化铁皮壳或特殊生长纹，卖点多为产地。",
+      "quality": "品质看点：产地可信、晶体完整、光泽好、自然皮壳和生长纹清楚为佳；只凭“喜马拉雅”名称不等于高价值。",
+      "origins": "印度北部、尼泊尔、巴基斯坦等喜马拉雅山系相关地区。",
+      "uses": "原石、晶簇、冥想摆件和矿物收藏。",
+      "price": "市场参考：普通小晶体几十至数百元；完整大晶簇或特殊形态数百至数千元以上。",
+      "authenticity": "辨别要点：普通白水晶可能被冠以喜马拉雅产地；需看可靠来源和产地记录。",
+      "treatment": "常见处理：清洗、酸洗、染色皮壳或人为做旧。识别看皮壳是否自然连续。",
+      "fengshui": "民俗说法中常被称为高山净化水晶。",
+      "aliases": [
+        "Himalayan Crystal",
+        "喜马拉雅白水晶"
+      ],
+      "imageKey": "himalayan-quartz"
+    },
+    {
+      "id": "crystal_106",
+      "name": "星光粉晶",
+      "englishName": "Star Rose Quartz",
+      "topCategory": "水晶类",
+      "category": "特殊水晶",
+      "appearance": "粉色半透明石英弧面或球体，在点光源下可出现六射星光，星光来自定向针状包裹体。",
+      "quality": "品质看点：粉色柔和、星线居中清晰、表面抛光好、裂少为佳；星线太机械或固定要谨慎。",
+      "origins": "马达加斯加、巴西、斯里兰卡等。",
+      "uses": "球体、弧面吊坠、戒面和收藏小件。",
+      "price": "市场参考：普通小件几十至数百元；星线明显、颜色好的球或戒面数百至数千元。",
+      "authenticity": "辨别要点：天然星光应随光源移动；玻璃或表面刻线仿品星线不自然。",
+      "treatment": "常见处理：染色、表面处理、拼合。识别看颜色和星线是否来自内部。",
+      "fengshui": "民俗说法中象征情感修复、人缘和温柔表达。",
+      "aliases": [
+        "星彩粉晶",
+        "Star Rose Quartz"
+      ],
+      "imageKey": "star-rose-quartz"
+    },
+    {
+      "id": "crystal_107",
+      "name": "紫钛晶",
+      "englishName": "Purple Rutilated Quartz",
+      "topCategory": "水晶类",
+      "category": "发晶",
+      "appearance": "透明至紫色石英中含紫褐、红褐或金属感针状包裹体，市场常以钛晶、发晶细分销售。",
+      "quality": "品质看点：发丝清晰立体、方向自然、晶体通透、裂少为佳；紫色过艳或发丝过整齐需谨慎。",
+      "origins": "巴西、马达加斯加、非洲部分地区。",
+      "uses": "手串、戒面、吊坠和晶体收藏。",
+      "price": "市场参考：普通珠串数百元内；发丝密而美、晶体透者数百至数千元，精品可更高。",
+      "authenticity": "辨别要点：玻璃内嵌金属丝、染色石英和注胶品常见；真发丝在晶体内部有深浅和穿插关系。",
+      "treatment": "常见处理：染色、注胶、拼合。识别看发丝是否穿透晶体、是否有气泡和胶感。",
+      "fengshui": "民俗说法中常被包装为行动力、财富和贵人能量。",
+      "aliases": [
+        "紫发晶",
+        "Purple Rutilated Quartz"
+      ],
+      "imageKey": "purple-rutilated-quartz"
+    },
+    {
+      "id": "crystal_108",
+      "name": "绿钛晶",
+      "englishName": "Green Rutilated Quartz",
+      "topCategory": "水晶类",
+      "category": "发晶",
+      "appearance": "透明石英中含绿色针状或纤维状包裹体，常与阳起石、绿泥石等包裹体相关，颜色呈绿丝或绿雾。",
+      "quality": "品质看点：绿色包裹体自然、晶体通透、裂少、发丝立体为佳；过于鲜艳均匀的绿需警惕染色。",
+      "origins": "巴西、马达加斯加、印度和非洲部分地区。",
+      "uses": "手串、吊坠、晶体观赏和发晶收藏。",
+      "price": "市场参考：普通珠串几十至数百元；发丝漂亮、晶体干净者数百至数千元。",
+      "authenticity": "辨别要点：染色石英颜色常沿裂隙集中；玻璃仿品可见气泡且发丝无立体穿插。",
+      "treatment": "常见处理：染色、注胶、拼合。识别看裂隙聚色和包裹体边界。",
+      "fengshui": "民俗说法中象征生长、事业和财富流动。",
+      "aliases": [
+        "绿发晶",
+        "Green Rutile Quartz"
+      ],
+      "imageKey": "green-rutilated-quartz"
+    },
+    {
+      "id": "crystal_109",
+      "name": "黑水晶（墨晶）",
+      "englishName": "Morion Quartz",
+      "topCategory": "水晶类",
+      "category": "石英族水晶",
+      "appearance": "深烟色至近黑色石英晶体，透强光可见褐色或烟灰色调，玻璃光泽。",
+      "quality": "品质看点：颜色自然不过死黑、晶体完整、晶面好、裂少为佳；完全不透且价格异常高需谨慎。",
+      "origins": "巴西、瑞士、俄罗斯、乌克兰、中国等。",
+      "uses": "原石、摆件、手串和矿物收藏。",
+      "price": "市场参考：普通小件几十至数百元；完整晶体或大件数百至数千元。",
+      "authenticity": "辨别要点：染色石英、玻璃和人工辐照烟晶易混；强光下观察颜色过渡和内部包裹体。",
+      "treatment": "常见处理：人工辐照使颜色加深。识别需结合颜色分布、包裹体和证书。",
+      "fengshui": "民俗说法中象征防护、稳定和吸收负面情绪。",
+      "aliases": [
+        "墨晶",
+        "Morion",
+        "黑茶晶"
+      ],
+      "imageKey": "morion-quartz"
+    },
+    {
+      "id": "crystal_110",
+      "name": "黑曜石",
+      "englishName": "Obsidian",
+      "topCategory": "水晶类",
+      "category": "火山玻璃",
+      "appearance": "黑色至深褐色天然火山玻璃，贝壳状断口，玻璃光泽，通常不具晶体结构。",
+      "quality": "品质看点：质地细腻、抛光好、裂少、颜色均匀或特殊光效明显为佳；黑曜石不是石英水晶。",
+      "origins": "墨西哥、美国、冰岛、日本、印度尼西亚、中国等火山活动地区。",
+      "uses": "手串、吊坠、雕件、刀刃标本和装饰品。",
+      "price": "市场参考：普通黑曜石饰品几十至数百元；特殊光效或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：玻璃仿品、塑料和染色玻璃可冒充；真黑曜石常有流纹、气泡拉长痕和贝壳状断口。",
+      "treatment": "常见处理：染色、镀膜、玻璃仿制。识别看光泽、流纹和断口。",
+      "fengshui": "民俗说法中常被当作防护、辟邪和稳定情绪材料。",
+      "aliases": [
+        "Obsidian",
+        "火山玻璃"
+      ],
+      "imageKey": "obsidian"
+    },
+    {
+      "id": "crystal_111",
+      "name": "雪花黑曜石",
+      "englishName": "Snowflake Obsidian",
+      "topCategory": "水晶类",
+      "category": "火山玻璃",
+      "appearance": "黑色火山玻璃中分布白色或灰白色雪花状球粒，形成黑白斑点图案。",
+      "quality": "品质看点：雪花分布自然、黑白对比清楚、抛光好、裂少为佳；图案过于规则要谨慎。",
+      "origins": "美国、墨西哥、冰岛等。",
+      "uses": "手串、吊坠、小雕件和装饰石。",
+      "price": "市场参考：普通饰品几十至数百元；图案漂亮或雕工好者数百元以上。",
+      "authenticity": "辨别要点：染色玻璃和印花仿品可能冒充；真雪花结构在材料内部，不是表面印刷。",
+      "treatment": "常见处理：染色、玻璃仿制、表面涂层。识别看图案是否深入内部。",
+      "fengshui": "民俗说法中象征平衡、清理和稳定。",
+      "aliases": [
+        "Snowflake Obsidian",
+        "雪花曜石"
+      ],
+      "imageKey": "snowflake-obsidian"
+    },
+    {
+      "id": "crystal_112",
+      "name": "金曜石",
+      "englishName": "Gold Sheen Obsidian",
+      "topCategory": "水晶类",
+      "category": "火山玻璃",
+      "appearance": "黑曜石中因微小气泡或包裹体排列产生金色闪光，转动可见金色猫眼状或片状光泽。",
+      "quality": "品质看点：金光强、方向清晰、底色黑亮、裂少为佳；表面镀膜金光需警惕。",
+      "origins": "墨西哥较常见，其他火山产区也有。",
+      "uses": "手串、吊坠、雕件和装饰摆件。",
+      "price": "市场参考：普通珠串几十至数百元；金光强、雕工好者数百至数千元。",
+      "authenticity": "辨别要点：真金曜石光效来自内部微结构；镀膜或玻璃仿品光在表面且易磨损。",
+      "treatment": "常见处理：染色、镀膜、玻璃仿制。识别看金光是否随内部角度变化。",
+      "fengshui": "民俗说法中常被包装为财富、防护和行动力。",
+      "aliases": [
+        "金眼黑曜石",
+        "Gold Sheen Obsidian"
+      ],
+      "imageKey": "gold-sheen-obsidian"
+    },
+    {
+      "id": "crystal_113",
+      "name": "彩虹黑曜石",
+      "englishName": "Rainbow Obsidian",
+      "topCategory": "水晶类",
+      "category": "火山玻璃",
+      "appearance": "黑曜石内部可见绿色、紫色、金色或彩虹状晕彩，通常需在特定角度强光下观察。",
+      "quality": "品质看点：彩虹光带明显、颜色丰富、抛光好、裂少为佳；自然光效应有角度变化，不应像涂层一样浮在表面。",
+      "origins": "墨西哥、美国等火山产区。",
+      "uses": "手串、吊坠、雕件和观赏石。",
+      "price": "市场参考：普通珠串几十至数百元；彩虹光强且雕工好者数百至数千元。",
+      "authenticity": "辨别要点：表面镀膜玻璃和染色材料易混；观察彩虹是否来自内部层状结构。",
+      "treatment": "常见处理：镀膜、染色、玻璃仿制。识别看磨损处和光效深度。",
+      "fengshui": "民俗说法中象征转化、保护和情绪释放。",
+      "aliases": [
+        "Rainbow Obsidian",
+        "彩曜石"
+      ],
+      "imageKey": "rainbow-obsidian"
+    },
+    {
+      "id": "crystal_114",
+      "name": "银发晶",
+      "englishName": "Silver Rutilated Quartz",
+      "topCategory": "水晶类",
+      "category": "发晶",
+      "appearance": "透明石英中含银白色、灰白色或金属光泽针状包裹体，发丝可稀疏或密集。",
+      "quality": "品质看点：发丝明亮立体、晶体通透、裂少、发丝分布有美感为佳；金属丝仿品需警惕。",
+      "origins": "巴西、马达加斯加、非洲部分地区。",
+      "uses": "手串、戒面、吊坠和发晶收藏。",
+      "price": "市场参考：普通珠串几十至数百元；晶体透、发丝美者数百至数千元。",
+      "authenticity": "辨别要点：玻璃内嵌金属丝常排列过于整齐且有气泡；真发丝在晶体内部穿插自然。",
+      "treatment": "常见处理：注胶、拼合、染色。识别看发丝立体关系和裂隙胶感。",
+      "fengshui": "民俗说法中象征清晰、保护和专注。",
+      "aliases": [
+        "银钛晶",
+        "白发晶",
+        "Silver Rutile Quartz"
+      ],
+      "imageKey": "silver-rutilated-quartz"
+    },
+    {
+      "id": "gem_101",
+      "name": "钻石",
+      "englishName": "Diamond",
+      "topCategory": "彩宝类",
+      "category": "碳矿物",
+      "appearance": "无色至浅黄、褐或其他颜色，金刚光泽，火彩强，硬度10，常见八面体晶形或切磨明亮式。",
+      "quality": "品质看点：4C是基础，即颜色、净度、切工、克拉；还要看荧光、奶咖绿、证书和是否处理。",
+      "origins": "南非、博茨瓦纳、俄罗斯、加拿大、澳大利亚、印度等。",
+      "uses": "订婚戒、珠宝镶嵌和投资收藏；高价值必须看权威证书。",
+      "price": "市场参考：碎钻几十至数百元/颗；1克拉商业品质约数万元起，高色高净高切工明显更高；天然与培育价格体系不同。",
+      "authenticity": "辨别要点：合成立方氧化锆、莫桑石、玻璃和培育钻易混；仅靠肉眼不能区分天然钻与培育钻。",
+      "treatment": "常见处理：高温高压改色、辐照、激光钻孔、裂隙充填。识别需专业仪器和证书。",
+      "fengshui": "民俗说法中象征坚定、承诺和清晰意志。",
+      "aliases": [
+        "金刚石",
+        "Diamond"
+      ],
+      "imageKey": "diamond"
+    },
+    {
+      "id": "gem_102",
+      "name": "彩色钻石",
+      "englishName": "Fancy Color Diamond",
+      "topCategory": "彩宝类",
+      "category": "碳矿物",
+      "appearance": "黄色、粉色、蓝色、绿色、橙色、红色、褐色等天然或处理彩色钻石，颜色是价值核心。",
+      "quality": "品质看点：颜色成因、色级、饱和度和天然性最重要；粉、蓝、绿、红等天然色极稀有，证书必须明确。",
+      "origins": "澳大利亚、南非、俄罗斯、巴西、加拿大等。",
+      "uses": "高级珠宝和收藏裸石；高端市场非常依赖证书与来源。",
+      "price": "市场参考：处理彩钻和培育彩钻价格跨度很大；天然稀有色可从数万元到数百万元以上。",
+      "authenticity": "辨别要点：辐照改色、涂层、培育钻和合成材料风险高；颜色是否天然不能凭照片判断。",
+      "treatment": "常见处理：辐照、退火、HPHT、涂层。必须看实验室报告。",
+      "fengshui": "民俗说法中不同颜色有不同象征，整体代表稀有和高辨识度。",
+      "aliases": [
+        "Fancy Diamond",
+        "彩钻"
+      ],
+      "imageKey": "fancy-color-diamond"
+    },
+    {
+      "id": "gem_103",
+      "name": "粉色蓝宝石",
+      "englishName": "Pink Sapphire",
+      "topCategory": "彩宝类",
+      "category": "刚玉族",
+      "appearance": "粉色至紫粉色刚玉，透明，硬度9，颜色可柔和或鲜艳。",
+      "quality": "品质看点：颜色饱和明亮、不过灰不过暗、净度好、切工亮为佳；与浅色红宝石边界依赖实验室和市场定义。",
+      "origins": "斯里兰卡、马达加斯加、缅甸、莫桑比克、坦桑尼亚。",
+      "uses": "戒面、吊坠、耳饰和婚戒彩宝。",
+      "price": "市场参考：商业品质数百至数千元/克拉；颜色好、未加热、净度佳者数千至数万元/克拉。",
+      "authenticity": "辨别要点：粉色玻璃、合成尖晶石、合成刚玉和扩散处理刚玉需警惕。",
+      "treatment": "常见处理：热处理、扩散处理。识别需看包裹体、色带和证书。",
+      "fengshui": "民俗说法中象征温柔、爱意和人缘。",
+      "aliases": [
+        "粉蓝宝",
+        "Pink Sapphire"
+      ],
+      "imageKey": "pink-sapphire"
+    },
+    {
+      "id": "gem_104",
+      "name": "黄色蓝宝石",
+      "englishName": "Yellow Sapphire",
+      "topCategory": "彩宝类",
+      "category": "刚玉族",
+      "appearance": "黄色至金黄色刚玉，透明，玻璃光泽，颜色从淡黄到浓金黄。",
+      "quality": "品质看点：颜色明亮浓郁、无明显褐调、净度好、切工不漏底为佳；未加热优质品价值更高。",
+      "origins": "斯里兰卡、泰国、马达加斯加、澳大利亚、坦桑尼亚。",
+      "uses": "戒面、吊坠和日常耐磨彩宝。",
+      "price": "市场参考：商业品质数百至数千元/克拉；颜色浓、净度好、未加热者数千至数万元/克拉。",
+      "authenticity": "辨别要点：黄水晶、黄色玻璃、托帕石、合成蓝宝和扩散处理易混。",
+      "treatment": "常见处理：热处理、铍扩散。识别需实验室检测扩散和色因。",
+      "fengshui": "民俗说法中象征财富、明朗和学习运。",
+      "aliases": [
+        "黄蓝宝",
+        "Yellow Sapphire"
+      ],
+      "imageKey": "yellow-sapphire"
+    },
+    {
+      "id": "gem_105",
+      "name": "绿色蓝宝石",
+      "englishName": "Green Sapphire",
+      "topCategory": "彩宝类",
+      "category": "刚玉族",
+      "appearance": "绿色、蓝绿色至黄绿色刚玉，颜色常由蓝黄组分叠加形成。",
+      "quality": "品质看点：颜色清爽明亮、净度好、切工亮为佳；过暗或灰调明显会影响价值。",
+      "origins": "澳大利亚、斯里兰卡、泰国、马达加斯加、美国蒙大拿。",
+      "uses": "戒面、吊坠和个性彩宝镶嵌。",
+      "price": "市场参考：普通商业品质数百至数千元/克拉；颜色好、净度好、产地特色明确者更高。",
+      "authenticity": "辨别要点：绿色碧玺、石榴石、玻璃和合成刚玉可混淆。",
+      "treatment": "常见处理：热处理、扩散处理。识别需证书确认。",
+      "fengshui": "民俗说法中象征稳定成长和清醒判断。",
+      "aliases": [
+        "绿蓝宝",
+        "Green Sapphire"
+      ],
+      "imageKey": "green-sapphire"
+    },
+    {
+      "id": "gem_106",
+      "name": "西瓜碧玺",
+      "englishName": "Watermelon Tourmaline",
+      "topCategory": "彩宝类",
+      "category": "电气石族",
+      "appearance": "同一晶体中出现粉红中心与绿色外圈，横切面像西瓜，也可呈红绿分带。",
+      "quality": "品质看点：红绿分带清晰、颜色鲜明、晶体完整、裂少为佳；切片过薄或注胶多会影响价值。",
+      "origins": "巴西、阿富汗、尼日利亚、马达加斯加、美国。",
+      "uses": "吊坠、切片、戒面和矿物晶体收藏。",
+      "price": "市场参考：普通切片几十至数百元；颜色好、分带完整、晶体大者数百至数千元以上。",
+      "authenticity": "辨别要点：染色石英、拼合玻璃和注胶切片常见；真分带应在晶体生长结构中自然过渡。",
+      "treatment": "常见处理：注胶、染色、拼合。识别看颜色边界、裂隙聚色和胶感。",
+      "fengshui": "民俗说法中象征平衡、关系和情绪流动。",
+      "aliases": [
+        "Watermelon Tourmaline",
+        "双色碧玺"
+      ],
+      "imageKey": "watermelon-tourmaline"
+    },
+    {
+      "id": "gem_107",
+      "name": "铬碧玺",
+      "englishName": "Chrome Tourmaline",
+      "topCategory": "彩宝类",
+      "category": "电气石族",
+      "appearance": "由铬或钒致色的浓绿色碧玺，颜色鲜绿，透明至半透明。",
+      "quality": "品质看点：颜色鲜绿明亮、净度好、切工亮为佳；过黑过暗会降低价值。",
+      "origins": "坦桑尼亚、肯尼亚等东非地区。",
+      "uses": "戒面、吊坠和绿色彩宝镶嵌。",
+      "price": "市场参考：小颗粒数百至数千元/克拉；颜色好、大颗粒、净度佳者数千至数万元/克拉。",
+      "authenticity": "辨别要点：绿色碧玺、铬透辉石、祖母绿、沙弗莱易混；需看折射率、光谱和包裹体。",
+      "treatment": "常见处理较少，主要风险是品种混淆。",
+      "fengshui": "民俗说法中象征成长、财富和活力。",
+      "aliases": [
+        "Chrome Tourmaline",
+        "绿碧玺"
+      ],
+      "imageKey": "chrome-tourmaline"
+    },
+    {
+      "id": "gem_108",
+      "name": "铬透辉石",
+      "englishName": "Chrome Diopside",
+      "topCategory": "彩宝类",
+      "category": "辉石族",
+      "appearance": "鲜绿色至深绿色透辉石，玻璃光泽，常呈明亮祖母绿色调但硬度较低。",
+      "quality": "品质看点：颜色鲜绿、净度好、切工亮为佳；大颗粒常偏暗，硬度低不适合高强度佩戴。",
+      "origins": "俄罗斯西伯利亚最著名，也见于巴基斯坦、缅甸等。",
+      "uses": "戒面、吊坠和绿色彩宝替代选择。",
+      "price": "市场参考：小颗粒几十至数百元/克拉；颜色好、大颗粒数百至数千元/克拉。",
+      "authenticity": "辨别要点：祖母绿、沙弗莱、绿色玻璃易混；硬度低、折射率和双折射特征不同。",
+      "treatment": "常见处理较少，主要注意裂隙和品种误称。",
+      "fengshui": "民俗说法中象征自然、生机和恢复。",
+      "aliases": [
+        "Chrome Diopside",
+        "西伯利亚祖母绿"
+      ],
+      "imageKey": "chrome-diopside"
+    },
+    {
+      "id": "gem_109",
+      "name": "葡萄石",
+      "englishName": "Prehnite",
+      "topCategory": "彩宝类",
+      "category": "硅酸盐矿物",
+      "appearance": "浅绿、黄绿至近无色，常半透明，呈葡萄状集合体或弧面宝石，光泽柔和。",
+      "quality": "品质看点：颜色清新、透明度好、棉裂少、弧面饱满为佳；过混浊或裂多价值低。",
+      "origins": "澳大利亚、南非、中国、美国、马里等。",
+      "uses": "手串、吊坠、弧面戒面和矿物标本。",
+      "price": "市场参考：普通珠串几十至数百元；透明度好、颜色佳者数百至数千元。",
+      "authenticity": "辨别要点：绿玉髓、玻璃、葡萄状玉髓易混；葡萄石硬度和折射率不同。",
+      "treatment": "常见处理较少，注意染色和玻璃仿品。",
+      "fengshui": "民俗说法中象征平静、整理和温柔守护。",
+      "aliases": [
+        "Prehnite",
+        "绿葡萄石"
+      ],
+      "imageKey": "prehnite"
+    },
+    {
+      "id": "gem_110",
+      "name": "榍石",
+      "englishName": "Sphene / Titanite",
+      "topCategory": "彩宝类",
+      "category": "岛状硅酸盐",
+      "appearance": "黄绿、褐绿至金黄色宝石，色散强，火彩明显，但硬度较低。",
+      "quality": "品质看点：颜色鲜亮、火彩强、净度好、切工好为佳；硬度低，镶嵌需保护。",
+      "origins": "马达加斯加、巴西、巴基斯坦、俄罗斯、奥地利等。",
+      "uses": "收藏裸石和低频佩戴珠宝；更适合欣赏火彩。",
+      "price": "市场参考：小颗粒数百至数千元/克拉；颜色好、净度好、大颗粒可更高。",
+      "authenticity": "辨别要点：橄榄石、翠榴石、锆石、玻璃易混；强色散和高折射率是线索。",
+      "treatment": "常见处理较少，主要注意裂隙和仿品。",
+      "fengshui": "民俗说法中象征灵感、明亮和创造力。",
+      "aliases": [
+        "Titanite",
+        "Sphene",
+        "榍石"
+      ],
+      "imageKey": "titanite"
+    },
+    {
+      "id": "gem_111",
+      "name": "赛黄晶（丹泉石）",
+      "englishName": "Danburite",
+      "topCategory": "彩宝类",
+      "category": "硼硅酸盐矿物",
+      "appearance": "无色、淡黄、粉色或香槟色透明宝石，玻璃光泽，外观可似黄水晶或托帕石。",
+      "quality": "品质看点：透明度高、颜色柔和、净度好、切工亮为佳；市场认知较小，价格不应按高端彩宝盲目溢价。",
+      "origins": "墨西哥、缅甸、日本、俄罗斯、马达加斯加等。",
+      "uses": "切磨宝石、吊坠和矿物晶体收藏。",
+      "price": "市场参考：普通切磨品几十至数百元/克拉；大颗粒、净度好、颜色佳者数百至数千元。",
+      "authenticity": "辨别要点：黄水晶、托帕石、玻璃易混；需折射率和密度区分。",
+      "treatment": "常见处理较少，注意误称和玻璃仿品。",
+      "fengshui": "民俗说法中象征清透、平和和净化。",
+      "aliases": [
+        "Danburite",
+        "丹泉石"
+      ],
+      "imageKey": "danburite"
+    },
+    {
+      "id": "gem_112",
+      "name": "方柱石",
+      "englishName": "Scapolite",
+      "topCategory": "彩宝类",
+      "category": "架状硅酸盐",
+      "appearance": "黄色、紫色、粉色、无色等透明宝石，常见长柱状晶体，玻璃光泽。",
+      "quality": "品质看点：颜色明亮、净度好、切工亮为佳；硬度中等，裂隙少更好。",
+      "origins": "坦桑尼亚、马达加斯加、缅甸、巴西、加拿大等。",
+      "uses": "戒面、吊坠和矿物收藏。",
+      "price": "市场参考：普通小颗粒几十至数百元/克拉；颜色特别或猫眼品种可更高。",
+      "authenticity": "辨别要点：黄水晶、紫水晶、托帕石、玻璃易混；需折射率和光谱确认。",
+      "treatment": "常见处理较少，注意辐照改色和仿品。",
+      "fengshui": "民俗说法中象征清晰表达和方向感。",
+      "aliases": [
+        "Scapolite",
+        "方柱石"
+      ],
+      "imageKey": "scapolite"
+    },
+    {
+      "id": "gem_113",
+      "name": "宝石级萤石",
+      "englishName": "Gem Fluorite",
+      "topCategory": "彩宝类",
+      "category": "卤化物矿物",
+      "appearance": "紫、绿、蓝、黄、多色带状透明萤石，玻璃光泽，硬度低，解理明显。",
+      "quality": "品质看点：颜色鲜艳、透明度好、色带美、裂少为佳；硬度4，佩戴耐久差，更适合收藏。",
+      "origins": "中国、英国、美国、墨西哥、西班牙、纳米比亚等。",
+      "uses": "矿物收藏、切磨收藏石和低频佩戴吊坠。",
+      "price": "市场参考：普通切磨品几十至数百元；颜色特别或大颗粒精品数百至数千元。",
+      "authenticity": "辨别要点：玻璃、紫水晶、合成材料易混；萤石硬度低、常有荧光和完全解理。",
+      "treatment": "常见处理：染色、充填较少见但需注意；切磨品需防磕碰。",
+      "fengshui": "民俗说法中象征清理思绪、学习和专注。",
+      "aliases": [
+        "Fluorite Gemstone",
+        "宝石萤石"
+      ],
+      "imageKey": "gem-fluorite"
+    },
+    {
+      "id": "gem_114",
+      "name": "闪锌矿",
+      "englishName": "Sphalerite",
+      "topCategory": "彩宝类",
+      "category": "硫化物矿物",
+      "appearance": "黄、橙、红褐至黑色透明或半透明宝石，色散极强，火彩明显但硬度低。",
+      "quality": "品质看点：颜色明亮、透明、火彩强、裂少为佳；硬度3.5-4，不适合日常戒指。",
+      "origins": "西班牙、墨西哥、美国、中国、保加利亚等。",
+      "uses": "收藏切磨石和矿物标本。",
+      "price": "市场参考：普通小颗粒数十至数百元；大颗粒透明火彩好者数百至数千元以上。",
+      "authenticity": "辨别要点：锆石、榍石、玻璃易混；高色散和低硬度是重要线索。",
+      "treatment": "常见处理少，主要注意裂隙和仿品。",
+      "fengshui": "民俗说法中较少，常被视为火彩和洞察象征。",
+      "aliases": [
+        "Sphalerite",
+        "闪锌矿宝石"
+      ],
+      "imageKey": "sphalerite"
+    },
+    {
+      "id": "gem_115",
+      "name": "蓝铜矿",
+      "englishName": "Azurite",
+      "topCategory": "彩宝类",
+      "category": "碳酸盐矿物",
+      "appearance": "深蓝至靛蓝色铜矿物，可呈块状、晶簇或与孔雀石共生，硬度低。",
+      "quality": "品质看点：颜色浓艳、晶体完整或蓝绿共生图案美、裂少为佳；稳定性和硬度限制佩戴。",
+      "origins": "摩洛哥、纳米比亚、美国、澳大利亚、中国等。",
+      "uses": "矿物标本、雕件、吊坠和蓝绿共生观赏石。",
+      "price": "市场参考：普通小件几十至数百元；晶体完整或共生图案漂亮者数百至数千元以上。",
+      "authenticity": "辨别要点：染色石、青金石、玻璃易混；真蓝铜矿颜色浓且硬度低，常与孔雀石共生。",
+      "treatment": "常见处理：稳定处理、上胶、染色仿品。识别看颜色渗透和胶感。",
+      "fengshui": "民俗说法中象征洞察、表达和深度思考。",
+      "aliases": [
+        "Azurite",
+        "蓝铜矿宝石"
+      ],
+      "imageKey": "azurite"
+    },
+    {
+      "id": "gem_116",
+      "name": "海纹石",
+      "englishName": "Larimar",
+      "topCategory": "彩宝类",
+      "category": "针钠钙石",
+      "appearance": "浅蓝、蓝白相间至绿蓝色不透明宝石，常有云朵或海浪状白色纹理。",
+      "quality": "品质看点：颜色天蓝、纹理像海浪、质地细、裂少为佳；发灰、发绿或白多价值较低。",
+      "origins": "多米尼加共和国是主要商业产地。",
+      "uses": "吊坠、手串、戒面和夏季风格饰品。",
+      "price": "市场参考：普通小件几十至数百元；蓝色浓、纹理好、体积大的成品数百至数千元。",
+      "authenticity": "辨别要点：染色石英、蓝色方解石、玻璃、塑料易混；真海纹石纹理自然且多为不透明。",
+      "treatment": "常见处理：染色、注胶、覆膜。识别看裂隙聚色、表面涂层和证书。",
+      "fengshui": "民俗说法中象征海洋、放松和沟通。",
+      "aliases": [
+        "Larimar",
+        "拉利玛",
+        "海纹玉"
+      ],
+      "imageKey": "larimar"
+    },
+    {
+      "id": "gem_117",
+      "name": "绿玉髓",
+      "englishName": "Chrysoprase",
+      "topCategory": "彩宝类",
+      "category": "石英族宝石",
+      "appearance": "苹果绿至黄绿色隐晶质石英，半透明至不透明，颜色由镍致色，质地细腻。",
+      "quality": "品质看点：颜色鲜嫩均匀、半透明、裂少、无明显杂色为佳；过艳过均匀低价需警惕染色。",
+      "origins": "澳大利亚、坦桑尼亚、巴西、波兰、美国等。",
+      "uses": "珠串、戒面、吊坠和雕件。",
+      "price": "市场参考：普通小件几十至数百元；颜色好、质地细的大件数百至数千元。",
+      "authenticity": "辨别要点：染色玉髓、玻璃、翡翠、东陵石易混；染色品裂隙聚色明显。",
+      "treatment": "常见处理：染色、浸蜡。识别看颜色分布和裂隙。",
+      "fengshui": "民俗说法中象征新生、财富和心境舒展。",
+      "aliases": [
+        "Chrysoprase",
+        "澳玉",
+        "绿玉髓"
+      ],
+      "imageKey": "chrysoprase"
+    },
+    {
+      "id": "gem_118",
+      "name": "变色石榴石",
+      "englishName": "Color Change Garnet",
+      "topCategory": "彩宝类",
+      "category": "石榴石族",
+      "appearance": "在日光和白炽灯下呈蓝绿、紫红、褐红等变化的石榴石，通常为多组分石榴石。",
+      "quality": "品质看点：变色幅度大、颜色漂亮、净度好、切工亮为佳；大颗粒优质品较少。",
+      "origins": "坦桑尼亚、马达加斯加、斯里兰卡、俄罗斯、肯尼亚等。",
+      "uses": "收藏裸石和个性彩宝镶嵌。",
+      "price": "市场参考：普通小颗粒数百至数千元/克拉；变色强、大颗粒优质品可达数千至数万元/克拉。",
+      "authenticity": "辨别要点：变石、合成变色刚玉和玻璃易混；石榴石为单折射，需折射率和光谱确认。",
+      "treatment": "常见处理少，主要风险是冒充变石或光源误导。",
+      "fengshui": "民俗说法中象征变化、转机和适应力。",
+      "aliases": [
+        "Color Change Garnet",
+        "变色榴石"
+      ],
+      "imageKey": "color-change-garnet"
+    },
+    {
+      "id": "gem_119",
+      "name": "芬达石",
+      "englishName": "Spessartine Garnet",
+      "topCategory": "彩宝类",
+      "category": "石榴石族",
+      "appearance": "橙色至橙红色锰铝榴石，颜色像汽水橙，玻璃光泽，火彩好。",
+      "quality": "品质看点：颜色鲜橙明亮、净度好、切工亮为佳；褐调重或裂多会降低价值。",
+      "origins": "纳米比亚、尼日利亚、坦桑尼亚、马达加斯加、巴西等。",
+      "uses": "戒面、吊坠和收藏裸石。",
+      "price": "市场参考：小颗粒数百至数千元/克拉；颜色浓艳、净度好、大颗粒者数千至数万元/克拉。",
+      "authenticity": "辨别要点：橙色玻璃、火欧泊、锆石、合成材料易混；折射率和单折射可辅助。",
+      "treatment": "常见处理少，主要注意裂隙和颜色评价。",
+      "fengshui": "民俗说法中象征活力、热情和创造力。",
+      "aliases": [
+        "Spessartine",
+        "Spessartite",
+        "橙榴石"
+      ],
+      "imageKey": "spessartine"
+    },
+    {
+      "id": "gem_120",
+      "name": "红绿宝",
+      "englishName": "Ruby in Zoisite",
+      "topCategory": "彩宝类",
+      "category": "多矿物集合体",
+      "appearance": "绿色黝帘石基底中含红色红宝石斑块，常伴黑色角闪石，颜色红绿对比强。",
+      "quality": "品质看点：红色斑块鲜明、绿色基底漂亮、结构紧密、裂少和雕工好为佳。",
+      "origins": "坦桑尼亚最常见。",
+      "uses": "手串、雕件、摆件和特色饰品。",
+      "price": "市场参考：普通珠串几十至数百元；红绿分布美、雕工好的大件数百至数千元。",
+      "authenticity": "辨别要点：染色石、红绿玻璃、拼合材料可冒充；真品红绿矿物边界自然。",
+      "treatment": "常见处理：染色、注胶、拼合。识别看颜色是否浮和裂隙聚色。",
+      "fengshui": "民俗说法中象征活力与疗愈、心力平衡。",
+      "aliases": [
+        "Ruby Zoisite",
+        "Anyolite",
+        "红宝黝帘石"
+      ],
+      "imageKey": "ruby-zoisite"
+    },
+    {
+      "id": "gem_121",
+      "name": "蓝晶石",
+      "englishName": "Kyanite",
+      "topCategory": "彩宝类",
+      "category": "岛状硅酸盐",
+      "appearance": "蓝色至蓝灰色柱状或片状晶体，常有明显方向性颜色和解理，硬度具方向差异。",
+      "quality": "品质看点：颜色蓝而明亮、透明度好、裂少、切工顺方向为佳；脆性和解理影响佩戴。",
+      "origins": "尼泊尔、巴西、缅甸、肯尼亚、坦桑尼亚、瑞士等。",
+      "uses": "切磨宝石、吊坠和矿物晶体收藏。",
+      "price": "市场参考：普通切磨品几十至数百元/克拉；颜色好、净度好者数百至数千元。",
+      "authenticity": "辨别要点：蓝宝石、坦桑石、堇青石和玻璃易混；硬度方向差和解理明显。",
+      "treatment": "常见处理少，注意染色和玻璃仿品。",
+      "fengshui": "民俗说法中象征沟通、清理和方向感。",
+      "aliases": [
+        "Kyanite",
+        "蓝线石"
+      ],
+      "imageKey": "kyanite"
+    },
+    {
+      "id": "gem_122",
+      "name": "矽线石猫眼",
+      "englishName": "Sillimanite Cat Eye",
+      "topCategory": "彩宝类",
+      "category": "岛状硅酸盐",
+      "appearance": "灰绿、褐、黄或无色弧面宝石，可见猫眼效应，纤维状结构明显。",
+      "quality": "品质看点：猫眼线清楚、居中、底色干净、弧面比例好为佳。",
+      "origins": "斯里兰卡、印度、缅甸、马达加斯加等。",
+      "uses": "猫眼戒面、吊坠和收藏弧面宝石。",
+      "price": "市场参考：普通小颗粒几十至数百元/克拉；猫眼线好者数百至数千元。",
+      "authenticity": "辨别要点：石英猫眼、金绿猫眼、玻璃猫眼易混；折射率和密度可区分。",
+      "treatment": "常见处理少，主要风险是名称混淆和玻璃仿品。",
+      "fengshui": "民俗说法中象征专注、守护和目标感。",
+      "aliases": [
+        "Sillimanite Cat Eye",
+        "矽线石"
+      ],
+      "imageKey": "sillimanite-cat-eye"
+    },
+    {
+      "id": "gem_123",
+      "name": "透辉石猫眼",
+      "englishName": "Diopside Cat Eye",
+      "topCategory": "彩宝类",
+      "category": "辉石族",
+      "appearance": "绿、褐绿至灰绿色弧面透辉石，因平行包裹体产生猫眼效应。",
+      "quality": "品质看点：猫眼线清楚、底色漂亮、裂少、弧面比例好为佳。",
+      "origins": "印度、斯里兰卡、缅甸、俄罗斯等。",
+      "uses": "猫眼戒面、吊坠和特色宝石。",
+      "price": "市场参考：普通小颗粒几十至数百元/克拉；猫眼明显、颜色好者数百至数千元。",
+      "authenticity": "辨别要点：金绿猫眼、石英猫眼、玻璃猫眼易混；透辉石硬度和折射率不同。",
+      "treatment": "常见处理少，主要注意裂隙和品种误称。",
+      "fengshui": "民俗说法中象征观察力和守护。",
+      "aliases": [
+        "Diopside Cat Eye",
+        "透辉石猫眼"
+      ],
+      "imageKey": "diopside-cat-eye"
+    },
+    {
+      "id": "gem_124",
+      "name": "蓝锥矿",
+      "englishName": "Benitoite",
+      "topCategory": "彩宝类",
+      "category": "稀有钡钛硅酸盐",
+      "appearance": "蓝色至蓝紫色稀有宝石，色散强，晶体常呈三角板状，硬度中等。",
+      "quality": "品质看点：颜色鲜蓝、火彩好、净度好、切工亮为佳；大颗粒非常稀少。",
+      "origins": "美国加州圣贝尼托县最著名。",
+      "uses": "收藏裸石和稀有矿物晶体。",
+      "price": "市场参考：小颗粒已可达数千元/克拉；高品质大颗粒价格很高，需看证书。",
+      "authenticity": "辨别要点：蓝宝石、坦桑石、堇青石、玻璃易混；强色散和产地稀有是线索。",
+      "treatment": "常见处理少，主要注意仿品和误称。",
+      "fengshui": "民俗说法较少，常被视为稀有、专注和独特表达。",
+      "aliases": [
+        "Benitoite",
+        "蓝锥石"
+      ],
+      "imageKey": "benitoite"
+    },
+    {
+      "id": "gem_125",
+      "name": "紫色蓝宝石",
+      "englishName": "Purple Sapphire",
+      "topCategory": "彩宝类",
+      "category": "刚玉族",
+      "appearance": "紫色至紫罗兰色刚玉，透明，硬度9，可带蓝紫或红紫调。",
+      "quality": "品质看点：颜色饱和明亮、不过暗、净度好、切工亮为佳；未加热品更有价值。",
+      "origins": "斯里兰卡、马达加斯加、缅甸、坦桑尼亚等。",
+      "uses": "戒面、吊坠、耳饰和个性彩宝镶嵌。",
+      "price": "市场参考：普通商业品数百至数千元/克拉；颜色好、净度好、未加热者数千至数万元/克拉。",
+      "authenticity": "辨别要点：紫水晶、堇青石、尖晶石、玻璃和合成刚玉易混。",
+      "treatment": "常见处理：热处理、扩散处理。识别需证书。",
+      "fengshui": "民俗说法中象征灵感、直觉和冷静。",
+      "aliases": [
+        "Purple Sapphire",
+        "紫蓝宝"
+      ],
+      "imageKey": "purple-sapphire"
+    },
+    {
+      "id": "jade_101",
+      "name": "和田青玉",
+      "englishName": "Green-Gray Nephrite Jade",
+      "topCategory": "玉石类",
+      "category": "透闪石玉",
+      "appearance": "青灰、青绿至深青色软玉，油脂光泽，结构细密，颜色比白玉更沉稳。",
+      "quality": "品质看点：细度、油性、颜色沉稳均匀、裂少为佳；细腻老熟的青玉有工艺和收藏价值。",
+      "origins": "新疆、青海、俄罗斯、加拿大等。",
+      "uses": "牌子、手镯、把件、器皿和雕件。",
+      "price": "市场参考：普通小件几十至数百元；细润青玉成品数百至数千元；工艺大件和精品更高。",
+      "authenticity": "辨别要点：石英岩、蛇纹石玉、染色材料易混；看纤维交织结构和油脂光泽。",
+      "treatment": "常见处理：染色、煮蜡、染皮。识别看颜色过渡和证书。",
+      "fengshui": "民俗说法中象征稳重、守成和平安。",
+      "aliases": [
+        "青玉",
+        "Nephrite Jade"
+      ],
+      "imageKey": "green-gray-nephrite"
+    },
+    {
+      "id": "jade_102",
+      "name": "和田青白玉",
+      "englishName": "Greenish White Nephrite Jade",
+      "topCategory": "玉石类",
+      "category": "透闪石玉",
+      "appearance": "白中带青或青中带白的软玉，半透明至微透明，油脂光泽，常见细腻温润质感。",
+      "quality": "品质看点：细度、油性、白度与青调协调、干净少裂为佳；比白玉更常见，性价比较高。",
+      "origins": "新疆、青海、俄罗斯、韩国等。",
+      "uses": "手镯、牌子、挂件和雕件。",
+      "price": "市场参考：普通小件几十至数百元；细润手镯或牌子数百至数千元；精品可更高。",
+      "authenticity": "辨别要点：阿富汗玉、石英岩和玻璃常冒充；真软玉有纤维交织结构。",
+      "treatment": "常见处理：染皮、煮蜡、注胶。识别看皮色和光泽。",
+      "fengshui": "民俗说法中象征平和、内敛和守护。",
+      "aliases": [
+        "青白玉",
+        "Greenish White Jade"
+      ],
+      "imageKey": "greenish-white-nephrite"
+    },
+    {
+      "id": "jade_103",
+      "name": "和田黄玉",
+      "englishName": "Yellow Nephrite Jade",
+      "topCategory": "玉石类",
+      "category": "透闪石玉",
+      "appearance": "黄色至黄绿色软玉，油脂光泽，优质品颜色温暖、质地细腻。",
+      "quality": "品质看点：颜色正黄、细腻油润、裂少、杂色少为佳；真正优质黄玉稀少，市场名称易混乱。",
+      "origins": "新疆若羌、且末等，也有青海和其他来源黄口料。",
+      "uses": "挂件、牌子、手镯和收藏雕件。",
+      "price": "市场参考：普通黄口料小件数百元内至数千元；颜色好、细润精品可达数千至数万元以上。",
+      "authenticity": "辨别要点：黄蜡石、黄龙玉、染色石英岩和黄色玻璃易混；需确认是否透闪石玉。",
+      "treatment": "常见处理：染色、染皮、煮蜡。识别看颜色是否浮和裂隙聚色。",
+      "fengshui": "民俗说法中象征富足、稳重和贵气。",
+      "aliases": [
+        "黄玉",
+        "黄口料",
+        "Yellow Nephrite"
+      ],
+      "imageKey": "yellow-nephrite"
+    },
+    {
+      "id": "jade_104",
+      "name": "和田糖玉",
+      "englishName": "Brown Sugar Nephrite Jade",
+      "topCategory": "玉石类",
+      "category": "透闪石玉",
+      "appearance": "软玉中带糖色、褐黄至红褐色调，常与白玉、青白玉形成糖白或糖青组合。",
+      "quality": "品质看点：糖色干净浓郁、过渡自然、玉质细润、裂少为佳；糖色脏暗或裂多价值降低。",
+      "origins": "新疆且末、若羌、青海、俄罗斯等。",
+      "uses": "手镯、牌子、巧雕和挂件。",
+      "price": "市场参考：普通小件几十至数百元；糖白分明、玉质细润者数百至数千元；精品更高。",
+      "authenticity": "辨别要点：染色糖皮和人工烧色需警惕；天然糖色与结构过渡自然。",
+      "treatment": "常见处理：染糖色、染皮、煮蜡。识别看颜色沿裂隙集中与否。",
+      "fengshui": "民俗说法中象征温暖、积累和踏实。",
+      "aliases": [
+        "糖玉",
+        "糖白玉",
+        "Sugar Jade"
+      ],
+      "imageKey": "sugar-nephrite"
+    },
+    {
+      "id": "jade_105",
+      "name": "青花料",
+      "englishName": "Black and White Nephrite Jade",
+      "topCategory": "玉石类",
+      "category": "透闪石玉",
+      "appearance": "白色或青白软玉中含石墨等深色矿物，形成黑白水墨状纹理。",
+      "quality": "品质看点：黑白对比清楚、白肉细润、墨色聚散有画面感、裂少为佳；脏乱灰暗会降低价值。",
+      "origins": "新疆、青海、俄罗斯等。",
+      "uses": "牌子、巧雕、手镯、把件和文房题材。",
+      "price": "市场参考：普通小件几十至数百元；画面好、玉质细者数百至数千元；精品巧雕更高。",
+      "authenticity": "辨别要点：染色黑白石英岩、青海烟青料和其他黑白石材易混；需看软玉结构。",
+      "treatment": "常见处理：染黑、煮蜡、注胶。识别看黑色是否自然进入结构。",
+      "fengshui": "民俗说法中象征水墨意境、稳重和文气。",
+      "aliases": [
+        "青花玉",
+        "墨玉青花",
+        "Black White Nephrite"
+      ],
+      "imageKey": "black-white-nephrite"
+    },
+    {
+      "id": "jade_106",
+      "name": "翠青玉",
+      "englishName": "Green-White Nephrite Jade",
+      "topCategory": "玉石类",
+      "category": "透闪石玉",
+      "appearance": "白色或青白软玉上带鲜绿色或翠绿色色带、色斑，常见清新绿白对比。",
+      "quality": "品质看点：绿色鲜而不浮、白肉细润、色带自然、裂少为佳；高品质翠青料近年市场关注度高。",
+      "origins": "青海、新疆、俄罗斯等。",
+      "uses": "手镯、牌子、挂件和巧雕。",
+      "price": "市场参考：普通小件数百元内；颜色漂亮、细润成品数百至数千元；精品手镯可更高。",
+      "authenticity": "辨别要点：染色软玉、石英岩和翡翠混淆；看纤维交织结构和颜色过渡。",
+      "treatment": "常见处理：染色、煮蜡、染皮。识别看裂隙聚绿和证书。",
+      "fengshui": "民俗说法中象征清新、生机和平安。",
+      "aliases": [
+        "翠青",
+        "翠青和田玉",
+        "翠青料"
+      ],
+      "imageKey": "green-white-nephrite"
+    },
+    {
+      "id": "jade_107",
+      "name": "墨翠",
+      "englishName": "Black Jadeite",
+      "topCategory": "玉石类",
+      "category": "翡翠细分",
+      "appearance": "外观近黑色至墨绿色翡翠，透射光下可见绿色，主要由绿辉石等组成。",
+      "quality": "品质看点：黑度好、透光绿正、结构细、裂少、种水好为佳；表面黑但透光灰绿或脏会影响价值。",
+      "origins": "缅甸为主，危地马拉也有相关翡翠材料。",
+      "uses": "戒面、吊坠、牌子和男款翡翠饰品。",
+      "price": "市场参考：普通小件数百至数千元；种水好、黑亮透绿者数千至数万元以上。",
+      "authenticity": "辨别要点：黑曜石、黑玛瑙、黑色玻璃、墨玉易混；透射绿和翡翠结构是关键。",
+      "treatment": "常见处理：B货、C货、覆膜和染色。识别看酸蚀纹、荧光和证书。",
+      "fengshui": "民俗说法中象征稳重、防护和聚气。",
+      "aliases": [
+        "墨翠翡翠",
+        "Black Jadeite"
+      ],
+      "imageKey": "black-jadeite"
+    },
+    {
+      "id": "jade_108",
+      "name": "紫罗兰翡翠",
+      "englishName": "Lavender Jadeite",
+      "topCategory": "玉石类",
+      "category": "翡翠细分",
+      "appearance": "紫色至粉紫色翡翠，常见淡紫、粉紫或蓝紫调，半透明至不透明。",
+      "quality": "品质看点：紫色浓艳明亮、种水好、底干净、裂少为佳；见光死、发灰会降低价值。",
+      "origins": "缅甸为主，危地马拉也有紫色翡翠材料。",
+      "uses": "手镯、吊坠、戒面和雕件。",
+      "price": "市场参考：普通淡紫小件数百至数千元；种水色俱佳者数千至数万元以上。",
+      "authenticity": "辨别要点：紫色石英岩、染色翡翠和玻璃易混；需看翡翠结构和染色痕迹。",
+      "treatment": "常见处理：染色、注胶、覆膜。识别看裂隙聚色和紫外反应。",
+      "fengshui": "民俗说法中象征浪漫、贵气和温柔气质。",
+      "aliases": [
+        "春色翡翠",
+        "Lavender Jadeite"
+      ],
+      "imageKey": "lavender-jadeite"
+    },
+    {
+      "id": "jade_109",
+      "name": "冰种翡翠",
+      "englishName": "Ice Jadeite",
+      "topCategory": "玉石类",
+      "category": "翡翠细分",
+      "appearance": "透明至半透明翡翠，质地清亮如冰，常有棉絮和微裂，颜色可无色、绿色或其他色。",
+      "quality": "品质看点：透明度、细腻度、起光、棉裂少、颜色干净为佳；有色冰种价值更高。",
+      "origins": "缅甸为主。",
+      "uses": "手镯、蛋面、吊坠和高端翡翠饰品。",
+      "price": "市场参考：普通冰种小件数千元起；种水好、颜色好或手镯可达数万元至更高。",
+      "authenticity": "辨别要点：玻璃、石英岩、B货翡翠易混；看翠性、结构、证书和酸蚀纹。",
+      "treatment": "常见处理：酸洗注胶、染色、覆膜。识别看荧光、网纹和证书。",
+      "fengshui": "民俗说法中象征清透、平安和贵气。",
+      "aliases": [
+        "冰种",
+        "高冰翡翠",
+        "Ice Jadeite"
+      ],
+      "imageKey": "ice-jadeite"
+    },
+    {
+      "id": "jade_110",
+      "name": "糯种翡翠",
+      "englishName": "Waxy Jadeite",
+      "topCategory": "玉石类",
+      "category": "翡翠细分",
+      "appearance": "半透明至微透明翡翠，质地像糯米汤，细腻但透明度低于冰种。",
+      "quality": "品质看点：细腻、底子干净、颜色协调、裂少为佳；糯冰、细糯比粗糯价值更高。",
+      "origins": "缅甸为主。",
+      "uses": "手镯、挂件、牌子和日常翡翠饰品。",
+      "price": "市场参考：普通小件数百至数千元；颜色好、细糯手镯数千至数万元。",
+      "authenticity": "辨别要点：石英岩玉、B货翡翠和染色翡翠常混淆；看结构和证书。",
+      "treatment": "常见处理：酸洗注胶、染色。识别看酸蚀纹、荧光和颜色分布。",
+      "fengshui": "民俗说法中象征温润、稳定和平安。",
+      "aliases": [
+        "糯冰翡翠",
+        "Waxy Jadeite"
+      ],
+      "imageKey": "waxy-jadeite"
+    },
+    {
+      "id": "jade_111",
+      "name": "豆种翡翠",
+      "englishName": "Coarse Jadeite",
+      "topCategory": "玉石类",
+      "category": "翡翠细分",
+      "appearance": "颗粒感较明显、透明度较低的翡翠，常呈绿色、白色或灰绿，结构像豆粒。",
+      "quality": "品质看点：颜色鲜明、颗粒不要太粗、裂少、雕工好为佳；总体属于大众翡翠常见类型。",
+      "origins": "缅甸为主。",
+      "uses": "手镯、挂件、小雕件和入门翡翠。",
+      "price": "市场参考：普通小件几十至数百元；颜色好、无裂手镯数百至数千元。",
+      "authenticity": "辨别要点：染色翡翠、东陵石、石英岩玉易混；看翠性和结构。",
+      "treatment": "常见处理：染色、注胶、覆膜。识别看裂隙聚色和证书。",
+      "fengshui": "民俗说法中象征朴实、平安和日常守护。",
+      "aliases": [
+        "豆种",
+        "Coarse Jadeite"
+      ],
+      "imageKey": "coarse-jadeite"
+    },
+    {
+      "id": "jade_112",
+      "name": "蓝田玉",
+      "englishName": "Lantian Jade",
+      "topCategory": "玉石类",
+      "category": "地方玉",
+      "appearance": "中国传统地方玉石名称，常见蛇纹石化大理岩或相关玉石材料，颜色有白、黄绿、浅绿等。",
+      "quality": "品质看点：质地细腻、颜色柔和、裂少、工艺好为佳；名称范围较宽，购买时需看标准鉴定名称。",
+      "origins": "中国陕西蓝田。",
+      "uses": "摆件、手镯、挂件和旅游纪念玉石。",
+      "price": "市场参考：普通小件几十至数百元；雕工和体量好的作品数百至数千元。",
+      "authenticity": "辨别要点：常与阿富汗玉、蛇纹石玉、石英岩玉混淆；需证书写明实际矿物名称。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看颜色和结构。",
+      "fengshui": "民俗说法中象征古玉文化、平安和地域人文。",
+      "aliases": [
+        "Lantian Jade",
+        "蓝田玉"
+      ],
+      "imageKey": "lantian-jade"
+    },
+    {
+      "id": "jade_113",
+      "name": "祁连玉",
+      "englishName": "Qilian Jade",
+      "topCategory": "玉石类",
+      "category": "地方玉",
+      "appearance": "绿色至暗绿色地方玉石，常见斑驳纹理和蜡状光泽，商业名称范围较宽。",
+      "quality": "品质看点：颜色均匀、质地细、裂少、工艺好为佳；需确认实际矿物组成。",
+      "origins": "中国甘肃、青海祁连山一带。",
+      "uses": "摆件、手镯、挂件和地方玉收藏。",
+      "price": "市场参考：普通小件几十至数百元；大件或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：蛇纹石玉、石英岩玉和染色石材易混；证书名称比商贸名更重要。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看裂隙聚色和光泽。",
+      "fengshui": "民俗说法中象征山岳稳定和平安。",
+      "aliases": [
+        "Qilian Jade",
+        "酒泉玉"
+      ],
+      "imageKey": "qilian-jade"
+    },
+    {
+      "id": "jade_114",
+      "name": "佘太翠",
+      "englishName": "She Taicui Quartzite Jade",
+      "topCategory": "玉石类",
+      "category": "石英质玉石",
+      "appearance": "绿色、白绿色至青绿色石英质玉石，常见细粒结构和油蜡状光泽，市场多做手镯。",
+      "quality": "品质看点：颜色清爽、质地细、裂少、镯形好为佳；名称是商贸名，需看证书是否为石英岩玉。",
+      "origins": "中国内蒙古等地市场常见。",
+      "uses": "手镯、挂件和大众玉石饰品。",
+      "price": "市场参考：普通手镯几十至数百元；颜色好、质地细者数百至数千元。",
+      "authenticity": "辨别要点：常被与翡翠、和田碧玉混淆；石英质粒状结构和折射率可区分。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看颜色是否浮和证书。",
+      "fengshui": "民俗说法中象征清新、平安和日常佩戴。",
+      "aliases": [
+        "佘太玉",
+        "She Taicui"
+      ],
+      "imageKey": "she-taicui"
+    },
+    {
+      "id": "jade_115",
+      "name": "密玉",
+      "englishName": "Mi Jade",
+      "topCategory": "玉石类",
+      "category": "石英质玉石",
+      "appearance": "河南密县一带绿色至浅绿色石英质玉石，常微透明至不透明，质地较细。",
+      "quality": "品质看点：颜色均匀、质地细腻、裂少、雕工好为佳；高价需核验证书。",
+      "origins": "中国河南新密等地。",
+      "uses": "雕件、摆件、挂件和地方玉收藏。",
+      "price": "市场参考：普通小件几十至数百元；颜色好或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：翡翠、东陵石、染色石英岩易混；看粒状结构和证书。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看裂隙聚色。",
+      "fengshui": "民俗说法中象征地域文化、稳重和朴实。",
+      "aliases": [
+        "河南密玉",
+        "Mi Jade"
+      ],
+      "imageKey": "mi-jade"
+    },
+    {
+      "id": "jade_116",
+      "name": "京白玉",
+      "englishName": "Jingbai Jade",
+      "topCategory": "玉石类",
+      "category": "石英质玉石",
+      "appearance": "白色至乳白色石英岩玉，质地较细，玻璃至油脂光泽，常被用作白玉替代材料。",
+      "quality": "品质看点：白度、细腻度、裂少和雕工为主；价值通常低于优质和田白玉。",
+      "origins": "中国北京及周边曾有相关商业名称，市场泛指白色石英岩玉。",
+      "uses": "雕件、摆件、珠串和入门饰品。",
+      "price": "市场参考：普通小件几十至数百元；工艺件数百至数千元。",
+      "authenticity": "辨别要点：常冒充和田白玉；石英岩粒状结构和折射率不同，手感也较玻璃。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看结构和证书。",
+      "fengshui": "民俗说法中象征洁净和平安。",
+      "aliases": [
+        "京白玉",
+        "White Quartzite Jade"
+      ],
+      "imageKey": "jingbai-jade"
+    },
+    {
+      "id": "jade_117",
+      "name": "樱花玛瑙",
+      "englishName": "Cherry Blossom Agate",
+      "topCategory": "玉石类",
+      "category": "石英族玉石",
+      "appearance": "半透明玉髓或玛瑙中带粉白、粉橙、花朵状包裹体或图案，常见柔和粉色调。",
+      "quality": "品质看点：花纹清晰自然、颜色柔和、通透度好、裂少为佳；染色和注胶需谨慎。",
+      "origins": "马达加斯加、印度尼西亚等市场常见。",
+      "uses": "手串、吊坠、雕件和装饰小件。",
+      "price": "市场参考：普通珠串几十至数百元；花纹漂亮、通透度好者数百至数千元。",
+      "authenticity": "辨别要点：染色玉髓、玻璃和树脂仿品易混；真花纹应在材料内部。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看裂隙聚色和气泡。",
+      "fengshui": "民俗说法中象征温柔、春天和人缘。",
+      "aliases": [
+        "樱花玉髓",
+        "Cherry Blossom Agate"
+      ],
+      "imageKey": "cherry-blossom-agate"
+    },
+    {
+      "id": "jade_118",
+      "name": "盐源玛瑙",
+      "englishName": "Yanyuan Agate",
+      "topCategory": "玉石类",
+      "category": "石英族玉石",
+      "appearance": "颜色丰富的玛瑙，常见粉、紫、绿、黄、灰、黑等多色，质地细腻，常制成珠串。",
+      "quality": "品质看点：颜色饱满协调、质地细、裂少、珠子圆整为佳；过艳过均匀需警惕染色。",
+      "origins": "中国四川盐源地区最有代表性。",
+      "uses": "手串、挂件、雕件和文玩饰品。",
+      "price": "市场参考：普通珠串几十至数百元；颜色好、质地细、雕工佳者数百至数千元。",
+      "authenticity": "辨别要点：染色玛瑙和外地玛瑙冒充；看颜色自然度和证书来源。",
+      "treatment": "常见处理：染色、烤色、上蜡。识别看裂隙聚色和颜色过渡。",
+      "fengshui": "民俗说法中象征丰富、温暖和情绪稳定。",
+      "aliases": [
+        "Yanyuan Agate",
+        "七彩玛瑙"
+      ],
+      "imageKey": "yanyuan-agate"
+    },
+    {
+      "id": "jade_119",
+      "name": "缠丝玛瑙",
+      "englishName": "Banded Agate",
+      "topCategory": "玉石类",
+      "category": "石英族玉石",
+      "appearance": "具有明显平行或曲折条带的玛瑙，颜色可黑白、红白、黄褐等，条纹像缠丝。",
+      "quality": "品质看点：条带清楚、图案美、颜色自然、裂少为佳；规则但自然的纹理更有观赏性。",
+      "origins": "巴西、印度、马达加斯加、中国、乌拉圭等。",
+      "uses": "珠串、雕件、印章、摆件和收藏切片。",
+      "price": "市场参考：普通小件几十至数百元；图案特殊、颜色美者数百至数千元。",
+      "authenticity": "辨别要点：染色玛瑙、玻璃和树脂仿品易混；真条带有自然过渡和层次。",
+      "treatment": "常见处理：染色、烤色。识别看颜色是否沿孔道和裂隙集中。",
+      "fengshui": "民俗说法中象征守护、秩序和稳定。",
+      "aliases": [
+        "Banded Agate",
+        "缟玛瑙"
+      ],
+      "imageKey": "banded-agate"
+    },
+    {
+      "id": "jade_120",
+      "name": "火玛瑙",
+      "englishName": "Fire Agate",
+      "topCategory": "玉石类",
+      "category": "石英族玉石",
+      "appearance": "褐色至橙红色玛瑙，内部薄层结构产生火焰状虹彩，常需弧面或雕刻显色。",
+      "quality": "品质看点：虹彩强、颜色多、覆盖面积大、层次清楚为佳；切磨过深会损失火彩。",
+      "origins": "墨西哥、美国亚利桑那和加州等。",
+      "uses": "戒面、吊坠和收藏弧面宝石。",
+      "price": "市场参考：普通小件数百元内；火彩强、图案好者数百至数千元以上。",
+      "authenticity": "辨别要点：染色玛瑙和镀膜玻璃易混；真火彩来自内部薄层，不是表面涂层。",
+      "treatment": "常见处理：染色、覆膜、拼合。识别看侧面层状结构和表面磨损。",
+      "fengshui": "民俗说法中象征活力、勇气和保护。",
+      "aliases": [
+        "Fire Agate",
+        "火焰玛瑙"
+      ],
+      "imageKey": "fire-agate"
+    },
+    {
+      "id": "jade_121",
+      "name": "海洋玉髓",
+      "englishName": "Ocean Jasper / Ocean Chalcedony",
+      "topCategory": "玉石类",
+      "category": "石英族玉石",
+      "appearance": "多色玉髓或碧石类材料，常见圆斑、海浪状、苔藓状图案，颜色丰富。",
+      "quality": "品质看点：图案独特、颜色协调、抛光好、裂少为佳；市场名称范围较宽。",
+      "origins": "马达加斯加、印度尼西亚等。",
+      "uses": "吊坠、手串、雕件和观赏切片。",
+      "price": "市场参考：普通小件几十至数百元；图案漂亮的大件数百至数千元。",
+      "authenticity": "辨别要点：染色碧石、树脂仿品和普通花纹石易混；看硬度、结构和颜色自然度。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看裂隙聚色和胶感。",
+      "fengshui": "民俗说法中象征流动、松弛和自然疗愈。",
+      "aliases": [
+        "Ocean Jasper",
+        "海洋石"
+      ],
+      "imageKey": "ocean-jasper"
+    },
+    {
+      "id": "jade_122",
+      "name": "葡萄玛瑙",
+      "englishName": "Grape Agate Chalcedony",
+      "topCategory": "玉石类",
+      "category": "石英族玉石",
+      "appearance": "紫色、绿色或灰色葡萄状玉髓集合体，由许多小球状晶体聚集而成。",
+      "quality": "品质看点：球粒完整、颜色均匀自然、晶面闪亮、破损少为佳；多作为标本而非耐磨首饰。",
+      "origins": "印度尼西亚苏拉威西等地最常见。",
+      "uses": "矿物标本、摆件、吊坠和小收藏。",
+      "price": "市场参考：普通小标本几十至数百元；颜色好、形态完整者数百至数千元。",
+      "authenticity": "辨别要点：染色葡萄状石英、树脂仿品可能出现；看球粒晶面和内部结构。",
+      "treatment": "常见处理：染色、胶粘修补。识别看颜色是否自然和胶痕。",
+      "fengshui": "民俗说法中象征丰盛、放松和灵感。",
+      "aliases": [
+        "Grape Agate",
+        "葡萄玉髓"
+      ],
+      "imageKey": "grape-agate"
+    },
+    {
+      "id": "jade_123",
+      "name": "阿拉善玛瑙",
+      "englishName": "Alashan Agate",
+      "topCategory": "玉石类",
+      "category": "石英族玉石",
+      "appearance": "产自戈壁环境的玛瑙、碧玉、玉髓类石英质材料，颜色多样，常见风化皮和奇石形态。",
+      "quality": "品质看点：颜色、质地、皮壳、形态和图案综合判断；雕件看工艺，原石看天然形态。",
+      "origins": "中国内蒙古阿拉善及周边戈壁地区。",
+      "uses": "手串、雕件、奇石、吊坠和文玩饰品。",
+      "price": "市场参考：普通小件几十至数百元；颜色特别、图案或雕工好者数百至数千元。",
+      "authenticity": "辨别要点：染色玛瑙、外地戈壁石冒充；看皮壳自然度和证书来源。",
+      "treatment": "常见处理：染色、上蜡、注胶。识别看裂隙和孔洞聚色。",
+      "fengshui": "民俗说法中象征戈壁能量、坚韧和平安。",
+      "aliases": [
+        "阿拉善玉",
+        "Alxa Agate"
+      ],
+      "imageKey": "alashan-agate"
+    },
+    {
+      "id": "jade_124",
+      "name": "木化玉",
+      "englishName": "Petrified Wood Jade",
+      "topCategory": "玉石类",
+      "category": "硅化木",
+      "appearance": "古代木材被二氧化硅交代形成，保留木纹和年轮状结构，可呈黄、褐、红、灰等色。",
+      "quality": "品质看点：木纹清晰、硅化程度好、颜色漂亮、裂少、抛光好为佳。",
+      "origins": "中国新疆、内蒙古、云南，美国、马达加斯加、印度尼西亚等。",
+      "uses": "摆件、手串、雕件、切片和观赏石。",
+      "price": "市场参考：普通小件几十至数百元；纹理美、大件或精品切片数百至数千元以上。",
+      "authenticity": "辨别要点：染色石英岩、树脂仿木纹和普通木化石易混；看硅化结构和纹理连续性。",
+      "treatment": "常见处理：染色、上蜡、树脂填充。识别看颜色和裂隙。",
+      "fengshui": "民俗说法中象征时间沉淀、稳定和生命记忆。",
+      "aliases": [
+        "硅化木",
+        "Petrified Wood"
+      ],
+      "imageKey": "petrified-wood"
+    },
+    {
+      "id": "jade_125",
+      "name": "桃花玉（蔷薇辉石）",
+      "englishName": "Rhodonite Jade",
+      "topCategory": "玉石类",
+      "category": "硅酸盐玉石",
+      "appearance": "粉红至玫红色蔷薇辉石集合体，常伴黑色锰氧化物脉纹，外观像桃花。",
+      "quality": "品质看点：粉色鲜明、黑纹适度、质地细、裂少、抛光好为佳。",
+      "origins": "俄罗斯、澳大利亚、巴西、美国、中国等。",
+      "uses": "手串、吊坠、雕件和装饰品。",
+      "price": "市场参考：普通珠串几十至数百元；颜色好、雕工好者数百至数千元。",
+      "authenticity": "辨别要点：染色石英、红纹石、粉色玻璃易混；蔷薇辉石黑色脉纹和硬度有特征。",
+      "treatment": "常见处理：染色、注胶、上蜡。识别看裂隙聚色和胶感。",
+      "fengshui": "民俗说法中象征桃花、人缘和情绪修复。",
+      "aliases": [
+        "Rhodonite",
+        "蔷薇辉石",
+        "桃花石"
+      ],
+      "imageKey": "rhodonite-jade"
+    }
+  ]
+}
