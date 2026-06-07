@@ -1,5 +1,5 @@
 (() => {
-  const APP_VERSION = "20260607-field-trip-v1";
+  const APP_VERSION = "20260607-field-tabs-v1";
 
   const STORAGE = {
     favorites: "gemApp.favorites.v1",
@@ -38,6 +38,7 @@
     selectedImage: "",
     identifying: false,
     lastResult: null,
+    fieldKitTab: "record",
   };
 
   const $ = (selector, root = document) => root.querySelector(selector);
@@ -143,7 +144,8 @@
     if (hash === "identify") return { name: "identify" };
     if (hash === "favorites") return { name: "favorites" };
     if (hash === "settings") return { name: "settings" };
-    if (hash === "field-kit") return { name: "field-kit" };
+    if (hash === "field-kit") return { name: "field-kit", tab: "record" };
+    if (hash.startsWith("field-kit/")) return { name: "field-kit", tab: hash.slice(10) || "record" };
     if (hash.startsWith("gem/")) return { name: "gem", id: hash.slice(4) };
     if (hash.startsWith("favorite/")) return { name: "favorite", id: hash.slice(9) };
     return { name: "encyclopedia" };
@@ -166,7 +168,7 @@
     }
 
     if (route.name === "field-kit") {
-      renderFieldKit();
+      renderFieldKit(route.tab);
       setActiveNav("encyclopedia");
       return;
     }
@@ -236,7 +238,7 @@
     });
 
     $("#open-field-kit").addEventListener("click", () => {
-      location.hash = "field-kit";
+      location.hash = "field-kit/record";
     });
 
     $("#clear-search").addEventListener("click", () => {
@@ -274,8 +276,17 @@
     renderGemList();
   }
 
-  function renderFieldKit() {
-    setHeader("看货模式", "东海水晶 / 苏州彩宝玉石现场小抄");
+  function renderFieldKit(tab = "record") {
+    const tabs = [
+      ["record", "现场记录"],
+      ["sources", "货源点"],
+      ["plan", "行前小抄"],
+      ["search", "必查品类"],
+      ["risks", "红线提醒"],
+    ];
+    const activeTab = tabs.some(([id]) => id === tab) ? tab : "record";
+    state.fieldKitTab = activeTab;
+    setHeader("看货模式", activeTab === "record" ? "先记录这件货，再去查资料" : "东海水晶 / 苏州彩宝玉石现场小抄");
 
     const quickSearches = [
       ["白水晶", "先看通透、棉裂、玻璃仿品"],
@@ -338,52 +349,13 @@
     ];
 
     $("#app").innerHTML = `
-      <section class="trip-hero">
-        <h2>新手现场顺序</h2>
-        <div class="route-focus">
-          <p><strong>东海主线：</strong>水晶、发晶、幽灵、散珠、手串、低中价彩宝配件，先练眼力和价格感。</p>
-          <p><strong>苏州主线：</strong>和田玉、籽料、玉雕、工作室工艺，重点看材料真假和雕工溢价。</p>
-        </div>
-        <ol class="step-list">
-          <li><strong>先拍照</strong><span>整体、近景、侧面、证书/价签各一张。</span></li>
-          <li><strong>再查百科</strong><span>重点看价格区间、真假辨别、优化处理。</span></li>
-          <li><strong>问五句话</strong><span>天然吗、处理过吗、哪里产、有没有证书、这个价按什么算。</span></li>
-          <li><strong>马上记录</strong><span>地点、报价、商家说法、自己判断和照片都留在收藏。</span></li>
-          <li><strong>别急付款</strong><span>第一次看货以学习和比价为主，高价件先不冲动。</span></li>
-        </ol>
-      </section>
-
-      <section class="control-panel">
-        <h2>东海 / 苏州货源点</h2>
-        <div class="source-list">
-          ${sourceStops
+      <section class="field-kit-nav">
+        <div class="field-tab-row" aria-label="看货模式模块">
+          ${tabs
             .map(
-              (stop) => `
-                <article class="source-card">
-                  <div class="source-head">
-                    <span class="tag">${escapeHtml(stop.city)}</span>
-                    <h3>${escapeHtml(stop.name)}</h3>
-                  </div>
-                  <p><strong>地图搜：</strong>${escapeHtml(stop.map)}</p>
-                  <p><strong>适合看：</strong>${escapeHtml(stop.focus)}</p>
-                  <p><strong>新手动作：</strong>${escapeHtml(stop.tip)}</p>
-                </article>
-              `,
-            )
-            .join("")}
-        </div>
-        <p class="help-text">看货点根据公开资料和产业集散区整理；出发前用地图再核对营业状态。APP 只帮你记录和比价，不给任何单个商家背书。</p>
-      </section>
-
-      <section class="control-panel">
-        <h2>现场必查品类</h2>
-        <div class="quick-search-grid">
-          ${quickSearches
-            .map(
-              ([name, note]) => `
-                <button type="button" class="quick-search" data-kit-search="${escapeAttribute(name)}">
-                  <strong>${escapeHtml(name)}</strong>
-                  <span>${escapeHtml(note)}</span>
+              ([id, label]) => `
+                <button type="button" class="field-tab ${id === activeTab ? "is-active" : ""}" data-field-tab="${escapeAttribute(id)}">
+                  ${escapeHtml(label)}
                 </button>
               `,
             )
@@ -391,20 +363,55 @@
         </div>
       </section>
 
-      <section class="control-panel">
-        <h2>一眼先避开的红线</h2>
-        <ul class="danger-list">
-          <li>商家只讲故事，不愿意写清材质、处理、价格。</li>
-          <li>高价件没有证书，或证书机构/名称说不清。</li>
-          <li>颜色过分统一鲜艳，却说纯天然无处理。</li>
-          <li>“今天不买就没了”“捡漏”“大师开光”等强催单话术。</li>
-          <li>籽料只看皮色不看肉质，或者毛孔、皮色明显不自然。</li>
-          <li>翡翠不讲 A/B/C 货，绿松石不讲注胶染色，彩宝不讲加热/充填。</li>
-        </ul>
-      </section>
+      ${renderFieldKitModule(activeTab, sourceStops, quickSearches)}
+    `;
 
-      <section class="favorite-editor">
-        <h2>新建现场记录</h2>
+    $$(".field-tab").forEach((button) => {
+      button.addEventListener("click", () => {
+        location.hash = `field-kit/${button.dataset.fieldTab}`;
+      });
+    });
+
+    if (activeTab === "record") {
+      $("#field-note-form").addEventListener("submit", saveFieldNoteFavorite);
+      $$(".recent-field-card").forEach((card) => {
+        card.addEventListener("click", () => {
+          location.hash = `favorite/${card.dataset.favoriteId}`;
+        });
+      });
+    }
+
+    if (activeTab === "search") {
+      $$(".quick-search").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.query = button.dataset.kitSearch;
+          state.selectedCategory = "全部";
+          location.hash = "encyclopedia";
+        });
+      });
+    }
+  }
+
+  function renderFieldKitModule(tab, sourceStops, quickSearches) {
+    if (tab === "sources") return renderSourceModule(sourceStops);
+    if (tab === "plan") return renderPlanModule();
+    if (tab === "search") return renderQuickSearchModule(quickSearches);
+    if (tab === "risks") return renderRiskModule();
+    return renderRecordModule();
+  }
+
+  function renderRecordModule() {
+    const recentNotes = loadFavorites()
+      .filter((favorite) => favorite.type === "field-note")
+      .slice(0, 4);
+
+    return `
+      <section class="favorite-editor primary-record">
+        <div class="module-heading">
+          <p class="section-label">第一屏先做这个</p>
+          <h2>新建现场记录</h2>
+          <p class="help-text">每看一件货就保存一条，不会覆盖上一条。照片、报价、商家说法和你的判断都会进收藏。</p>
+        </div>
         <form id="field-note-form" class="form-grid">
           <label class="field">
             <span>地点</span>
@@ -451,17 +458,123 @@
           <button type="submit" class="button success full">保存到收藏</button>
         </form>
       </section>
+
+      ${
+        recentNotes.length
+          ? `
+            <section class="control-panel">
+              <h2>最近现场记录</h2>
+              <div class="history-list">
+                ${recentNotes
+                  .map(
+                    (favorite) => `
+                      <article class="history-card recent-field-card" data-favorite-id="${escapeAttribute(favorite.id)}" role="button" tabindex="0">
+                        <img class="thumb" src="${favoriteThumbSrc(favorite)}" alt="${escapeAttribute(favorite.title)} 缩略图" ${imageFallbackAttr()} />
+                        <div>
+                          <h3 class="favorite-title">${escapeHtml(favorite.title)}</h3>
+                          <p class="favorite-subtitle">${escapeHtml(favorite.subtitle || "现场记录")}</p>
+                          <p class="snippet">${escapeHtml(shortText(favorite.note || "点开继续编辑备注和照片", 82))}</p>
+                        </div>
+                      </article>
+                    `,
+                  )
+                  .join("")}
+              </div>
+            </section>
+          `
+          : `<section class="empty-state">还没有现场记录。后天看到第一件货时，从这里开始记。</section>`
+      }
     `;
+  }
 
-    $$(".quick-search").forEach((button) => {
-      button.addEventListener("click", () => {
-        state.query = button.dataset.kitSearch;
-        state.selectedCategory = "全部";
-        location.hash = "encyclopedia";
-      });
-    });
+  function renderSourceModule(sourceStops) {
+    return `
+      <section class="control-panel">
+        <div class="module-heading">
+          <p class="section-label">看货区域，不是店铺背书</p>
+          <h2>东海 / 苏州货源点</h2>
+        </div>
+        <div class="source-list">
+          ${sourceStops
+            .map(
+              (stop) => `
+                <article class="source-card">
+                  <div class="source-head">
+                    <span class="tag">${escapeHtml(stop.city)}</span>
+                    <h3>${escapeHtml(stop.name)}</h3>
+                  </div>
+                  <p><strong>地图搜：</strong>${escapeHtml(stop.map)}</p>
+                  <p><strong>适合看：</strong>${escapeHtml(stop.focus)}</p>
+                  <p><strong>新手动作：</strong>${escapeHtml(stop.tip)}</p>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+        <p class="help-text">出发前用地图再核对营业状态。APP 只帮你记录和比价，不给任何单个商家背书。</p>
+      </section>
+    `;
+  }
 
-    $("#field-note-form").addEventListener("submit", saveFieldNoteFavorite);
+  function renderPlanModule() {
+    return `
+      <section class="trip-hero">
+        <h2>行前小抄</h2>
+        <div class="route-focus">
+          <p><strong>东海主线：</strong>水晶、发晶、幽灵、散珠、手串、低中价彩宝配件，先练眼力和价格感。</p>
+          <p><strong>苏州主线：</strong>和田玉、籽料、玉雕、工作室工艺，重点看材料真假和雕工溢价。</p>
+        </div>
+        <ol class="step-list">
+          <li><strong>先拍照</strong><span>整体、近景、侧面、证书/价签各一张。</span></li>
+          <li><strong>再查百科</strong><span>重点看价格区间、真假辨别、优化处理。</span></li>
+          <li><strong>问五句话</strong><span>天然吗、处理过吗、哪里产、有没有证书、这个价按什么算。</span></li>
+          <li><strong>马上记录</strong><span>地点、报价、商家说法、自己判断和照片都留在收藏。</span></li>
+          <li><strong>别急付款</strong><span>第一次看货以学习和比价为主，高价件先不冲动。</span></li>
+        </ol>
+      </section>
+    `;
+  }
+
+  function renderQuickSearchModule(quickSearches) {
+    return `
+      <section class="control-panel">
+        <div class="module-heading">
+          <p class="section-label">点一下直接查百科</p>
+          <h2>现场必查品类</h2>
+        </div>
+        <div class="quick-search-grid">
+          ${quickSearches
+            .map(
+              ([name, note]) => `
+                <button type="button" class="quick-search" data-kit-search="${escapeAttribute(name)}">
+                  <strong>${escapeHtml(name)}</strong>
+                  <span>${escapeHtml(note)}</span>
+                </button>
+              `,
+            )
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderRiskModule() {
+    return `
+      <section class="control-panel">
+        <div class="module-heading">
+          <p class="section-label">不懂时先保守</p>
+          <h2>一眼先避开的红线</h2>
+        </div>
+        <ul class="danger-list">
+          <li>商家只讲故事，不愿意写清材质、处理、价格。</li>
+          <li>高价件没有证书，或证书机构/名称说不清。</li>
+          <li>颜色过分统一鲜艳，却说纯天然无处理。</li>
+          <li>“今天不买就没了”“捡漏”“大师开光”等强催单话术。</li>
+          <li>籽料只看皮色不看肉质，或者毛孔、皮色明显不自然。</li>
+          <li>翡翠不讲 A/B/C 货，绿松石不讲注胶染色，彩宝不讲加热/充填。</li>
+        </ul>
+      </section>
+    `;
   }
 
   function renderGemList() {

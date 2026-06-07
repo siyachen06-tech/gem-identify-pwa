@@ -208,6 +208,55 @@ h3 {
   font-size: 1.22rem;
 }
 
+.field-kit-nav {
+  position: sticky;
+  top: calc(92px + env(safe-area-inset-top, 0px));
+  z-index: 4;
+  margin: -4px 0 0;
+  padding: 8px 0;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.field-tab-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.field-tab-row::-webkit-scrollbar {
+  display: none;
+}
+
+.field-tab {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 10px 13px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--ink);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.field-tab.is-active {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.module-heading {
+  margin-bottom: 12px;
+}
+
+.module-heading h2 {
+  margin-bottom: 4px;
+}
+
+.primary-record {
+  border-color: var(--ink);
+}
+
 .search-row {
   display: grid;
   grid-template-columns: 1fr;
