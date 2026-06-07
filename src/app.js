@@ -1,5 +1,5 @@
 (() => {
-  const APP_VERSION = "20260607-seed-jade-v1";
+  const APP_VERSION = "20260607-field-trip-v1";
 
   const STORAGE = {
     favorites: "gemApp.favorites.v1",
@@ -143,6 +143,7 @@
     if (hash === "identify") return { name: "identify" };
     if (hash === "favorites") return { name: "favorites" };
     if (hash === "settings") return { name: "settings" };
+    if (hash === "field-kit") return { name: "field-kit" };
     if (hash.startsWith("gem/")) return { name: "gem", id: hash.slice(4) };
     if (hash.startsWith("favorite/")) return { name: "favorite", id: hash.slice(9) };
     return { name: "encyclopedia" };
@@ -161,6 +162,12 @@
     if (route.name === "favorite") {
       renderFavoriteDetail(route.id);
       setActiveNav("favorites");
+      return;
+    }
+
+    if (route.name === "field-kit") {
+      renderFieldKit();
+      setActiveNav("encyclopedia");
       return;
     }
 
@@ -204,6 +211,14 @@
 
     $("#app").innerHTML = `
       <section class="search-panel">
+        <div class="field-entry">
+          <div>
+            <p class="section-label">后天现场用</p>
+            <h2>东海 / 苏州看货模式</h2>
+            <p class="help-text">先做功课，再看实物，再记录报价和风险。完全新手也按这张表走。</p>
+          </div>
+          <button type="button" class="button primary" id="open-field-kit">打开</button>
+        </div>
         <div class="search-row">
           <input id="search-input" class="input" type="search" value="${escapeAttribute(state.query)}" placeholder="搜中文名、英文名、别名、真假要点" autocomplete="off" />
           <button type="button" class="button ghost" id="clear-search">清空</button>
@@ -218,6 +233,10 @@
     $("#search-input").addEventListener("input", (event) => {
       state.query = event.target.value;
       renderGemList();
+    });
+
+    $("#open-field-kit").addEventListener("click", () => {
+      location.hash = "field-kit";
     });
 
     $("#clear-search").addEventListener("click", () => {
@@ -253,6 +272,196 @@
     });
 
     renderGemList();
+  }
+
+  function renderFieldKit() {
+    setHeader("看货模式", "东海水晶 / 苏州彩宝玉石现场小抄");
+
+    const quickSearches = [
+      ["白水晶", "先看通透、棉裂、玻璃仿品"],
+      ["紫水晶", "重点看色带、烤色黄晶风险"],
+      ["黄水晶", "天然少，烤色和合成要谨慎"],
+      ["粉水晶", "看颜色是否过艳、是否染色"],
+      ["绿幽灵水晶", "看包裹体层次和注色风险"],
+      ["金发晶", "看发丝立体感和玻璃内嵌金属丝"],
+      ["碧玺", "看裂、注胶、颜色名是否夸大"],
+      ["海蓝宝", "看颜色、净度、蓝托帕混淆"],
+      ["托帕石", "看辐照改色、证书名称"],
+      ["翡翠", "先问 A/B/C 货和证书"],
+      ["和田玉籽料", "看皮色、毛孔、二上皮和滚筒料"],
+      ["绿松石", "看注胶、染色、泡油处理"],
+    ];
+
+    const sourceStops = [
+      {
+        city: "东海",
+        name: "中国东海水晶城",
+        map: "江苏省东海县牛山街道中华北路1号",
+        focus: "水晶原石、手串、雕件、摆件、直播/批发商户集中",
+        tip: "适合第一站建立价格感；同品类至少看 5 家再记录最低/中位/最高报价。",
+      },
+      {
+        city: "东海",
+        name: "淘晶广场 / 水晶城周边摊位",
+        map: "地图搜：中国东海水晶城 淘晶广场",
+        focus: "小件、散珠、低价练眼力货",
+        tip: "适合练手，不适合一上来买高价件；问清天然、染色、镀膜、合成。",
+      },
+      {
+        city: "东海",
+        name: "东海水晶博物馆",
+        map: "地图搜：中国东海水晶博物馆",
+        focus: "先补晶体形态、产地和工艺背景",
+        tip: "不是主要买货点；看完再逛市场，能减少被术语绕晕。",
+      },
+      {
+        city: "苏州",
+        name: "相王路 / 十全街玉器集聚区",
+        map: "地图搜：苏州相王路 十全街 玉器",
+        focus: "和田玉、籽料、玉雕成品、工作室",
+        tip: "重点记录白度、细度、油性、皮色、雕工、证书和是否二上皮。",
+      },
+      {
+        city: "苏州",
+        name: "相王玉器城",
+        map: "十全街与相王路交汇处附近",
+        focus: "玉器商户集中，适合集中比价",
+        tip: "不懂时先看不买；高价件必须证书、复检和冷静期。",
+      },
+      {
+        city: "苏州",
+        name: "光福镇玉雕/工艺品集聚区",
+        map: "地图搜：苏州光福镇 玉雕",
+        focus: "玉雕加工、工艺摆件、工作室型货源",
+        tip: "适合看工艺和加工，不要把雕工故事直接等同于材料价值。",
+      },
+    ];
+
+    $("#app").innerHTML = `
+      <section class="trip-hero">
+        <h2>新手现场顺序</h2>
+        <div class="route-focus">
+          <p><strong>东海主线：</strong>水晶、发晶、幽灵、散珠、手串、低中价彩宝配件，先练眼力和价格感。</p>
+          <p><strong>苏州主线：</strong>和田玉、籽料、玉雕、工作室工艺，重点看材料真假和雕工溢价。</p>
+        </div>
+        <ol class="step-list">
+          <li><strong>先拍照</strong><span>整体、近景、侧面、证书/价签各一张。</span></li>
+          <li><strong>再查百科</strong><span>重点看价格区间、真假辨别、优化处理。</span></li>
+          <li><strong>问五句话</strong><span>天然吗、处理过吗、哪里产、有没有证书、这个价按什么算。</span></li>
+          <li><strong>马上记录</strong><span>地点、报价、商家说法、自己判断和照片都留在收藏。</span></li>
+          <li><strong>别急付款</strong><span>第一次看货以学习和比价为主，高价件先不冲动。</span></li>
+        </ol>
+      </section>
+
+      <section class="control-panel">
+        <h2>东海 / 苏州货源点</h2>
+        <div class="source-list">
+          ${sourceStops
+            .map(
+              (stop) => `
+                <article class="source-card">
+                  <div class="source-head">
+                    <span class="tag">${escapeHtml(stop.city)}</span>
+                    <h3>${escapeHtml(stop.name)}</h3>
+                  </div>
+                  <p><strong>地图搜：</strong>${escapeHtml(stop.map)}</p>
+                  <p><strong>适合看：</strong>${escapeHtml(stop.focus)}</p>
+                  <p><strong>新手动作：</strong>${escapeHtml(stop.tip)}</p>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+        <p class="help-text">看货点根据公开资料和产业集散区整理；出发前用地图再核对营业状态。APP 只帮你记录和比价，不给任何单个商家背书。</p>
+      </section>
+
+      <section class="control-panel">
+        <h2>现场必查品类</h2>
+        <div class="quick-search-grid">
+          ${quickSearches
+            .map(
+              ([name, note]) => `
+                <button type="button" class="quick-search" data-kit-search="${escapeAttribute(name)}">
+                  <strong>${escapeHtml(name)}</strong>
+                  <span>${escapeHtml(note)}</span>
+                </button>
+              `,
+            )
+            .join("")}
+        </div>
+      </section>
+
+      <section class="control-panel">
+        <h2>一眼先避开的红线</h2>
+        <ul class="danger-list">
+          <li>商家只讲故事，不愿意写清材质、处理、价格。</li>
+          <li>高价件没有证书，或证书机构/名称说不清。</li>
+          <li>颜色过分统一鲜艳，却说纯天然无处理。</li>
+          <li>“今天不买就没了”“捡漏”“大师开光”等强催单话术。</li>
+          <li>籽料只看皮色不看肉质，或者毛孔、皮色明显不自然。</li>
+          <li>翡翠不讲 A/B/C 货，绿松石不讲注胶染色，彩宝不讲加热/充填。</li>
+        </ul>
+      </section>
+
+      <section class="favorite-editor">
+        <h2>新建现场记录</h2>
+        <form id="field-note-form" class="form-grid">
+          <label class="field">
+            <span>地点</span>
+            <select id="field-place" class="select">
+              <option value="东海">东海</option>
+              <option value="苏州">苏州</option>
+              <option value="其他">其他</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>货源点 / 店铺</span>
+            <input id="field-source" class="input" type="text" placeholder="例：中国东海水晶城 2 号馆 / 相王路某店 / 光福工作室" />
+          </label>
+          <label class="field">
+            <span>品类 / 名称</span>
+            <input id="field-item" class="input" type="text" placeholder="例：紫水晶手串 / 和田玉籽料 / 碧玺戒面" />
+          </label>
+          <label class="field">
+            <span>商家报价</span>
+            <input id="field-price" class="input" type="text" placeholder="例：800 元 / 1200 元一串 / 按克价" />
+          </label>
+          <label class="field">
+            <span>商家说法</span>
+            <textarea id="field-claim" class="textarea compact-textarea" placeholder="产地、天然/处理、证书、尺寸、重量、瑕疵、是否可退换"></textarea>
+          </label>
+          <label class="field">
+            <span>我的判断</span>
+            <textarea id="field-judgment" class="textarea compact-textarea" placeholder="先写最朴素的感受：好不好看、价格贵不贵、哪里不放心、要不要复看"></textarea>
+          </label>
+          <label class="field">
+            <span>风险等级</span>
+            <select id="field-risk" class="select">
+              <option value="先不买">先不买</option>
+              <option value="低风险，可小额试">低风险，可小额试</option>
+              <option value="待复看">待复看</option>
+              <option value="高风险">高风险</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>现场照片</span>
+            <input id="field-photos" class="input" type="file" accept="image/*" capture="environment" multiple />
+            <p class="help-text">照片会压缩后保存在本机收藏；高价值样品原图另存在相册。</p>
+          </label>
+          <button type="submit" class="button success full">保存到收藏</button>
+        </form>
+      </section>
+    `;
+
+    $$(".quick-search").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.query = button.dataset.kitSearch;
+        state.selectedCategory = "全部";
+        location.hash = "encyclopedia";
+      });
+    });
+
+    $("#field-note-form").addEventListener("submit", saveFieldNoteFavorite);
   }
 
   function renderGemList() {
@@ -754,8 +963,8 @@
   }
 
   function renderFavoriteCard(favorite) {
-    const thumb = favorite.imageData || favoriteGemImageSrc(favorite);
-    const typeLabel = favorite.type === "identification" ? "识别结果" : "百科条目";
+    const thumb = favoriteThumbSrc(favorite);
+    const typeLabel = favoriteTypeLabel(favorite);
     return `
       <article class="favorite-card" data-favorite-id="${escapeAttribute(favorite.id)}" role="button" tabindex="0">
         <img class="thumb" src="${thumb}" alt="${escapeAttribute(favorite.title)} 缩略图" ${imageFallbackAttr()} />
@@ -785,8 +994,8 @@
       return;
     }
 
-    setHeader(favorite.title, favorite.type === "identification" ? "识别结果收藏" : "百科条目收藏");
-    const thumb = favorite.imageData || favoriteGemImageSrc(favorite);
+    setHeader(favorite.title, `${favoriteTypeLabel(favorite)}收藏`);
+    const thumb = favoriteThumbSrc(favorite);
     const gem = currentGemForFavorite(favorite);
 
     $("#app").innerHTML = `
@@ -810,7 +1019,9 @@
           <button type="button" class="button ghost" data-back-favorites>返回收藏</button>
         </div>
       </section>
-      ${favorite.type === "identification" ? renderResultPanel(favorite.data, false) : renderGemReference(favorite)}
+      ${favorite.type === "identification" ? renderResultPanel(favorite.data, false) : ""}
+      ${favorite.type === "field-note" ? renderFieldNoteReference(favorite) : ""}
+      ${favorite.type === "gem" ? renderGemReference(favorite) : ""}
     `;
 
     $("#favorite-photo").addEventListener("change", (event) => addFavoritePhotos(favorite.id, event.target.files));
@@ -842,6 +1053,23 @@
       </section>
       ${renderProfessionalPanel(gem)}
       ${renderReferencesPanel(gem)}
+    `;
+  }
+
+  function renderFieldNoteReference(favorite) {
+    const data = favorite.data || {};
+    return `
+      <section class="control-panel">
+        <h2>现场记录</h2>
+        <div class="result-grid">
+          ${renderResultItem("地点", data.place)}
+          ${renderResultItem("货源点 / 店铺", data.source)}
+          ${renderResultItem("商家报价", data.price)}
+          ${renderResultItem("风险等级", data.risk)}
+          ${renderResultItem("商家说法", data.claim)}
+          ${renderResultItem("我的判断", data.judgment)}
+        </div>
+      </section>
     `;
   }
 
@@ -930,6 +1158,68 @@
       showToast("API Key 已清空");
       renderSettings();
     });
+  }
+
+  async function saveFieldNoteFavorite(event) {
+    event.preventDefault();
+
+    const place = $("#field-place").value;
+    const source = $("#field-source").value.trim();
+    const item = $("#field-item").value.trim();
+    const price = $("#field-price").value.trim();
+    const claim = $("#field-claim").value.trim();
+    const judgment = $("#field-judgment").value.trim();
+    const risk = $("#field-risk").value;
+    const files = [...($("#field-photos").files || [])];
+
+    if (!item) {
+      showToast("先写品类或名称");
+      $("#field-item").focus();
+      return;
+    }
+
+    const photos = [];
+    try {
+      for (const file of files) {
+        photos.push(await compressImageFile(file, 1100, 0.76));
+      }
+    } catch (error) {
+      showToast(error.message || "照片保存失败");
+      return;
+    }
+
+    const createdAt = new Date().toISOString();
+    const data = { place, source, item, price, claim, judgment, risk };
+    const note = [
+      `地点：${place}`,
+      source ? `货源点/店铺：${source}` : "",
+      price ? `报价：${price}` : "",
+      `风险等级：${risk}`,
+      claim ? `商家说法：${claim}` : "",
+      judgment ? `我的判断：${judgment}` : "",
+    ]
+      .filter(Boolean)
+      .join("\n");
+
+    const favorites = loadFavorites();
+    const favorite = {
+      id: `field-note:${Date.now()}`,
+      type: "field-note",
+      sourceId: "",
+      title: item,
+      subtitle: `${place}现场记录 · ${risk}`,
+      imageKey: place === "苏州" ? "jade" : "crystal",
+      data,
+      note,
+      photos,
+      createdAt,
+      updatedAt: createdAt,
+    };
+
+    favorites.unshift(favorite);
+    saveFavorites(favorites);
+    showToast("现场记录已保存");
+    location.hash = `favorite/${favorite.id}`;
   }
 
   function addGemFavorite(id) {
@@ -1121,6 +1411,18 @@
         · ${escapeHtml(credit.license || "Wikimedia Commons")}${escapeHtml(artist)}
       </p>
     `;
+  }
+
+  function favoriteTypeLabel(favorite) {
+    if (favorite.type === "identification") return "识别结果";
+    if (favorite.type === "field-note") return "现场记录";
+    return "百科条目";
+  }
+
+  function favoriteThumbSrc(favorite) {
+    if (favorite.photos?.[0]) return favorite.photos[0];
+    if (favorite.imageData) return favorite.imageData;
+    return favoriteGemImageSrc(favorite);
   }
 
   function favoriteGemImageSrc(favorite) {
