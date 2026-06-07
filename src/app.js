@@ -1,5 +1,5 @@
 (() => {
-  const APP_VERSION = "20260606-completion-v1";
+  const APP_VERSION = "20260607-seed-jade-v1";
 
   const STORAGE = {
     favorites: "gemApp.favorites.v1",

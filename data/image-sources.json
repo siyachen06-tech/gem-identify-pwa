@@ -2107,6 +2107,146 @@
       "matchTerms": [
         "rhodonite"
       ]
+    },
+    "hetian-seed-nephrite": {
+      "label": "和田玉籽料",
+      "preferredTitles": [
+        "Nephrite jade ventifact (Precambrian; Granite Mountains, Wyoming, USA) 6.jpg"
+      ],
+      "queries": [
+        "Nephrite jade pebble",
+        "Nephrite jade ventifact",
+        "Hetian jade pebble"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "hetian-mountain-nephrite": {
+      "label": "和田山料",
+      "preferredTitles": [
+        "Nephrite jade (Oregon, USA) 5.jpg"
+      ],
+      "queries": [
+        "Nephrite jade rough specimen",
+        "Nephrite jade mountain material"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "hetian-river-nephrite": {
+      "label": "和田山流水料",
+      "preferredTitles": [
+        "Nephrite jade ventifact (Precambrian; Granite Mountains, Wyoming, USA) 6.jpg"
+      ],
+      "queries": [
+        "Nephrite jade pebble",
+        "Nephrite jade river pebble"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "white-seed-nephrite": {
+      "label": "和田白玉籽料",
+      "preferredTitles": [
+        "Ming White Jade & Green Nephrite Flat Scepters.jpg"
+      ],
+      "queries": [
+        "White nephrite jade",
+        "White Hetian jade"
+      ],
+      "matchTerms": [
+        "white",
+        "nephrite",
+        "jade"
+      ]
+    },
+    "black-white-seed-nephrite": {
+      "label": "和田青花籽料",
+      "preferredTitles": [
+        "Black and white nephrite pendant.jpg"
+      ],
+      "queries": [
+        "Black white nephrite jade",
+        "Ink nephrite jade"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "yellow-qin-seed-nephrite": {
+      "label": "黄沁籽料",
+      "preferredTitles": [
+        "Honey nephrite pendant.jpg"
+      ],
+      "queries": [
+        "Yellow nephrite jade",
+        "Honey nephrite jade"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "splash-gold-skin-seed-nephrite": {
+      "label": "洒金皮籽料",
+      "preferredTitles": [
+        "Nephrite jade ventifact (Precambrian; Granite Mountains, Wyoming, USA) 6.jpg"
+      ],
+      "queries": [
+        "Nephrite jade pebble skin",
+        "Hetian jade seed skin"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "red-skin-seed-nephrite": {
+      "label": "红皮籽料",
+      "preferredTitles": [
+        "BLW Jade cup.jpg"
+      ],
+      "queries": [
+        "Brown red nephrite jade",
+        "Red skin Hetian jade"
+      ],
+      "matchTerms": [
+        "jade"
+      ]
+    },
+    "black-skin-seed-nephrite": {
+      "label": "黑皮籽料",
+      "preferredTitles": [
+        "Nephrite jade ventifact (Precambrian; Granite Mountains, Wyoming, USA) 6.jpg"
+      ],
+      "queries": [
+        "Black skin nephrite jade",
+        "Dark nephrite jade pebble"
+      ],
+      "matchTerms": [
+        "nephrite",
+        "jade"
+      ]
+    },
+    "sugar-white-seed-nephrite": {
+      "label": "糖白籽料",
+      "preferredTitles": [
+        "BLW Jade cup.jpg"
+      ],
+      "queries": [
+        "Brown white nephrite jade",
+        "Sugar nephrite jade"
+      ],
+      "matchTerms": [
+        "jade"
+      ]
     }
   }
 }
