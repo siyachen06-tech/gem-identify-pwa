@@ -1,10 +1,15 @@
 (() => {
-  const APP_VERSION = "20260607-field-tabs-v1";
+  const APP_VERSION = "20260607-photo-db-v1";
 
   const STORAGE = {
     favorites: "gemApp.favorites.v1",
     settings: "gemApp.settings.v1",
     identifications: "gemApp.identifications.v1",
+  };
+
+  const PHOTO_DB = {
+    name: "gemApp.photos.v1",
+    store: "photos",
   };
 
   const DEFAULT_SETTINGS = {
@@ -39,7 +44,10 @@
     identifying: false,
     lastResult: null,
     fieldKitTab: "record",
+    photoCache: new Map(),
   };
+
+  let photoDbPromise = null;
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -54,6 +62,7 @@
     updateNetworkPill();
     await loadGemData();
     await loadImageCredits();
+    await migrateLegacyPhotosToIndexedDb();
     renderRoute();
     registerServiceWorker();
   }
@@ -379,6 +388,7 @@
           location.hash = `favorite/${card.dataset.favoriteId}`;
         });
       });
+      hydrateStoredPhotos();
     }
 
     if (activeTab === "search") {
@@ -469,7 +479,7 @@
                   .map(
                     (favorite) => `
                       <article class="history-card recent-field-card" data-favorite-id="${escapeAttribute(favorite.id)}" role="button" tabindex="0">
-                        <img class="thumb" src="${favoriteThumbSrc(favorite)}" alt="${escapeAttribute(favorite.title)} 缩略图" ${imageFallbackAttr()} />
+                        ${photoImgHtml(favorite.photos?.[0] || favorite.imageRef || favorite.imageData || favoriteGemImageSrc(favorite), "thumb", `${favorite.title} 缩略图`)}
                         <div>
                           <h3 class="favorite-title">${escapeHtml(favorite.title)}</h3>
                           <p class="favorite-subtitle">${escapeHtml(favorite.subtitle || "现场记录")}</p>
@@ -869,10 +879,12 @@
 
     try {
       const result = await callModelIdentification(state.selectedImage);
+      const imageRef = await saveStoredPhoto(state.selectedImage);
       const record = {
         id: `identify-${Date.now()}`,
         createdAt: new Date().toISOString(),
         imageData: state.selectedImage,
+        imageRef,
         ...result,
       };
       state.lastResult = record;
@@ -976,7 +988,7 @@
     return `
       <section class="result-panel">
         <h2>${escapeHtml(result.mineralName)}</h2>
-        ${result.imageData ? `<img class="result-image" src="${result.imageData}" alt="识别图片" />` : ""}
+        ${resultImageHtml(result)}
         <div class="result-grid">
           ${renderResultItem("外观特征分析", result.appearanceAnalysis)}
           ${renderResultItem("品质初步判断", result.qualityJudgment)}
@@ -1016,7 +1028,7 @@
             .map(
               (item) => `
                 <article class="history-card" data-history-id="${escapeAttribute(item.id)}" role="button" tabindex="0">
-                  <img class="thumb" src="${item.imageData}" alt="识别历史图片" />
+                  ${photoImgHtml(item.imageRef || item.imageData, "thumb", "识别历史图片")}
                   <div>
                     <h3 class="favorite-title">${escapeHtml(item.mineralName)}</h3>
                     <p class="favorite-subtitle">${formatTime(item.createdAt)}</p>
@@ -1033,11 +1045,12 @@
 
   function bindHistoryClicks() {
     $$(".history-card").forEach((card) => {
-      card.addEventListener("click", () => {
+      card.addEventListener("click", async () => {
         const record = loadHistory().find((item) => item.id === card.dataset.historyId);
         if (!record) return;
-        state.lastResult = record;
-        state.selectedImage = record.imageData;
+        const imageData = record.imageData || (await loadStoredPhoto(record.imageRef)) || "";
+        state.lastResult = { ...record, imageData };
+        state.selectedImage = imageData;
         renderIdentify();
       });
     });
@@ -1048,6 +1061,8 @@
         if (record) saveIdentificationFavorite(record);
       });
     });
+
+    hydrateStoredPhotos();
   }
 
   function renderFavorites() {
@@ -1073,14 +1088,16 @@
     $$("[data-delete-favorite]").forEach((button) => {
       button.addEventListener("click", () => deleteFavorite(button.dataset.deleteFavorite));
     });
+
+    hydrateStoredPhotos();
+    updateDeviceStorageEstimate();
   }
 
   function renderFavoriteCard(favorite) {
-    const thumb = favoriteThumbSrc(favorite);
     const typeLabel = favoriteTypeLabel(favorite);
     return `
       <article class="favorite-card" data-favorite-id="${escapeAttribute(favorite.id)}" role="button" tabindex="0">
-        <img class="thumb" src="${thumb}" alt="${escapeAttribute(favorite.title)} 缩略图" ${imageFallbackAttr()} />
+        ${photoImgHtml(favoritePrimaryPhoto(favorite), "thumb", `${favorite.title} 缩略图`)}
         <div class="favorite-card-body">
           <div class="gem-title-row">
             <div>
@@ -1108,12 +1125,11 @@
     }
 
     setHeader(favorite.title, `${favoriteTypeLabel(favorite)}收藏`);
-    const thumb = favoriteThumbSrc(favorite);
     const gem = currentGemForFavorite(favorite);
 
     $("#app").innerHTML = `
       <section class="favorite-editor">
-        <img class="detail-art" src="${thumb}" alt="${escapeAttribute(favorite.title)} 图片" ${imageFallbackAttr()} />
+        ${photoImgHtml(favoritePrimaryPhoto(favorite), "detail-art", `${favorite.title} 图片`)}
         <h2>${escapeHtml(favorite.title)}</h2>
         <p class="favorite-subtitle">${escapeHtml(favorite.subtitle || "")}</p>
         ${gem ? imageCreditHtml(gem.imageKey) : ""}
@@ -1147,6 +1163,8 @@
     $$("[data-remove-photo]").forEach((button) => {
       button.addEventListener("click", () => removeFavoritePhoto(favorite.id, Number(button.dataset.removePhoto)));
     });
+
+    hydrateStoredPhotos();
   }
 
   function renderGemReference(favorite) {
@@ -1192,12 +1210,12 @@
     }
 
     return `
-      <div class="photo-grid">
+          <div class="photo-grid">
         ${favorite.photos
           .map(
             (photo, index) => `
               <div class="photo-item">
-                <img src="${photo}" alt="收藏照片 ${index + 1}" />
+                ${photoImgHtml(photo, "", `收藏照片 ${index + 1}`)}
                 <button type="button" class="mini-button danger" data-remove-photo="${index}">移除</button>
               </div>
             `,
@@ -1271,6 +1289,8 @@
       showToast("API Key 已清空");
       renderSettings();
     });
+
+    updateDeviceStorageEstimate();
   }
 
   async function saveFieldNoteFavorite(event) {
@@ -1294,7 +1314,8 @@
     const photos = [];
     try {
       for (const file of files) {
-        photos.push(await compressImageFile(file, 1100, 0.76));
+        const compressed = await compressImageFile(file, 960, 0.64);
+        photos.push(await saveStoredPhoto(compressed));
       }
     } catch (error) {
       showToast(error.message || "照片保存失败");
@@ -1363,7 +1384,7 @@
     showToast("已保存到收藏");
   }
 
-  function saveIdentificationFavorite(record) {
+  async function saveIdentificationFavorite(record) {
     const favoriteId = `identification:${record.id}`;
     const favorites = loadFavorites();
     if (favorites.some((item) => item.id === favoriteId)) {
@@ -1371,14 +1392,17 @@
       return;
     }
 
+    const imageRef = record.imageRef || (record.imageData ? await saveStoredPhoto(record.imageData) : null);
+    const compactRecord = compactRecordForLocalStorage({ ...record, imageRef });
+
     favorites.unshift({
       id: favoriteId,
       type: "identification",
       sourceId: record.id,
       title: record.mineralName || "识别结果",
       subtitle: `识别于 ${formatTime(record.createdAt)}`,
-      imageData: record.imageData,
-      data: record,
+      imageRef,
+      data: compactRecord,
       note: "",
       photos: [],
       createdAt: new Date().toISOString(),
@@ -1413,7 +1437,8 @@
 
     try {
       for (const file of files) {
-        favorite.photos.push(await compressImageFile(file, 1100, 0.76));
+        const compressed = await compressImageFile(file, 960, 0.64);
+        favorite.photos.push(await saveStoredPhoto(compressed));
       }
       favorite.updatedAt = new Date().toISOString();
       saveFavorites(favorites);
@@ -1428,7 +1453,8 @@
     const favorites = loadFavorites();
     const favorite = favorites.find((item) => item.id === id);
     if (!favorite || !favorite.photos) return;
-    favorite.photos.splice(index, 1);
+    const [removed] = favorite.photos.splice(index, 1);
+    deleteStoredPhoto(removed);
     favorite.updatedAt = new Date().toISOString();
     saveFavorites(favorites);
     showToast("照片已移除");
@@ -1437,7 +1463,10 @@
 
   function deleteFavorite(id, afterRoute) {
     if (!confirm("确认删除这条收藏？")) return;
-    saveFavorites(loadFavorites().filter((item) => item.id !== id));
+    const favorites = loadFavorites();
+    const favorite = favorites.find((item) => item.id === id);
+    if (favorite) deleteFavoriteStoredPhotos(favorite);
+    saveFavorites(favorites.filter((item) => item.id !== id));
     showToast("收藏已删除");
     location.hash = afterRoute || "favorites";
     if (!afterRoute && currentRoute().name === "favorites") renderFavorites();
@@ -1455,13 +1484,19 @@
     localStorage.setItem(STORAGE.favorites, JSON.stringify(favorites));
   }
 
+  function compactRecordForLocalStorage(record) {
+    const compact = { ...record };
+    if (compact.imageData && compact.imageRef) delete compact.imageData;
+    return compact;
+  }
+
   function loadHistory() {
     return safeJson(STORAGE.identifications, []);
   }
 
   function saveIdentificationRecord(record) {
     const history = loadHistory().filter((item) => item.id !== record.id);
-    history.unshift(record);
+    history.unshift(compactRecordForLocalStorage(record));
     localStorage.setItem(STORAGE.identifications, JSON.stringify(history.slice(0, 20)));
   }
 
@@ -1471,6 +1506,148 @@
 
   function saveSettings(settings) {
     localStorage.setItem(STORAGE.settings, JSON.stringify(settings));
+  }
+
+  async function migrateLegacyPhotosToIndexedDb() {
+    let favoritesChanged = false;
+    const favorites = loadFavorites();
+
+    for (const favorite of favorites) {
+      if (Array.isArray(favorite.photos)) {
+        const migratedPhotos = [];
+        for (const photo of favorite.photos) {
+          if (isDataUrl(photo)) {
+            migratedPhotos.push(await saveStoredPhoto(photo));
+            favoritesChanged = true;
+          } else {
+            migratedPhotos.push(photo);
+          }
+        }
+        favorite.photos = migratedPhotos;
+      }
+
+      if (isDataUrl(favorite.imageData)) {
+        favorite.imageRef = await saveStoredPhoto(favorite.imageData);
+        delete favorite.imageData;
+        favoritesChanged = true;
+      }
+
+      if (isDataUrl(favorite.data?.imageData)) {
+        favorite.data.imageRef = favorite.imageRef || (await saveStoredPhoto(favorite.data.imageData));
+        delete favorite.data.imageData;
+        favoritesChanged = true;
+      }
+    }
+
+    if (favoritesChanged) saveFavorites(favorites);
+
+    let historyChanged = false;
+    const history = loadHistory();
+    for (const record of history) {
+      if (isDataUrl(record.imageData)) {
+        record.imageRef = await saveStoredPhoto(record.imageData);
+        delete record.imageData;
+        historyChanged = true;
+      }
+    }
+    if (historyChanged) localStorage.setItem(STORAGE.identifications, JSON.stringify(history));
+  }
+
+  function openPhotoDb() {
+    if (!("indexedDB" in window)) return Promise.reject(new Error("当前浏览器不支持 IndexedDB"));
+    if (photoDbPromise) return photoDbPromise;
+
+    photoDbPromise = new Promise((resolve, reject) => {
+      const request = indexedDB.open(PHOTO_DB.name, 1);
+      request.onupgradeneeded = () => {
+        const db = request.result;
+        if (!db.objectStoreNames.contains(PHOTO_DB.store)) {
+          db.createObjectStore(PHOTO_DB.store, { keyPath: "id" });
+        }
+      };
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error || new Error("IndexedDB 打开失败"));
+    });
+
+    return photoDbPromise;
+  }
+
+  async function saveStoredPhoto(dataUrl) {
+    if (!isDataUrl(dataUrl)) return dataUrl;
+
+    try {
+      const db = await openPhotoDb();
+      const id = `photo-${Date.now()}-${Math.random().toString(16).slice(2)}`;
+      await runPhotoStore("readwrite", (store) => store.put({ id, dataUrl, createdAt: new Date().toISOString() }), db);
+      return { storage: "indexeddb", id };
+    } catch (error) {
+      console.warn("Photo IndexedDB save failed, falling back to localStorage payload.", error);
+      return dataUrl;
+    }
+  }
+
+  async function loadStoredPhoto(photo) {
+    if (isDataUrl(photo)) return photo;
+    const id = storedPhotoId(photo);
+    if (!id) return "";
+    if (state.photoCache.has(id)) return state.photoCache.get(id);
+
+    try {
+      const db = await openPhotoDb();
+      const record = await runPhotoStore("readonly", (store) => store.get(id), db);
+      const dataUrl = record?.dataUrl || "";
+      if (dataUrl) state.photoCache.set(id, dataUrl);
+      return dataUrl;
+    } catch (error) {
+      console.warn("Photo IndexedDB load failed.", error);
+      return "";
+    }
+  }
+
+  async function deleteStoredPhoto(photo) {
+    const id = storedPhotoId(photo);
+    if (!id) return;
+    state.photoCache.delete(id);
+    try {
+      const db = await openPhotoDb();
+      await runPhotoStore("readwrite", (store) => store.delete(id), db);
+    } catch (error) {
+      console.warn("Photo IndexedDB delete failed.", error);
+    }
+  }
+
+  function deleteFavoriteStoredPhotos(favorite) {
+    (favorite.photos || []).forEach(deleteStoredPhoto);
+    deleteStoredPhoto(favorite.imageRef);
+    deleteStoredPhoto(favorite.data?.imageRef);
+  }
+
+  function runPhotoStore(mode, action, existingDb) {
+    return new Promise((resolve, reject) => {
+      const dbPromise = existingDb ? Promise.resolve(existingDb) : openPhotoDb();
+      dbPromise
+        .then((db) => {
+          const transaction = db.transaction(PHOTO_DB.store, mode);
+          const request = action(transaction.objectStore(PHOTO_DB.store));
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = () => reject(request.error || transaction.error);
+          transaction.onerror = () => reject(transaction.error || request.error);
+        })
+        .catch(reject);
+    });
+  }
+
+  function isDataUrl(value) {
+    return typeof value === "string" && value.startsWith("data:image/");
+  }
+
+  function isStoredPhoto(value) {
+    return Boolean(value && typeof value === "object" && value.storage === "indexeddb" && value.id);
+  }
+
+  function storedPhotoId(value) {
+    if (isStoredPhoto(value)) return value.id;
+    return "";
   }
 
   function safeJson(key, fallback) {
@@ -1491,13 +1668,26 @@
       <div class="storage-meter">
         <strong>localStorage 估算占用：${formatBytes(usage)} / 约 ${formatBytes(limit)}</strong>
         <div class="meter-bar"><div class="meter-fill" style="width:${percent}%"></div></div>
-        <p class="help-text">照片会明显增加占用。高价值样品建议另存原图和证书。</p>
+        <p class="help-text">文字记录、设置和少量旧数据在 localStorage；新照片会优先保存到 IndexedDB，不再塞进这 5MB。</p>
+        <p class="help-text" id="device-storage-estimate">照片存储空间正在估算...</p>
       </div>
     `;
   }
 
   function calculateLocalStorageUsage() {
     return Object.values(STORAGE).reduce((total, key) => total + (localStorage.getItem(key) || "").length * 2, 0);
+  }
+
+  async function updateDeviceStorageEstimate() {
+    const target = $("#device-storage-estimate");
+    if (!target || !navigator.storage?.estimate) return;
+    try {
+      const estimate = await navigator.storage.estimate();
+      if (!estimate.quota) return;
+      target.textContent = `浏览器总存储估算：已用 ${formatBytes(estimate.usage || 0)} / 可用约 ${formatBytes(estimate.quota)}。现场原图仍建议同步保存在手机相册。`;
+    } catch (error) {
+      target.textContent = "当前浏览器没有返回总存储估算。现场原图仍建议同步保存在手机相册。";
+    }
   }
 
   function applyOutdoorMode() {
@@ -1526,16 +1716,45 @@
     `;
   }
 
+  function resultImageHtml(result) {
+    const photo = result.imageRef || result.imageData;
+    return photo ? photoImgHtml(photo, "result-image", "识别图片") : "";
+  }
+
+  function photoImgHtml(photo, className, alt) {
+    const storedId = storedPhotoId(photo);
+    const classAttr = className ? ` class="${escapeAttribute(className)}"` : "";
+    const src = photoSrc(photo);
+    const storedAttr = storedId ? ` data-photo-id="${escapeAttribute(storedId)}"` : "";
+    return `<img${classAttr} src="${escapeAttribute(src)}" alt="${escapeAttribute(alt)}"${storedAttr} ${imageFallbackAttr()} />`;
+  }
+
+  function photoSrc(photo) {
+    if (isDataUrl(photo)) return photo;
+    const id = storedPhotoId(photo);
+    if (id && state.photoCache.has(id)) return state.photoCache.get(id);
+    return "assets/icon.svg";
+  }
+
+  async function hydrateStoredPhotos(root = document) {
+    const images = $$("img[data-photo-id]", root);
+    await Promise.all(
+      images.map(async (image) => {
+        const id = image.dataset.photoId;
+        const dataUrl = await loadStoredPhoto({ storage: "indexeddb", id });
+        if (dataUrl) image.src = dataUrl;
+      }),
+    );
+  }
+
   function favoriteTypeLabel(favorite) {
     if (favorite.type === "identification") return "识别结果";
     if (favorite.type === "field-note") return "现场记录";
     return "百科条目";
   }
 
-  function favoriteThumbSrc(favorite) {
-    if (favorite.photos?.[0]) return favorite.photos[0];
-    if (favorite.imageData) return favorite.imageData;
-    return favoriteGemImageSrc(favorite);
+  function favoritePrimaryPhoto(favorite) {
+    return favorite.photos?.[0] || favorite.imageRef || favorite.imageData || favoriteGemImageSrc(favorite);
   }
 
   function favoriteGemImageSrc(favorite) {
